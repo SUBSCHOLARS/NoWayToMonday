@@ -1,1 +1,2 @@
 # NoWayToMonday
+2024年12月に行われたUnity1WeekJamにおいて提出した2Dドット絵の短編ノベルゲームです。

@@ -3399,7 +3399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shader: {fileID: 4800000, guid: 40ec85c133cff4ae8b0184a892a9737e, type: 3}
-  lineWidth: 2
+  lineWidth: 5
   hardness: 0.9
   displacementSpeed: 0.1
 --- !u!1 &545543066

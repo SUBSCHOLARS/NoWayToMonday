@@ -3830,6 +3830,8 @@ GameObject:
   - component: {fileID: 594145125}
   - component: {fileID: 594145124}
   - component: {fileID: 594145123}
+  - component: {fileID: 594145126}
+  - component: {fileID: 594145127}
   m_Layer: 0
   m_Name: NoWayToMondayNewPlayer-Sheet_0
   m_TagString: Untagged
@@ -3925,6 +3927,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &594145126
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594145122}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &594145127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594145122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76b3fd1d1ed4347d3bbf9fb119d9bbf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &675131793
 GameObject:
   m_ObjectHideFlags: 0
@@ -16626,6 +16667,10 @@ PrefabInstance:
     - target: {fileID: 3026002099080024658, guid: 8dab7a71172aa486ba4cc02b9cf41a9e, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3026002099080024658, guid: 8dab7a71172aa486ba4cc02b9cf41a9e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3782919059604448349, guid: 8dab7a71172aa486ba4cc02b9cf41a9e, type: 3}
       propertyPath: m_LocalPosition.x

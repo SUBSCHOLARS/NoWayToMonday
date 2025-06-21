@@ -16631,6 +16631,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NoWayToMondayNewPlayer-Sheet_0
       objectReference: {fileID: 0}
+    - target: {fileID: 6756010313625688972, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756010313625688972, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
+      propertyPath: WalkingSound
+      value: 
+      objectReference: {fileID: 2049550813}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

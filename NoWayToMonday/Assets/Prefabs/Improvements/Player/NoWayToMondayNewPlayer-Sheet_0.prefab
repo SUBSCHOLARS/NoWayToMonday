@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8476425731288215776}
   - component: {fileID: 6330418373074125801}
   - component: {fileID: 105746034221474443}
-  - component: {fileID: 3476242760060856954}
   - component: {fileID: 3655411357572774288}
+  - component: {fileID: 6756010313625688972}
   m_Layer: 0
   m_Name: NoWayToMondayNewPlayer-Sheet_0
   m_TagString: Player
@@ -136,19 +136,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3476242760060856954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989174105313279419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76b3fd1d1ed4347d3bbf9fb119d9bbf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3.5
 --- !u!61 &3655411357572774288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -194,3 +181,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0816679, y: 6.2300005}
   m_EdgeRadius: 0
+--- !u!114 &6756010313625688972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989174105313279419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f877abf5b1c4c609794603f79e2286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3.5
+  WalkingSound: {fileID: 0}

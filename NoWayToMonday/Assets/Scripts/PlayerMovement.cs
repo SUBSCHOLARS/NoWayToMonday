@@ -5,71 +5,48 @@ using DG.Tweening;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public GameObject[] players;
-    public GameObject[] inversedplayers;
-    private float switchInterval=0.2f;
-    private float timer=0f;
-    private int currentIndex=0;
-    private int currentinversedIndex=0;
-    public float speed=2.0f;
+    [SerializeField]private float speed=2.0f;
     private bool canMove=true;
     private bool autoMove=false;
     private bool autoMoveRight=false;
     private bool backMove=false;
     public GameObject WalkingSound;
     Rigidbody2D rb2D;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        ActivateCurrentObject();
-        rb2D=this.gameObject.GetComponent<Rigidbody2D>();
+        rb2D = this.gameObject.GetComponent<Rigidbody2D>();
+        animator = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.RightArrow)&&canMove)
+        if((Input.GetKey(KeyCode.RightArrow)&&canMove)||(Input.GetKey(KeyCode.D)&&canMove))
         {
-            DeactivateInversedPlayers();
-            ActivateCurrentObject();
-            timer+=Time.deltaTime;
-            if(timer>=switchInterval)
-            {
-                SwitchPlayers();
-                timer=0f;
-            }
+            Vector3 scale = transform.localScale;
+            scale.x = 1; // Flip the sprite to face right
+            transform.localScale = scale;
+            animator.SetBool("IsWalking", true);
             transform.position+=new Vector3(1,0,0)*speed*Time.deltaTime;
         }
-        else if(Input.GetKey(KeyCode.LeftArrow)&&canMove)
+        if((Input.GetKey(KeyCode.LeftArrow)&&canMove)||(Input.GetKey(KeyCode.A)&&canMove))
         {
-            DeactivatePlayers();
-            ActivateCurrentInversedObject();
-            timer+=Time.deltaTime;
-            if(timer>=switchInterval)
-            {
-                SwitchInversedPlayers();
-                timer=0f;
-            }
+            Vector3 scale = transform.localScale;
+            scale.x = -1;
+            transform.localScale = scale;
+            animator.SetBool("IsWalking", true);
             transform.position+=new Vector3(-1,0,0)*speed*Time.deltaTime;
-        }
-        else
-        {
-            timer=0f;
         }
         if((Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown(KeyCode.LeftArrow))&&canMove)
         {
             WalkingSound.SetActive(true);
         }
-        if(Input.GetKeyUp(KeyCode.RightArrow))
+        if(Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || 
+           Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
         {
-            DeactivatePlayers();
-            players[0].SetActive(true);
-            WalkingSound.SetActive(false);
-        }
-        if(Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            DeactivateInversedPlayers();
-            inversedplayers[0].SetActive(true);
+            animator.SetBool("IsWalking", false);
             WalkingSound.SetActive(false);
         }
         if(this.gameObject.transform.position.x<-8f)
@@ -78,75 +55,16 @@ public class PlayerMovement : MonoBehaviour
         }
         if(autoMove)
         {
-            DeactivatePlayers();
-            ActivateCurrentInversedObject();
-            timer+=Time.deltaTime;
-            if(timer>=switchInterval)
-            {
-                SwitchInversedPlayers();
-                timer=0f;
-            }
             transform.position+=new Vector3(-1,0,0)*speed*Time.deltaTime;
         }
         if(autoMoveRight)
         {
-            DeactivateInversedPlayers();
-            ActivateCurrentObject();
-            timer+=Time.deltaTime;
-            if(timer>=switchInterval)
-            {
-                SwitchPlayers();
-                timer=0f;
-            }
             transform.position+=new Vector3(1,0,0)*speed*Time.deltaTime;
         }
         if(backMove)
         {
-            DeactivatePlayers();
-            ActivateCurrentInversedObject();
-            timer+=Time.deltaTime;
-            if(timer>=switchInterval)
-            {
-                SwitchInversedPlayers();
-                timer=0f;
-            }
             transform.position+=new Vector3(-1,0,0)*speed*Time.deltaTime;
         }
-    }
-    public void SwitchPlayers()
-    {
-        players[currentIndex].SetActive(false);
-        currentIndex=(currentIndex+1)%players.Length;
-        ActivateCurrentObject();
-    }
-    public void SwitchInversedPlayers()
-    {
-        inversedplayers[currentinversedIndex].SetActive(false);
-        currentinversedIndex=(currentinversedIndex+1)%inversedplayers.Length;
-        ActivateCurrentInversedObject();
-
-    }
-    public void DeactivatePlayers()
-    {
-        for(int i=0; i<players.Length; i++)
-        {
-            players[i].SetActive(false);
-        }
-    }
-    public void DeactivateInversedPlayers()
-    {
-        for(int i=0; i<inversedplayers.Length; i++)
-        {
-            inversedplayers[i].SetActive(false);
-        }
-    }
-    public void ActivateCurrentObject()
-    {
-        players[currentIndex].SetActive(true);
-    }
-    public void ActivateCurrentInversedObject()
-    {
-        inversedplayers[currentinversedIndex].SetActive(true);
     }
     public void SetMovement(bool enable)
     {

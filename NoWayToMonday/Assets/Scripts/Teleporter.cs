@@ -20,11 +20,12 @@ public class Teleporter : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            player.transform.position=new Vector3(21.6f,-1.8f,0f);
-            MainCamera.transform.position=new Vector3(30f,0f,-10f);
+            player.transform.position = new Vector3(21.6f, -6.3f, 0f);
+            MainCamera.transform.position = new Vector3(30f, 0f, -10f);
             audioManager.PlayAuido();
+            Debug.Log("Triggerd");
         }
     }
 }

@@ -15,19 +15,27 @@ public class WalkingTestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             Vector3 scale = transform.localScale;
             scale.x = 1; // Flip the sprite to face right
             transform.localScale = scale;
             transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+            animator.SetBool("IsWalking", true);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             Vector3 scale = transform.localScale;
             scale.x = -1; // Flip the sprite to face left
             transform.localScale = scale;
             transform.position += new Vector3(-speed, 0, 0) * Time.deltaTime;
+            animator.SetBool("IsWalking", true);
+        }
+
+        if(Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || 
+           Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 }

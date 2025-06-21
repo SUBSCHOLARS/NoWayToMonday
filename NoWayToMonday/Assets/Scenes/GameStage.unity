@@ -3360,7 +3360,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.850746
+  orthographic size: 4.9242425
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3448,7 +3448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_AssetsPPU: 67
+  m_AssetsPPU: 66
   m_RefResolutionX: 960
   m_RefResolutionY: 360
   m_CropFrame: 0
@@ -5380,7 +5380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7a1c0c2b8b814b43b3a0553ae49db10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 982964523}
+  player: {fileID: 594145122}
   MainCamera: {fileID: 519420028}
   Reason: {fileID: 749043847}
   audioManager: {fileID: 560707327}
@@ -8272,7 +8272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a39fd268104ca49c7b610a2db79017cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 982964523}
+  player: {fileID: 594145122}
   MainCamera: {fileID: 519420028}
   audioManager: {fileID: 560707327}
 --- !u!50 &1434829297

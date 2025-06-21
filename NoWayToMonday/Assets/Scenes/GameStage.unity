@@ -13383,7 +13383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d857a7ecc149c476d9f69378a95071cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 982964523}
+  player: {fileID: 594145122}
   MainCamera: {fileID: 519420028}
   audioManager: {fileID: 560707327}
 --- !u!1 &1833071032

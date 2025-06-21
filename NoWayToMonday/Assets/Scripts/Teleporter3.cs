@@ -22,11 +22,11 @@ public class Teleporter3 : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player")&&DayCountManager.DayCount==7)
         {
-            player.transform.position=new Vector3(52.6f,-6.3f,0f);
+            player.transform.position=new Vector3(52.6f,-4.5f,0f);
         }
         if(other.gameObject.CompareTag("Player"))
         {
-            player.transform.position=new Vector3(38f,-6.3f,0f);
+            player.transform.position=new Vector3(38f,-4.5f,0f);
             MainCamera.transform.position=new Vector3(30f,0f,-10f);
             audioManager.PlayAuido();
         }

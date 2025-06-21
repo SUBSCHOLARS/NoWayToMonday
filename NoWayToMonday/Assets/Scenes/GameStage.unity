@@ -3488,7 +3488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1255832063}
+  selectedFlowchart: {fileID: 1643264164}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -3824,6 +3824,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 989174105313279419, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
   m_PrefabInstance: {fileID: 3815448241276708225}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &594145129 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6756010313625688972, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
+  m_PrefabInstance: {fileID: 3815448241276708225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594145122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f877abf5b1c4c609794603f79e2286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &675131793
 GameObject:
   m_ObjectHideFlags: 0
@@ -6208,11 +6219,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 59.539894, y: 9.523967}
+  scrollPos: {x: 42.022194, y: -6.78743}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6769997
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -6221,8 +6232,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1192274790}
-  selectedCommands:
-  - {fileID: 1192274789}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -6277,7 +6287,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 105.28743
-    width: 109.82278
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6361,7 +6371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a4d8b1607e040249742ad85ccd2e7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 982964525}
+  playerMovement: {fileID: 594145129}
   playerFinalMovement: {fileID: 0}
   KnifeText: {fileID: 2124667334}
   SleepActivator: {fileID: 316916022}
@@ -9506,7 +9516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 52.789185, y: -74.2984}
+  scrollPos: {x: 48.674637, y: 28.5}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 312.5
@@ -9518,9 +9528,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1643264283}
-  selectedCommands:
-  - {fileID: 1643264285}
+  - {fileID: 1643264163}
+  selectedCommands: []
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -12189,7 +12198,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1643264285
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

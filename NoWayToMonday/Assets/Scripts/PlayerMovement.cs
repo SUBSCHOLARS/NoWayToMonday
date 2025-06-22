@@ -55,14 +55,26 @@ public class PlayerMovement : MonoBehaviour
         }
         if(autoMove)
         {
+            animator.SetBool("IsWalking", true);
+            WalkingSound.SetActive(true);
+            Vector3 scale = transform.localScale;
+            scale.x = -1;
+            transform.localScale = scale;
             transform.position+=new Vector3(-1,0,0)*speed*Time.deltaTime;
         }
         if(autoMoveRight)
         {
+            animator.SetBool("IsWalking", true);
+            WalkingSound.SetActive(true);
             transform.position+=new Vector3(1,0,0)*speed*Time.deltaTime;
         }
         if(backMove)
         {
+            animator.SetBool("IsWalking", true);
+            WalkingSound.SetActive(true);
+            Vector3 scale = transform.localScale;
+            scale.x = -1;
+            transform.localScale = scale;
             transform.position+=new Vector3(-1,0,0)*speed*Time.deltaTime;
         }
     }

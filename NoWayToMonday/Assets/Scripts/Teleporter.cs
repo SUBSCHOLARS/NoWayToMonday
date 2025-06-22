@@ -22,7 +22,7 @@ public class Teleporter : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            player.transform.position = new Vector3(21.6f, -4.5f, 0f);
+            player.transform.position = new Vector3(21.6f, -5.9f, 0f);
             MainCamera.transform.position = new Vector3(30f, 0f, -10f);
             audioManager.PlayAuido();
             Debug.Log("Triggerd");

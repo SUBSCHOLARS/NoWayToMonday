@@ -22,7 +22,7 @@ public class Teleporter3 : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player")&&DayCountManager.DayCount==7)
         {
-            player.transform.position=new Vector3(52.6f,-4.5f,0f);
+            player.transform.position=new Vector3(52.6f,-6.2f,0f);
         }
         if(other.gameObject.CompareTag("Player"))
         {

@@ -2243,10 +2243,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 337235530}
-  selectedCommands:
-  - {fileID: 337235531}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 337235538}
   description: 
@@ -3014,7 +3012,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4620f820447de4eba850e3d4ab0aded5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4353,7 +4351,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4450,7 +4448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radioClips:
-  - {fileID: 8300000, guid: 0f3dac72d3df7499598b8657ca7aa6a0, type: 3}
+  - {fileID: 8300000, guid: e1e7ffebf2bc54b1380855203e4dfc31, type: 3}
   - {fileID: 8300000, guid: 0f3dac72d3df7499598b8657ca7aa6a0, type: 3}
   - {fileID: 8300000, guid: 0f3dac72d3df7499598b8657ca7aa6a0, type: 3}
   - {fileID: 8300000, guid: 0f3dac72d3df7499598b8657ca7aa6a0, type: 3}
@@ -6625,7 +6623,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 52c2d16d61ac3494a83bd415cf115f91, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9116,7 +9114,7 @@ GameObject:
   - component: {fileID: 1439416924}
   - component: {fileID: 1439416923}
   m_Layer: 0
-  m_Name: Light 2D (1)
+  m_Name: LumpLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

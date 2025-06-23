@@ -49,9 +49,9 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsWalking", false);
             WalkingSound.SetActive(false);
         }
-        if(this.gameObject.transform.position.x<-11.5f)
+        if(this.gameObject.transform.position.x<-13f)
         {
-            this.gameObject.transform.position=new Vector3(-11.5f,-6.2f,0);
+            this.gameObject.transform.position=new Vector3(-13f,-7.2f,0);
         }
         if(autoMove)
         {

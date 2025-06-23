@@ -193,5 +193,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f877abf5b1c4c609794603f79e2286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 4.5
   WalkingSound: {fileID: 0}

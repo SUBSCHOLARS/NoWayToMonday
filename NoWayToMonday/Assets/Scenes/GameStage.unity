@@ -18188,7 +18188,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 965895475087766289, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.8
+      value: -9.1
       objectReference: {fileID: 0}
     - target: {fileID: 965895475087766289, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18229,10 +18229,6 @@ PrefabInstance:
     - target: {fileID: 989174105313279419, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
       propertyPath: m_Name
       value: NoWayToMondayNewPlayer-Sheet_0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6756010313625688972, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
-      propertyPath: speed
-      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6756010313625688972, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
       propertyPath: WalkingSound

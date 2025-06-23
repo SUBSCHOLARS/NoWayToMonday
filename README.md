@@ -12,6 +12,10 @@ https://soundeffect-lab.info/
 https://github.com/openai/openai-fm
 
 API Keyを取得した後に、リポジトリをクローンしてローカルで出力したものを使用しています。
+- OtoLogic
+
+https://otologic.jp/
+
 - Audacity
 - Unity 2022.3.23f1
 - Aseprite

@@ -10,6 +10,8 @@ public class ScreenFader : MonoBehaviour
     public float fadeDuration=2.0f;
     public float clearFadeDuration=4.0f;
     public AudioManager audioManager;
+    public GameObject MainCamera;
+    public GameObject player;
 
     public void FadeToBlack()
     {
@@ -31,6 +33,10 @@ public class ScreenFader : MonoBehaviour
         fadeImage.DOFade(1, fadeDuration).SetEase(Ease.InOutQuad).OnComplete(() =>
         {
             audioManager.PlayAuido();
+            Vector3 playerScale=player.transform.localScale;
+            playerScale.x=-1;
+            player.transform.localScale=playerScale;
+            MainCamera.transform.position=new Vector3(62.4f,-0.19f,-10f);
             fadeImage.DOFade(0, clearFadeDuration).SetEase(Ease.InOutQuad);
         });
     }

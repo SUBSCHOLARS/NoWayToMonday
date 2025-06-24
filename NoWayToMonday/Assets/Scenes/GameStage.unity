@@ -12086,6 +12086,7 @@ GameObject:
   - component: {fileID: 1643264280}
   - component: {fileID: 1643264284}
   - component: {fileID: 1643264285}
+  - component: {fileID: 1643264286}
   m_Layer: 0
   m_Name: Flowchart2
   m_TagString: Untagged
@@ -12157,6 +12158,7 @@ MonoBehaviour:
   - {fileID: 1643264178}
   - {fileID: 1643264180}
   - {fileID: 1643264179}
+  - {fileID: 1643264286}
   - {fileID: 1643264184}
   - {fileID: 1643264168}
   - {fileID: 1643264182}
@@ -12187,7 +12189,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1643264163}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1643264286}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -14853,6 +14856,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1910558882}
   methodName: TriggerZone3Deactivate
+  delay: 0
+--- !u!114 &1643264286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643264160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 124
+  indentLevel: 0
+  targetObject: {fileID: 1511723585}
+  methodName: FadeToBlackThenToClearWithSound
   delay: 0
 --- !u!1 &1650516392
 GameObject:

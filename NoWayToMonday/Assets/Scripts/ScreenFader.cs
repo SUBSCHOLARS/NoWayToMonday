@@ -9,10 +9,11 @@ public class ScreenFader : MonoBehaviour
     public Image fadeImage;
     public float fadeDuration=2.0f;
     public float clearFadeDuration=4.0f;
+    public AudioManager audioManager;
 
     public void FadeToBlack()
     {
-        fadeImage.DOFade(1,fadeDuration).SetEase(Ease.InOutQuad);
+        fadeImage.DOFade(1, fadeDuration).SetEase(Ease.InOutQuad);
     }
     public void FadeToClear()
     {
@@ -22,6 +23,14 @@ public class ScreenFader : MonoBehaviour
     {
         fadeImage.DOFade(1, fadeDuration).SetEase(Ease.InOutQuad).OnComplete(() =>
         {
+            fadeImage.DOFade(0, clearFadeDuration).SetEase(Ease.InOutQuad);
+        });
+    }
+    public void FadeToBlackThenToClearWithSound()
+    {
+        fadeImage.DOFade(1, fadeDuration).SetEase(Ease.InOutQuad).OnComplete(() =>
+        {
+            audioManager.PlayAuido();
             fadeImage.DOFade(0, clearFadeDuration).SetEase(Ease.InOutQuad);
         });
     }

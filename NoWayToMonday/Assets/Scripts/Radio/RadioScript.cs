@@ -10,7 +10,6 @@ public class RadioScript : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.PlayOneShot(radioClips[DayCountManager.DayCount - 1]);
     }
 
     // Update is called once per frame

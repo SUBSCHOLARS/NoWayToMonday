@@ -10845,7 +10845,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 1
     m_RotationOrder: 4
-  speed: 0.5
+  speed: 3
   intensity: 1
 --- !u!1 &1434154168
 GameObject:

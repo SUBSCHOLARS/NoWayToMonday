@@ -26,4 +26,15 @@ public class RadioScript : MonoBehaviour
     {
         audioSource.Stop();
     }
+    public void ResumeRadio()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.UnPause();
+        }
+    }
+    public void PauseRadio()
+    {
+        audioSource.Pause();
+    }
 }

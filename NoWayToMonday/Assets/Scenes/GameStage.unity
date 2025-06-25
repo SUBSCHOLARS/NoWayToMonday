@@ -12616,9 +12616,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1643264163}
+  - {fileID: 1643264201}
   selectedCommands:
-  - {fileID: 1643264170}
+  - {fileID: 1643264196}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -13260,7 +13260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 23
   indentLevel: 0
-  storyText: "\u3044\u3084\u3044\u3084\u6628\u65E5\u759A\u66DC\u306A\u3089\u4ECA\u65E5\u306F\u9B2F\u66DC\u65E5\u3060\u308D\u3002"
+  storyText: "\u3044\u3084\u3044\u3084\u6628\u65E5{$RepeatKanji}\u66DC\u306A\u3089\u4ECA\u65E5\u306F{$Specific}\u66DC\u65E5\u3060\u308D\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -13287,7 +13287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  storyText: "\u3044\u3084\u6628\u65E5\u759A\u66DC\u306A\u3089\u4ECA\u65E5\u6708\u66DC\u65E5\u304B\u306A\u3042\u3063\u3066"
+  storyText: "\u3044\u3084\u6628\u65E5{$RepearKanji}\u66DC\u306A\u3089\u4ECA\u65E5\u6708\u66DC\u65E5\u304B\u306A\u3042\u3063\u3066"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}

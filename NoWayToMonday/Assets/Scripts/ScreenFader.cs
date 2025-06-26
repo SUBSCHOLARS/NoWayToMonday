@@ -40,6 +40,15 @@ public class ScreenFader : MonoBehaviour
             fadeImage.DOFade(0, clearFadeDuration).SetEase(Ease.InOutQuad);
         });
     }
+    public void FadeToBlackThenToClearFinalDay()
+    {
+        fadeImage.DOFade(1, fadeDuration).SetEase(Ease.InOutQuad).OnComplete(() =>
+        {
+            MainCamera.transform.position=new Vector3(62.4f,-0.19f,-10f);
+            player.transform.position = new Vector3(84.8f,-7.2f,0f);
+            fadeImage.DOFade(0, clearFadeDuration).SetEase(Ease.InOutQuad);
+        });
+    }
     // Start is called before the first frame update
     void Start()
     {

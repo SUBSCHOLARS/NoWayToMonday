@@ -4745,7 +4745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1643264164}
+  selectedFlowchart: {fileID: 1833071035}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -12517,6 +12517,7 @@ GameObject:
   - component: {fileID: 1643264312}
   - component: {fileID: 1643264313}
   - component: {fileID: 1643264314}
+  - component: {fileID: 1643264315}
   m_Layer: 0
   m_Name: Flowchart2
   m_TagString: Untagged
@@ -12623,7 +12624,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1643264283}
   selectedCommands:
-  - {fileID: 1643264285}
+  - {fileID: 1643264315}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -15278,6 +15279,7 @@ MonoBehaviour:
   - {fileID: 1643264285}
   - {fileID: 1643264282}
   - {fileID: 1643264281}
+  - {fileID: 1643264315}
   - {fileID: 1643264280}
   - {fileID: 1643264284}
   suppressAllAutoSelections: 0
@@ -15813,6 +15815,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1643264160}
   methodName: RepeatRandomKanjiForSpecificSay
+  delay: 0
+--- !u!114 &1643264315
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643264160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 153
+  indentLevel: 0
+  targetObject: {fileID: 1511723585}
+  methodName: FadeToBlackTenToClearFinalDay
   delay: 0
 --- !u!1 &1650516392
 GameObject:
@@ -17453,7 +17472,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1833071034}
   selectedCommands:
-  - {fileID: 1833071044}
+  - {fileID: 1833071059}
   variables:
   - {fileID: 1833071053}
   description: 
@@ -18444,8 +18463,8 @@ MonoBehaviour:
   Teleporter2: {fileID: 917182447}
   brotherAutoMovement: {fileID: 1791615137}
   brotherAutoMovementTrueEnd: {fileID: 267407432}
-  BrotherTrueEnd: {fileID: 267407431}
-  BrotherBadEnd: {fileID: 1791615134}
+  BrotherTrueEnd: {fileID: 1531718580}
+  BrotherBadEnd: {fileID: 1531718580}
   Knife: {fileID: 24423152}
   TrueKnife: {fileID: 0}
   TextAppearer: {fileID: 1328636598}
@@ -19586,9 +19605,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2141021501}
-  selectedCommands:
-  - {fileID: 2141021529}
+  - {fileID: 2141021506}
+  selectedCommands: []
   variables:
   - {fileID: 2141021508}
   - {fileID: 2141021507}
@@ -20159,7 +20177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 34.531372
+    x: -1.1389885
     y: 196.07466
     width: 121.34073
     height: 40

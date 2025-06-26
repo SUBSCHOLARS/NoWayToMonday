@@ -19,13 +19,13 @@ public class SinkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isNearFaucet && !isDripStopped&& Input.GetKey(KeyCode.Space))
+        if (isNearFaucet && !isDripStopped&& Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsDripping", false);
             audioSource.PlayOneShot(audioSource.clip);
             isDripStopped = true;
         }
-        else if (isNearFaucet && isDripStopped && Input.GetKey(KeyCode.Space))
+        else if (isNearFaucet && isDripStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsDripping", true);
             isDripStopped = false;

@@ -5390,6 +5390,7 @@ GameObject:
   - component: {fileID: 609949635}
   - component: {fileID: 609949636}
   - component: {fileID: 609949637}
+  - component: {fileID: 609949638}
   m_Layer: 0
   m_Name: Sink-Sheet_0
   m_TagString: Untagged
@@ -5542,7 +5543,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f91d3c62f3e146899415dcb53d2f99c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5586,7 +5587,25 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.0337604
+      value: 0.043937802
+      inSlope: -5.756229
+      outSlope: -5.756229
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.17791432
+      value: 0.018180847
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5616,7 +5635,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.0090904
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5639,6 +5658,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drippingSound: {fileID: 8300000, guid: a40d7471c860d4c3fbac084314a9f964, type: 3}
+--- !u!50 &609949638
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609949631}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &641629274
 GameObject:
   m_ObjectHideFlags: 0
@@ -21617,6 +21663,10 @@ PrefabInstance:
       propertyPath: WalkingSound
       value: 
       objectReference: {fileID: 2049550813}
+    - target: {fileID: 8476425731288215776, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

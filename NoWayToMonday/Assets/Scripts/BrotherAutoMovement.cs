@@ -36,7 +36,7 @@ public class BrotherAutoMovement : MonoBehaviour
         {
             StabbingSound.SetActive(true);
             Bleeding.SetActive(true);
-            SceneManager.LoadScene("BadEnd");
+            SceneManager.LoadSceneAsync("BadEnd");
         }
     }
 }

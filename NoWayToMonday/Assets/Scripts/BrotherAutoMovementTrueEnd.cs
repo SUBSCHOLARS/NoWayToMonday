@@ -35,7 +35,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
             KnifeInverse.SetActive(true);
             StabbingSound.SetActive(true);
             Bleeding.SetActive(true);
-            SceneManager.LoadScene("TrueEnd");
+            SceneManager.LoadSceneAsync("TrueEnd");
         }
     }
 }

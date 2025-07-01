@@ -21,6 +21,10 @@ https://otologic.jp/
 - ~Audacity~
 - Adobe Audition
 
-OpenAIによる生成ではなくAuditionによる生成に切り替えました。
+~OpenAIによる生成ではなくAuditionによる生成に切り替えました。~
+
+ライセンスがめんどくさそうだったのでスピーチ生成は使わず、音声編集としての使用に切り替えました。
 - Unity 2022.3.23f1
 - Aseprite
+- 音読さん
+- TTSMaker

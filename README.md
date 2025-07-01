@@ -28,5 +28,4 @@ https://otologic.jp/
 結局有用なサービス使うなら金払えって話だよね。OpenAIってかなり良心的なAPI金額よな。
 - Unity 2022.3.23f1
 - Aseprite
-- 音読さん
 - TTSMaker

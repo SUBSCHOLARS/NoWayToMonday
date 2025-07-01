@@ -9,11 +9,11 @@ https://taira-komori.jpn.org/noise01.html
 - 効果音ラボ
 
 https://soundeffect-lab.info/
-- OpenAI fm
+~- OpenAI fm
 
 https://github.com/openai/openai-fm
 
-API Keyを取得した後に、リポジトリをクローンしてローカルで出力したものを使用しています。
+API Keyを取得した後に、リポジトリをクローンしてローカルで出力したものを使用しています。~
 - OtoLogic
 
 https://otologic.jp/

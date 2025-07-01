@@ -24252,6 +24252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bedroom
       objectReference: {fileID: 0}
+    - target: {fileID: 8350480852238544267, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
+      propertyPath: radioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 313af213473c9446e8346257f24b6799, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

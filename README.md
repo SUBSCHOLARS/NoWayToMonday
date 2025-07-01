@@ -18,6 +18,9 @@ https://soundeffect-lab.info/
 
 https://otologic.jp/
 
-- Audacity
+- ~Audacity~
+- Adobe Audition
+
+OpenAIによる生成ではなくAuditionによる生成に切り替えました。
 - Unity 2022.3.23f1
 - Aseprite

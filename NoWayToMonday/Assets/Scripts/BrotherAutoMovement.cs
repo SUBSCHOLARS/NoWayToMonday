@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class BrotherAutoMovement : MonoBehaviour
 {
-    public GameObject[] Brothers;
+    //public GameObject[] Brothers;
     public float switchinterval=0.1f;
     public float speed=30f;
     public bool isBrotherMove=false;
-    public GameObject StabbingSound;
-    public GameObject Bleeding;
+    //public GameObject StabbingSound;
+    //public GameObject Bleeding;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +34,8 @@ public class BrotherAutoMovement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            StabbingSound.SetActive(true);
-            Bleeding.SetActive(true);
+            //StabbingSound.SetActive(true);
+            //Bleeding.SetActive(true);
             SceneManager.LoadSceneAsync("BadEnd");
         }
     }

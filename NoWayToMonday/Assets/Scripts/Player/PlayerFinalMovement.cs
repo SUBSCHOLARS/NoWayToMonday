@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerFinalMovement : MonoBehaviour
 {
-    public GameObject[] players;
-    public GameObject[] inversedplayers;
+    public GameObject player;
     private bool Final=false;
     // Start is called before the first frame update
     void Start()
@@ -16,21 +15,14 @@ public class PlayerFinalMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Final)
+        if (Final)
         {
-            DeactivatePlayers();
-            inversedplayers[0].SetActive(true);
+            Vector3 playerScale = player.transform.localScale;
+            playerScale.x = -1;
         }
     }
     public void FinalMovement(bool finalEnable)
     {
         Final=finalEnable;
-    }
-    public void DeactivatePlayers()
-    {
-        for(int i=0; i<players.Length; i++)
-        {
-            players[i].SetActive(false);
-        }
     }
 }

@@ -7,9 +7,9 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
 {
     public float speed=10.0f;
     private bool BrotherMove=false;
-    public GameObject KnifeInverse;
-    public GameObject StabbingSound;
-    public GameObject Bleeding;
+    //public GameObject KnifeInverse;
+    //public GameObject StabbingSound;
+    //public GameObject Bleeding;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +32,9 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            KnifeInverse.SetActive(true);
-            StabbingSound.SetActive(true);
-            Bleeding.SetActive(true);
+            //KnifeInverse.SetActive(true);
+            //StabbingSound.SetActive(true);
+            //Bleeding.SetActive(true);
             SceneManager.LoadSceneAsync("TrueEnd");
         }
     }

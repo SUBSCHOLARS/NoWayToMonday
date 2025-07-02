@@ -79,6 +79,15 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = scale;
             transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
         }
+        if (isMovingRight)
+        {
+            transform.DOMoveX(89.7f, -7.2f).SetEase(Ease.Linear).OnComplete(() =>
+            {
+                isMovingRight = false;
+            });
+            animator.SetBool("IsWalking", true);
+            WalkingSound.SetActive(true);
+        }
     }
     public void SetMovement(bool enable)
     {
@@ -99,17 +108,6 @@ public class PlayerMovement : MonoBehaviour
     public void DOMoveRight(bool rightEnable)
     {
         isMovingRight = rightEnable;
-        if (isMovingRight)
-        {
-            transform.DOMoveX(89.7f, -7.2f).SetEase(Ease.Linear);
-            animator.SetBool("IsWalking", true);
-            WalkingSound.SetActive(true);
-        }
-        else
-        {
-            animator.SetBool("IsWalking", false);
-            WalkingSound.SetActive(false);
-        }
     }
     public void SlidePlayer()
     {

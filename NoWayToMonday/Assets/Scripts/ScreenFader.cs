@@ -44,7 +44,7 @@ public class ScreenFader : MonoBehaviour
     {
         fadeImage.DOFade(1, fadeDuration).SetEase(Ease.InOutQuad).OnComplete(() =>
         {
-            MainCamera.transform.position=new Vector3(62.4f,-0.19f,-10f);
+            MainCamera.transform.position=new Vector3(94.9f,-0.19f,-10f);
             player.transform.position = new Vector3(84.8f,-7.2f,0f);
             fadeImage.DOFade(0, clearFadeDuration).SetEase(Ease.InOutQuad);
         });

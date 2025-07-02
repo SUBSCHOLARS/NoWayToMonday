@@ -1950,7 +1950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5045,7 +5045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 337235529}
+  selectedFlowchart: {fileID: 1643264164}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -14559,7 +14559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -45.2984, y: 29.43367}
+  scrollPos: {x: -9.588669, y: -74.5484}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 312.5
@@ -18993,8 +18993,8 @@ Transform:
   m_GameObject: {fileID: 1718076887}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.15361, y: -2.9515457, z: 0.20572099}
-  m_LocalScale: {x: 1.574534, y: 1.575499, z: 1}
+  m_LocalPosition: {x: 5.2929, y: -2.9515457, z: 0.20572099}
+  m_LocalScale: {x: 1.5920115, y: 1.575499, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1241117515}

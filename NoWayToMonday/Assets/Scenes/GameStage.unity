@@ -24276,6 +24276,10 @@ PrefabInstance:
       propertyPath: radioClips.Array.data[5]
       value: 
       objectReference: {fileID: 8300000, guid: 20ae7988faef642b3aee05240db992c9, type: 3}
+    - target: {fileID: 8350480852238544267, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
+      propertyPath: radioClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: c18b5372fd7564ef0b3d7d282007fd27, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

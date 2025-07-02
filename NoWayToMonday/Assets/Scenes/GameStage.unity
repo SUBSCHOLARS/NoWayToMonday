@@ -14628,7 +14628,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1643264283}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1643264315}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -17745,7 +17746,7 @@ MonoBehaviour:
   itemId: 153
   indentLevel: 0
   targetObject: {fileID: 1511723585}
-  methodName: FadeToBlackTenToClearFinalDay
+  methodName: FadeToBlackThenToClearFinalDay
   delay: 0
 --- !u!1 &1643500432
 GameObject:

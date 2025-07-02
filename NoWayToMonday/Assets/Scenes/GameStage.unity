@@ -1950,7 +1950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3238,7 +3238,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 337235530}
   selectedCommands: []
   variables:
   - {fileID: 337235538}
@@ -4735,7 +4736,7 @@ Transform:
   m_GameObject: {fileID: 518019935}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.84, y: 10.744449, z: 0.1086248}
+  m_LocalPosition: {x: 24.7, y: 10.744449, z: 0.1086248}
   m_LocalScale: {x: 1, y: 10.090567, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5044,7 +5045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1643264164}
+  selectedFlowchart: {fileID: 337235529}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -7759,9 +7760,6 @@ GameObject:
   - component: {fileID: 905157675}
   - component: {fileID: 905157674}
   - component: {fileID: 905157673}
-  - component: {fileID: 905157679}
-  - component: {fileID: 905157678}
-  - component: {fileID: 905157680}
   m_Layer: 0
   m_Name: FlowchartReason2
   m_TagString: Untagged
@@ -7872,9 +7870,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 905157674}
   - {fileID: 905157675}
-  - {fileID: 905157679}
-  - {fileID: 905157678}
-  - {fileID: 905157680}
   - {fileID: 905157673}
   suppressAllAutoSelections: 0
 --- !u!114 &905157677
@@ -7904,7 +7899,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 905157676}
   selectedCommands:
-  - {fileID: 905157680}
+  - {fileID: 905157673}
   variables: []
   description: 
   stepPause: 0
@@ -7916,57 +7911,6 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
---- !u!114 &905157678
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905157671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 5
-  indentLevel: 0
-  targetObject: {fileID: 0}
-  methodName: ActivateCurrentObject
-  delay: 0
---- !u!114 &905157679
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905157671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  targetObject: {fileID: 0}
-  methodName: DeactivateInversedPlayers
-  delay: 0
---- !u!114 &905157680
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905157671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 6
-  indentLevel: 0
-  targetObject: {fileID: 0}
-  methodName: SlidePlayer
-  delay: 0
 --- !u!1 &907155296
 GameObject:
   m_ObjectHideFlags: 0
@@ -24188,7 +24132,7 @@ PrefabInstance:
     - target: {fileID: 8350480852238544267, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
       propertyPath: radioClips.Array.data[6]
       value: 
-      objectReference: {fileID: 8300000, guid: c18b5372fd7564ef0b3d7d282007fd27, type: 3}
+      objectReference: {fileID: 8300000, guid: dd4089c49cc0046899a214e5a6e1055e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

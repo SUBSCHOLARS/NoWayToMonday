@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private bool autoMove = false;
     private bool autoMoveRight = false;
     private bool backMove = false;
+    private bool isMovingRight = false;
     public GameObject WalkingSound;
     Rigidbody2D rb2D;
     Animator animator;
@@ -94,6 +95,21 @@ public class PlayerMovement : MonoBehaviour
     public void BackMovement(bool backEnable)
     {
         backMove = backEnable;
+    }
+    public void DOMoveRight(bool rightEnable)
+    {
+        isMovingRight = rightEnable;
+        if (isMovingRight)
+        {
+            transform.DOMoveX(89.7f, -7.2f).SetEase(Ease.Linear);
+            animator.SetBool("IsWalking", true);
+            WalkingSound.SetActive(true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+            WalkingSound.SetActive(false);
+        }
     }
     public void SlidePlayer()
     {

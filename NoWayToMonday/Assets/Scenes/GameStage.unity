@@ -5044,7 +5044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1255832063}
+  selectedFlowchart: {fileID: 1643264164}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -14413,7 +14413,6 @@ GameObject:
   - component: {fileID: 1643264192}
   - component: {fileID: 1643264191}
   - component: {fileID: 1643264190}
-  - component: {fileID: 1643264189}
   - component: {fileID: 1643264188}
   - component: {fileID: 1643264187}
   - component: {fileID: 1643264186}
@@ -14435,7 +14434,6 @@ GameObject:
   - component: {fileID: 1643264229}
   - component: {fileID: 1643264228}
   - component: {fileID: 1643264227}
-  - component: {fileID: 1643264226}
   - component: {fileID: 1643264225}
   - component: {fileID: 1643264224}
   - component: {fileID: 1643264222}
@@ -14453,7 +14451,6 @@ GameObject:
   - component: {fileID: 1643264209}
   - component: {fileID: 1643264208}
   - component: {fileID: 1643264207}
-  - component: {fileID: 1643264206}
   - component: {fileID: 1643264205}
   - component: {fileID: 1643264204}
   - component: {fileID: 1643264279}
@@ -14471,7 +14468,6 @@ GameObject:
   - component: {fileID: 1643264266}
   - component: {fileID: 1643264265}
   - component: {fileID: 1643264264}
-  - component: {fileID: 1643264263}
   - component: {fileID: 1643264262}
   - component: {fileID: 1643264261}
   - component: {fileID: 1643264260}
@@ -14489,7 +14485,6 @@ GameObject:
   - component: {fileID: 1643264247}
   - component: {fileID: 1643264246}
   - component: {fileID: 1643264245}
-  - component: {fileID: 1643264244}
   - component: {fileID: 1643264243}
   - component: {fileID: 1643264242}
   - component: {fileID: 1643264283}
@@ -14620,11 +14615,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 287.06177, y: 137.20703}
+  scrollPos: {x: -45.2984, y: 29.43367}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 312.5
-  zoom: 0.49999994
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -14633,8 +14628,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1643264283}
-  selectedCommands:
-  - {fileID: 1643264315}
+  selectedCommands: []
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -15108,23 +15102,6 @@ MonoBehaviour:
   targetObject: {fileID: 1643264160}
   methodName: EnableMovement
   delay: 0
---- !u!114 &1643264189
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643264160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 31
-  indentLevel: 0
-  targetObject: {fileID: 1643264160}
-  methodName: AutoMovement
-  delay: 0
 --- !u!114 &1643264190
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -15420,7 +15397,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.2984
     y: 69.06633
-    width: 98.00001
+    width: 98
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15448,7 +15425,6 @@ MonoBehaviour:
   - {fileID: 1643264305}
   - {fileID: 1643264185}
   - {fileID: 1643264292}
-  - {fileID: 1643264189}
   - {fileID: 1643264188}
   - {fileID: 1643264187}
   suppressAllAutoSelections: 0
@@ -15517,23 +15493,6 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1643264160}
   methodName: EnableMovement
-  delay: 0
---- !u!114 &1643264206
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643264160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 73
-  indentLevel: 0
-  targetObject: {fileID: 1643264160}
-  methodName: AutoMovement
   delay: 0
 --- !u!114 &1643264207
 MonoBehaviour:
@@ -15881,7 +15840,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.4758
     y: 118.270164
-    width: 98.00001
+    width: 98
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15909,7 +15868,6 @@ MonoBehaviour:
   - {fileID: 1643264307}
   - {fileID: 1643264207}
   - {fileID: 1643264298}
-  - {fileID: 1643264206}
   - {fileID: 1643264205}
   - {fileID: 1643264204}
   suppressAllAutoSelections: 0
@@ -15946,23 +15904,6 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1643264160}
   methodName: EnableMovement
-  delay: 0
---- !u!114 &1643264226
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643264160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 53
-  indentLevel: 0
-  targetObject: {fileID: 1643264160}
-  methodName: AutoMovement
   delay: 0
 --- !u!114 &1643264227
 MonoBehaviour:
@@ -16310,7 +16251,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.15332
     y: 68.875015
-    width: 106.00001
+    width: 106
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16338,7 +16279,6 @@ MonoBehaviour:
   - {fileID: 1643264306}
   - {fileID: 1643264227}
   - {fileID: 1643264294}
-  - {fileID: 1643264226}
   - {fileID: 1643264225}
   - {fileID: 1643264224}
   suppressAllAutoSelections: 0
@@ -16375,23 +16315,6 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1643264160}
   methodName: EnableMovement
-  delay: 0
---- !u!114 &1643264244
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643264160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 111
-  indentLevel: 0
-  targetObject: {fileID: 1643264160}
-  methodName: AutoMovement
   delay: 0
 --- !u!114 &1643264245
 MonoBehaviour:
@@ -16767,7 +16690,6 @@ MonoBehaviour:
   - {fileID: 1643264309}
   - {fileID: 1643264245}
   - {fileID: 1643264303}
-  - {fileID: 1643264244}
   - {fileID: 1643264243}
   - {fileID: 1643264242}
   suppressAllAutoSelections: 0
@@ -16804,23 +16726,6 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1643264160}
   methodName: EnableMovement
-  delay: 0
---- !u!114 &1643264263
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643264160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 92
-  indentLevel: 0
-  targetObject: {fileID: 1643264160}
-  methodName: AutoMovement
   delay: 0
 --- !u!114 &1643264264
 MonoBehaviour:
@@ -17196,7 +17101,6 @@ MonoBehaviour:
   - {fileID: 1643264308}
   - {fileID: 1643264264}
   - {fileID: 1643264301}
-  - {fileID: 1643264263}
   - {fileID: 1643264262}
   - {fileID: 1643264261}
   suppressAllAutoSelections: 0
@@ -17277,7 +17181,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 86.39516
     y: 173.0484
-    width: 109.00001
+    width: 109
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24247,6 +24151,10 @@ PrefabInstance:
     - target: {fileID: 1791661271040201141, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6195588903173966010, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7925350154985320706, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
       propertyPath: m_Name

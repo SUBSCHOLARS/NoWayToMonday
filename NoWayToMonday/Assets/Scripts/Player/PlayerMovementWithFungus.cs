@@ -45,6 +45,13 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public void AutoMoveRightEnable(){
         playerMovement.AutoMovementRight(true);
     }
+    public void DOMoveRightEnable(){
+        playerMovement.DOMoveRight();
+    }
+    public void DOMoveRightDisable()
+    {
+        playerMovement.DOMoveRight();
+    }
     public void KnifeTextDeactivate()
     {
         KnifeText.alpha = 0;

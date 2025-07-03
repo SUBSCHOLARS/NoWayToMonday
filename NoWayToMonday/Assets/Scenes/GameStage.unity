@@ -7991,8 +7991,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 905157676}
+  selectedCommands:
+  - {fileID: 905157678}
   variables: []
   description: 
   stepPause: 0
@@ -8019,7 +8021,7 @@ MonoBehaviour:
   itemId: 4
   indentLevel: 0
   targetObject: {fileID: 1910558882}
-  methodName: AutoMoveRightEnable
+  methodName: DOMoveRightEnable
   delay: 0
 --- !u!1 &907155296
 GameObject:
@@ -10812,7 +10814,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1255832065}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1255832089}
   variables:
   - {fileID: 1255832064}
   description: 

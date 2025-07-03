@@ -15,7 +15,14 @@ public class BackgroundChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(DayCountManager.DayCount==7)
+        {
+            Room.SetActive(false);
+            AlteredRoom.SetActive(true);
+            Destroy(Brother);
+            Reason2.SetActive(true);
+            Debug.Log("Altered!");
+        }
     }
 
     // Update is called once per frame
@@ -29,7 +36,7 @@ public class BackgroundChanger : MonoBehaviour
     }
     public void AlteringRoom(){
         int counter=SleepFlowchart.GetIntegerVariable("DayCount");
-        if(counter==7||DayCountManager.DayCount==7)
+        if(counter==7)
         {
             Room.SetActive(false);
             AlteredRoom.SetActive(true);

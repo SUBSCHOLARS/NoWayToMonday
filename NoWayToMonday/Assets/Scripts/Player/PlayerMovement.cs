@@ -75,14 +75,6 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = scale;
             transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
         }
-        if (isMovingRight)
-        {
-            transform.DOMoveX(89.7f, -7.2f).SetEase(Ease.Linear).OnComplete(() =>
-            {
-                isMovingRight = false;
-            });
-            animator.SetBool("IsWalking", true);
-        }
     }
     public void SetMovement(bool enable)
     {
@@ -100,9 +92,16 @@ public class PlayerMovement : MonoBehaviour
     {
         backMove = backEnable;
     }
-    public void DOMoveRight(bool rightEnable)
+    public void DOMoveRight()
     {
-        isMovingRight = rightEnable;
+        Vector3 scale = transform.localScale;
+        scale.x = 1; // Flip the sprite to face right
+        transform.localScale = scale;
+        animator.SetBool("IsWalking", true);
+        transform.DOMoveX(89.7f, 1.5f).SetEase(Ease.InOutQuad).OnComplete(() =>
+        {
+            animator.SetBool("IsWalking", false);
+        });
     }
     public void SlidePlayer()
     {

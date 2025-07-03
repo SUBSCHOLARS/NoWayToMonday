@@ -17,8 +17,9 @@ public class PlayerFinalMovement : MonoBehaviour
     {
         if (Final)
         {
-            Vector3 playerScale = player.transform.localScale;
-            playerScale.x = -1;
+            Vector3 scale = player.transform.localScale;
+            scale.x = -1;
+            player.transform.localScale = scale;
         }
     }
     public void FinalMovement(bool finalEnable)

@@ -21584,8 +21584,8 @@ MonoBehaviour:
   BGMs: {fileID: 1568849796}
   Reason: {fileID: 749043847}
   Teleporter2: {fileID: 917182447}
-  brotherAutoMovement: {fileID: 1791615137}
-  brotherAutoMovementTrueEnd: {fileID: 267407432}
+  brotherAutoMovement: {fileID: 1710852509}
+  brotherAutoMovementTrueEnd: {fileID: 1338643829}
   BrotherTrueEnd: {fileID: 1338643824}
   BrotherBadEnd: {fileID: 1710852505}
   Knife: {fileID: 24423152}

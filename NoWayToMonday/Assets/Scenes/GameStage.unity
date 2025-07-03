@@ -769,7 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97033683}
   - component: {fileID: 97033684}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4943,7 +4943,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -10571,7 +10571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5294118}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19746,7 +19746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1747651503}
   - component: {fileID: 1747651502}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NoProgramScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}

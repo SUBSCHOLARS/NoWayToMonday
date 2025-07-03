@@ -11,14 +11,18 @@ public class PlayerMovement : MonoBehaviour
     private bool autoMoveRight = false;
     private bool backMove = false;
     private bool isMovingRight = false;
-    public GameObject WalkingSound;
+    private int soundIndex = 0;
+    public AudioClip[] walkingSounds;
+    //public GameObject WalkingSound;
     Rigidbody2D rb2D;
     Animator animator;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         rb2D = this.gameObject.GetComponent<Rigidbody2D>();
         animator = this.gameObject.GetComponent<Animator>();
+        audioSource = this.gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,16 +44,11 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsWalking", true);
             transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
         }
-        if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)) && canMove)
-        {
-            WalkingSound.SetActive(true);
-        }
         if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) ||
            Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
            || (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow)))
         {
             animator.SetBool("IsWalking", false);
-            WalkingSound.SetActive(false);
         }
         if (this.gameObject.transform.position.x < -13f)
         {
@@ -58,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
         if (autoMove)
         {
             animator.SetBool("IsWalking", true);
-            WalkingSound.SetActive(true);
             Vector3 scale = transform.localScale;
             scale.x = -1;
             transform.localScale = scale;
@@ -67,13 +65,11 @@ public class PlayerMovement : MonoBehaviour
         if (autoMoveRight)
         {
             animator.SetBool("IsWalking", true);
-            WalkingSound.SetActive(true);
             transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
         }
         if (backMove)
         {
             animator.SetBool("IsWalking", true);
-            WalkingSound.SetActive(true);
             Vector3 scale = transform.localScale;
             scale.x = -1;
             transform.localScale = scale;
@@ -86,7 +82,6 @@ public class PlayerMovement : MonoBehaviour
                 isMovingRight = false;
             });
             animator.SetBool("IsWalking", true);
-            WalkingSound.SetActive(true);
         }
     }
     public void SetMovement(bool enable)
@@ -112,6 +107,18 @@ public class PlayerMovement : MonoBehaviour
     public void SlidePlayer()
     {
         transform.DOMoveX(55f, 1f);
+    }
+    public void WalkingSound()
+    {
+        audioSource.PlayOneShot(walkingSounds[soundIndex]);
+        if(soundIndex < walkingSounds.Length - 1)
+        {
+            soundIndex++;
+        }
+        else
+        {
+            soundIndex = 0;
+        }
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {

@@ -29,7 +29,7 @@ public class BackgroundChanger : MonoBehaviour
     }
     public void AlteringRoom(){
         int counter=SleepFlowchart.GetIntegerVariable("DayCount");
-        if(counter==7)
+        if(counter==7||DayCountManager.DayCount==7)
         {
             Room.SetActive(false);
             AlteredRoom.SetActive(true);

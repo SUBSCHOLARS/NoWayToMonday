@@ -42,8 +42,12 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public void AutoMoveRightDisable(){
         playerMovement.AutoMovementRight(false);
     }
-    public void KnifeTextDeactivate(){
-        KnifeText.alpha=0;
+    public void AutoMoveRightEnable(){
+        playerMovement.AutoMovementRight(true);
+    }
+    public void KnifeTextDeactivate()
+    {
+        KnifeText.alpha = 0;
     }
     public void SleepActivate(){
         SleepActivator.SetActive(true);

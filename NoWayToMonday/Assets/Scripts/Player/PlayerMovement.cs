@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
         scale.x = 1; // Flip the sprite to face right
         transform.localScale = scale;
         animator.SetBool("IsWalking", true);
-        transform.DOMoveX(89.7f, 1.5f).SetEase(Ease.InOutQuad).OnComplete(() =>
+        transform.DOMoveX(89.7f, 1.5f).SetEase(Ease.Linear).OnComplete(() =>
         {
             animator.SetBool("IsWalking", false);
         });

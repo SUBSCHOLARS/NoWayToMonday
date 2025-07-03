@@ -12541,6 +12541,7 @@ GameObject:
   - component: {fileID: 1338643828}
   - component: {fileID: 1338643827}
   - component: {fileID: 1338643829}
+  - component: {fileID: 1338643830}
   m_Layer: 0
   m_Name: TrueEndNoWayToMondayBrotherEnding
   m_TagString: Untagged
@@ -12673,6 +12674,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!50 &1338643830
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338643824}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1348520577
 GameObject:
   m_ObjectHideFlags: 0
@@ -18915,6 +18943,7 @@ GameObject:
   - component: {fileID: 1710852506}
   - component: {fileID: 1710852508}
   - component: {fileID: 1710852509}
+  - component: {fileID: 1710852510}
   m_Layer: 0
   m_Name: BadEndNoWayToMondayBrotherEnding
   m_TagString: Untagged
@@ -19047,8 +19076,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchinterval: 0.1
-  speed: 30
+  speed: 45
   isBrotherMove: 0
+--- !u!50 &1710852510
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710852505}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1714446922
 GameObject:
   m_ObjectHideFlags: 0

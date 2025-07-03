@@ -13,6 +13,7 @@ public class BackgroundChanger : MonoBehaviour
     public GameObject Reason2;
     public GameObject NormalCalendar;
     public GameObject AlteredCalendar;
+    public GameObject Lunastasis;
     public Flowchart SleepFlowchart;
     // Start is called before the first frame update
     void Start()
@@ -52,6 +53,10 @@ public class BackgroundChanger : MonoBehaviour
         {
             NormalCalendar.SetActive(false);
             AlteredCalendar.SetActive(true);
+        }
+        else if (counter == 5)
+        {
+            Lunastasis.SetActive(true);
         }
     }
 }

@@ -461,6 +461,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2948483131972430748, guid: 377cbe918b336453a89510b9f54a3228, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1143429579}
+    - targetCorrespondingSourceObject: {fileID: 2948483131972430748, guid: 377cbe918b336453a89510b9f54a3228, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1143429581}
   m_SourcePrefab: {fileID: 100100000, guid: 377cbe918b336453a89510b9f54a3228, type: 3}
 --- !u!1 &1143429578 stripped
 GameObject:
@@ -575,6 +578,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1143429581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143429578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd7e10aba6314205bc6f84aaa6be0d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackOutSheet: {fileID: 1500605501}
 --- !u!1 &1270517539
 GameObject:
   m_ObjectHideFlags: 1

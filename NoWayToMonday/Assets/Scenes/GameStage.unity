@@ -1951,7 +1951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15087,8 +15087,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1643264201}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1643264176}

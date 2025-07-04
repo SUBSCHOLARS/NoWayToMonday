@@ -113,10 +113,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_0
       rect:
         serializedVersion: 2
-        x: 154
-        y: 903
-        width: 196
-        height: 434
+        x: 218
+        y: 1288
+        width: 284
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a9d34105c00c4d9180fd661c21dba9e
-      internalID: 486250097
+      spriteID: 87bcbe903fdc44ed69c93645e786bd36
+      internalID: 370386523
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_1
       rect:
         serializedVersion: 2
-        x: 602
-        y: 903
-        width: 196
-        height: 434
+        x: 858
+        y: 1288
+        width: 284
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd82d0deadd054fecb15ca4896d0ca66
-      internalID: -1126734756
+      spriteID: 026cbce625fe846aebcf1cb34e334793
+      internalID: -2074768768
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1057
-        y: 903
-        width: 189
-        height: 434
+        x: 1508
+        y: 1288
+        width: 274
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ad0a45834b27412f8e1107b65341e3c
-      internalID: 1181278836
+      spriteID: a672cc14869a14d1b814f9a9b6f9ab87
+      internalID: 671168158
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_3
       rect:
         serializedVersion: 2
-        x: 1505
-        y: 903
-        width: 189
-        height: 434
+        x: 2148
+        y: 1288
+        width: 274
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6514e130dbd9042049fa2565a127e5b5
-      internalID: 635063789
+      spriteID: df06a97122447464687286c779a7ac75
+      internalID: 655387634
       vertices: []
       indices: 
       edges: []
@@ -197,10 +197,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_4
       rect:
         serializedVersion: 2
-        x: 161
-        y: 455
-        width: 196
-        height: 434
+        x: 228
+        y: 648
+        width: 284
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78281557bbcfd478d81458d18b55263e
-      internalID: 477912881
+      spriteID: 5b7e6c5a22b974fdd8e6386a9274434e
+      internalID: -1060955877
       vertices: []
       indices: 
       edges: []
@@ -218,10 +218,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_5
       rect:
         serializedVersion: 2
-        x: 609
-        y: 455
-        width: 140
-        height: 434
+        x: 868
+        y: 648
+        width: 204
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e13e0e95c14ba4c98b57e26bf96dd0f1
-      internalID: -1199764227
+      spriteID: fda15cb2ec66048a4a3290bac51f3765
+      internalID: 614121317
       vertices: []
       indices: 
       edges: []
@@ -239,10 +239,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_6
       rect:
         serializedVersion: 2
-        x: 1057
-        y: 455
-        width: 126
-        height: 434
+        x: 1508
+        y: 648
+        width: 184
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 608015211bac3484d81112020e99193d
-      internalID: -2007731962
+      spriteID: b3c2be8cd7ed14fe5a0561fbe3cdc4c4
+      internalID: -844649459
       vertices: []
       indices: 
       edges: []
@@ -260,10 +260,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_7
       rect:
         serializedVersion: 2
-        x: 1505
-        y: 455
-        width: 126
-        height: 434
+        x: 2148
+        y: 648
+        width: 184
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1377493e616fc4041b4009bbdcc55c26
-      internalID: 2040634507
+      spriteID: d54c75418a47a4bb0b05c8ea6a4f8f64
+      internalID: 1334910383
       vertices: []
       indices: 
       edges: []
@@ -281,10 +281,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_8
       rect:
         serializedVersion: 2
-        x: 161
-        y: 7
-        width: 119
-        height: 434
+        x: 228
+        y: 8
+        width: 174
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a38536bf385db4bcfaee0a6abcf540e7
-      internalID: 1025725601
+      spriteID: 53c0f2ffa51ba46c7acaaef656fbd8c5
+      internalID: -2043474739
       vertices: []
       indices: 
       edges: []
@@ -302,10 +302,10 @@ TextureImporter:
       name: NoWayToMondaySelfStabbing-Sheet_9
       rect:
         serializedVersion: 2
-        x: 609
-        y: 7
-        width: 119
-        height: 434
+        x: 868
+        y: 8
+        width: 174
+        height: 624
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ffd7010453ac457b933352aaed1ea3a
-      internalID: 225550808
+      spriteID: a525053106a384c18bdd5e209e356abf
+      internalID: -228793949
       vertices: []
       indices: 
       edges: []
@@ -330,16 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NoWayToMondaySelfStabbing-Sheet_0: 486250097
-      NoWayToMondaySelfStabbing-Sheet_1: -1126734756
-      NoWayToMondaySelfStabbing-Sheet_2: 1181278836
-      NoWayToMondaySelfStabbing-Sheet_3: 635063789
-      NoWayToMondaySelfStabbing-Sheet_4: 477912881
-      NoWayToMondaySelfStabbing-Sheet_5: -1199764227
-      NoWayToMondaySelfStabbing-Sheet_6: -2007731962
-      NoWayToMondaySelfStabbing-Sheet_7: 2040634507
-      NoWayToMondaySelfStabbing-Sheet_8: 1025725601
-      NoWayToMondaySelfStabbing-Sheet_9: 225550808
+      NoWayToMondaySelfStabbing-Sheet_0: 370386523
+      NoWayToMondaySelfStabbing-Sheet_1: -2074768768
+      NoWayToMondaySelfStabbing-Sheet_2: 671168158
+      NoWayToMondaySelfStabbing-Sheet_3: 655387634
+      NoWayToMondaySelfStabbing-Sheet_4: -1060955877
+      NoWayToMondaySelfStabbing-Sheet_5: 614121317
+      NoWayToMondaySelfStabbing-Sheet_6: -844649459
+      NoWayToMondaySelfStabbing-Sheet_7: 1334910383
+      NoWayToMondaySelfStabbing-Sheet_8: -2043474739
+      NoWayToMondaySelfStabbing-Sheet_9: -228793949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

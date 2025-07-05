@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 1007228522}
   - component: {fileID: 1007228523}
   - component: {fileID: 1007228524}
+  - component: {fileID: 1007228525}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -493,6 +494,7 @@ MonoBehaviour:
   - {fileID: 1007228517}
   - {fileID: 1007228522}
   - {fileID: 1007228523}
+  - {fileID: 1007228525}
   - {fileID: 1007228524}
   suppressAllAutoSelections: 0
 --- !u!114 &1007228520
@@ -522,7 +524,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1007228519}
   selectedCommands:
-  - {fileID: 1007228524}
+  - {fileID: 1007228525}
   variables: []
   description: 
   stepPause: 0
@@ -619,6 +621,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1143429578}
   methodName: TriggerStabbingAnimation
+  delay: 0
+--- !u!114 &1007228525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007228516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  targetObject: {fileID: 1143429578}
+  methodName: StabbingCall
   delay: 0
 --- !u!1 &1078810524
 GameObject:
@@ -843,6 +862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32bc3fdd33fcd48379a601fe71e33eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stabbingCallClip: {fileID: 0}
 --- !u!82 &1143429580
 AudioSource:
   m_ObjectHideFlags: 0

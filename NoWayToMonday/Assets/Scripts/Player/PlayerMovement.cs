@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     private bool autoMove = false;
     private bool autoMoveRight = false;
     private bool backMove = false;
-    private bool isMovingRight = false;
     private int soundIndex = 0;
     public AudioClip[] walkingSounds;
     //public GameObject WalkingSound;

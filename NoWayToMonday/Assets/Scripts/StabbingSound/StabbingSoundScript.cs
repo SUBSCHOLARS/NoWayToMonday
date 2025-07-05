@@ -5,6 +5,7 @@ using UnityEngine;
 public class StabbingSoundScript : MonoBehaviour
 {
     private AudioSource audioSource;
+    public AudioClip stabbingCallClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +20,9 @@ public class StabbingSoundScript : MonoBehaviour
     public void StabbingSound()
     {
         audioSource.PlayOneShot(audioSource.clip);
+    }
+    public void StabbingCall()
+    {
+        audioSource.PlayOneShot(stabbingCallClip);
     }
 }

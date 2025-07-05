@@ -504,6 +504,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 267407436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &38229691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38229692}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &38229692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38229691}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 40.919193, y: -4.390242, z: -0.3275789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &39035100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,7 +4869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2141021495}
+  selectedFlowchart: {fileID: 1192274788}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -9655,7 +9686,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1192274790}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1192274789}
   variables: []
   description: 
   stepPause: 0
@@ -22822,8 +22854,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 2141021506}
+  selectedCommands:
+  - {fileID: 2141021511}
   variables:
   - {fileID: 2141021508}
   - {fileID: 2141021507}
@@ -23140,7 +23174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: "\u30CA\u30A4\u30D5\u3092\u624B\u306B\u53D6\u3063\u305F...."
+  storyText: "\u5305\u4E01\u3092\u624B\u306B\u53D6\u3063\u305F...."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -24288,3 +24322,4 @@ SceneRoots:
   - {fileID: 1531718582}
   - {fileID: 79184665}
   - {fileID: 1241117515}
+  - {fileID: 38229692}

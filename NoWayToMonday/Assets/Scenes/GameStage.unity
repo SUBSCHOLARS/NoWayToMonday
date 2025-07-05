@@ -1982,7 +1982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4765,7 +4765,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.9454546
+  orthographic size: 7.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4869,7 +4869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1192274788}
+  selectedFlowchart: {fileID: 1833071035}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -20051,7 +20051,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1833071034}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1833071059}
   variables:
   - {fileID: 1833071053}
   description: 
@@ -24039,6 +24040,10 @@ PrefabInstance:
     - target: {fileID: 4481394681575848882, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
       propertyPath: m_Color.r
       value: 0.79607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481394681575848882, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
+      propertyPath: m_SortingOrder
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6195588903173966010, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
       propertyPath: m_Volume

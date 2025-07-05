@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ebfcb1767c4e4c10bad2c91c251c6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlackOut: {fileID: 2774647780799897620, guid: 5565ec0042a0f4c39a165166e13076a4, type: 3}
 --- !u!1101 &7820954830181128167
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

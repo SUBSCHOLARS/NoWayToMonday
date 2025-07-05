@@ -25,7 +25,7 @@ public class Teleporter2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            player.transform.position = new Vector3(70f, -7.2f, 0f);
+            player.transform.position = new Vector3(70f, -7.7f, 0f);
             MainCamera.transform.position = new Vector3(97.6f, 17.3f, -10f);
             audioManager.PlayAuido();
             this.gameObject.SetActive(false);

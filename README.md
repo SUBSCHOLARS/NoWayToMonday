@@ -6,6 +6,12 @@
 - 無料効果音で遊ぼう！
 
 https://taira-komori.jpn.org/noise01.html
+
+- ニコニ・コモンズ
+
+https://commons.nicovideo.jp/works/nc191393
+
+換気扇 プロペラ（ループ用）
 - 効果音ラボ
 
 https://soundeffect-lab.info/

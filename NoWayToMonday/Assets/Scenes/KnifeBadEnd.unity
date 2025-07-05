@@ -324,7 +324,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 21f5ae3dbedb24d89a04524f164e8624, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8363affc61bee45fca9b48259a03de41, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
@@ -921,7 +921,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1007228519}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1007228525}
   variables: []
   description: 
   stepPause: 0

@@ -117,15 +117,15 @@ TextureImporter:
         y: 1288
         width: 284
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87bcbe903fdc44ed69c93645e786bd36
-      internalID: 370386523
+      spriteID: a12a2bfb798de408587b1660af0d2a52
+      internalID: 1558108878
       vertices: []
       indices: 
       edges: []
@@ -138,15 +138,15 @@ TextureImporter:
         y: 1288
         width: 284
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 026cbce625fe846aebcf1cb34e334793
-      internalID: -2074768768
+      spriteID: b5787f3d204ab4ecea6d9b064570e7a6
+      internalID: 1257163711
       vertices: []
       indices: 
       edges: []
@@ -159,15 +159,15 @@ TextureImporter:
         y: 1288
         width: 274
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a672cc14869a14d1b814f9a9b6f9ab87
-      internalID: 671168158
+      spriteID: 93d2b159cbeb94c078ceb6cbfe173cba
+      internalID: 59521013
       vertices: []
       indices: 
       edges: []
@@ -180,15 +180,15 @@ TextureImporter:
         y: 1288
         width: 274
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df06a97122447464687286c779a7ac75
-      internalID: 655387634
+      spriteID: 91c408118cab24488bfc652bfa320db8
+      internalID: 1517847666
       vertices: []
       indices: 
       edges: []
@@ -201,15 +201,15 @@ TextureImporter:
         y: 648
         width: 284
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b7e6c5a22b974fdd8e6386a9274434e
-      internalID: -1060955877
+      spriteID: a7d5c6027513141e5b1723f76d1c3595
+      internalID: 209415378
       vertices: []
       indices: 
       edges: []
@@ -222,15 +222,15 @@ TextureImporter:
         y: 648
         width: 204
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fda15cb2ec66048a4a3290bac51f3765
-      internalID: 614121317
+      spriteID: d695bbb1491c44a66af289e4ba19c95d
+      internalID: 1217605496
       vertices: []
       indices: 
       edges: []
@@ -243,15 +243,15 @@ TextureImporter:
         y: 648
         width: 184
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3c2be8cd7ed14fe5a0561fbe3cdc4c4
-      internalID: -844649459
+      spriteID: 048857b7c34c140edaba6e9407588968
+      internalID: 1300029853
       vertices: []
       indices: 
       edges: []
@@ -264,15 +264,15 @@ TextureImporter:
         y: 648
         width: 184
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d54c75418a47a4bb0b05c8ea6a4f8f64
-      internalID: 1334910383
+      spriteID: 6e156e071ecce442cadb80e9ba507286
+      internalID: 1550224200
       vertices: []
       indices: 
       edges: []
@@ -285,15 +285,15 @@ TextureImporter:
         y: 8
         width: 174
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53c0f2ffa51ba46c7acaaef656fbd8c5
-      internalID: -2043474739
+      spriteID: d0e029417a8d1400bb16d487628f0802
+      internalID: 918957455
       vertices: []
       indices: 
       edges: []
@@ -306,15 +306,15 @@ TextureImporter:
         y: 8
         width: 174
         height: 624
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a525053106a384c18bdd5e209e356abf
-      internalID: -228793949
+      spriteID: 14ca4a735d7594aa9a50116d59c8f8ac
+      internalID: -1287971512
       vertices: []
       indices: 
       edges: []
@@ -330,16 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NoWayToMondaySelfStabbing-Sheet_0: 370386523
-      NoWayToMondaySelfStabbing-Sheet_1: -2074768768
-      NoWayToMondaySelfStabbing-Sheet_2: 671168158
-      NoWayToMondaySelfStabbing-Sheet_3: 655387634
-      NoWayToMondaySelfStabbing-Sheet_4: -1060955877
-      NoWayToMondaySelfStabbing-Sheet_5: 614121317
-      NoWayToMondaySelfStabbing-Sheet_6: -844649459
-      NoWayToMondaySelfStabbing-Sheet_7: 1334910383
-      NoWayToMondaySelfStabbing-Sheet_8: -2043474739
-      NoWayToMondaySelfStabbing-Sheet_9: -228793949
+      NoWayToMondaySelfStabbing-Sheet_0: 1558108878
+      NoWayToMondaySelfStabbing-Sheet_1: 1257163711
+      NoWayToMondaySelfStabbing-Sheet_2: 59521013
+      NoWayToMondaySelfStabbing-Sheet_3: 1517847666
+      NoWayToMondaySelfStabbing-Sheet_4: 209415378
+      NoWayToMondaySelfStabbing-Sheet_5: 1217605496
+      NoWayToMondaySelfStabbing-Sheet_6: 1300029853
+      NoWayToMondaySelfStabbing-Sheet_7: 1550224200
+      NoWayToMondaySelfStabbing-Sheet_8: 918957455
+      NoWayToMondaySelfStabbing-Sheet_9: -1287971512
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

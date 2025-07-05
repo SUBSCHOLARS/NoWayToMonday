@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovementWithFungus : MonoBehaviour
 {
@@ -21,7 +22,10 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public GameObject TrueKnife;
     public GameObject TextAppearer;
     public GameObject TriggerZone3;
-    public void DisableMovement(){
+    public AudioClip Noise;
+    private AudioSource audioSource;
+    public void DisableMovement()
+    {
         playerMovement.SetMovement(false);
     }
     public void EnableMovement(){
@@ -96,6 +100,12 @@ public class PlayerMovementWithFungus : MonoBehaviour
     }
     public void TriggerZone3Deactivate(){
         TriggerZone3.SetActive(false);
+    }
+    public void LoadKnifeBadEnd()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(Noise);
+        SceneManager.LoadSceneAsync("KnifeBadEnd");
     }
     // Start is called before the first frame update
     void Start()

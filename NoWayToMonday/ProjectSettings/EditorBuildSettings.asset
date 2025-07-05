@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TrueEnd.unity
     guid: e329875b9c892471195c8fca8544099f
+  - enabled: 1
+    path: Assets/Scenes/KnifeBadEnd.unity
+    guid: 8b1ee40c3da0b44ec8f08c3a90e4c61c
   m_configObjects: {}

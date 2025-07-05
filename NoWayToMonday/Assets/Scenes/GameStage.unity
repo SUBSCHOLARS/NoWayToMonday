@@ -3221,6 +3221,7 @@ MonoBehaviour:
   TrueKnife: {fileID: 0}
   TextAppearer: {fileID: 0}
   TriggerZone3: {fileID: 0}
+  Noise: {fileID: 0}
 --- !u!114 &337235536
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9809,6 +9810,7 @@ MonoBehaviour:
   TrueKnife: {fileID: 0}
   TextAppearer: {fileID: 0}
   TriggerZone3: {fileID: 0}
+  Noise: {fileID: 0}
 --- !u!114 &1192274795
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -14304,6 +14306,7 @@ MonoBehaviour:
   TrueKnife: {fileID: 0}
   TextAppearer: {fileID: 0}
   TriggerZone3: {fileID: 0}
+  Noise: {fileID: 0}
 --- !u!114 &1643264168
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -21063,6 +21066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1910558884}
   - component: {fileID: 1910558883}
+  - component: {fileID: 1910558885}
   m_Layer: 0
   m_Name: PlayerMovementWithFungus
   m_TagString: Untagged
@@ -21098,6 +21102,7 @@ MonoBehaviour:
   TrueKnife: {fileID: 779420349}
   TextAppearer: {fileID: 1328636598}
   TriggerZone3: {fileID: 1434829295}
+  Noise: {fileID: 8300000, guid: 2e6f5aa80169846958c4304e42688740, type: 3}
 --- !u!4 &1910558884
 Transform:
   m_ObjectHideFlags: 0
@@ -21113,6 +21118,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1873431478}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1910558885
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910558882}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1911450700
 GameObject:
   m_ObjectHideFlags: 0
@@ -22657,6 +22758,9 @@ GameObject:
   - component: {fileID: 2141021527}
   - component: {fileID: 2141021528}
   - component: {fileID: 2141021529}
+  - component: {fileID: 2141021531}
+  - component: {fileID: 2141021530}
+  - component: {fileID: 2141021532}
   m_Layer: 0
   m_Name: FlowchartKnife
   m_TagString: Untagged
@@ -22721,7 +22825,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2141021506}
   selectedCommands:
-  - {fileID: 2141021511}
+  - {fileID: 2141021532}
   variables:
   - {fileID: 2141021508}
   - {fileID: 2141021507}
@@ -22970,7 +23074,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 2141021530}
   - {fileID: 2141021511}
+  - {fileID: 2141021531}
+  - {fileID: 2141021532}
   - {fileID: 2141021510}
   - {fileID: 2141021516}
   suppressAllAutoSelections: 0
@@ -23035,7 +23142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: ....
+  storyText: "\u30CA\u30A4\u30D5\u3092\u624B\u306B\u53D6\u3063\u305F...."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -23643,6 +23750,58 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1910558882}
   methodName: EnableMovement
+  delay: 0
+--- !u!114 &2141021530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141021493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  targetObject: {fileID: 1910558882}
+  methodName: DisableMovement
+  delay: 0
+--- !u!114 &2141021531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141021493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1.5
+  durationOLD: 0
+--- !u!114 &2141021532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141021493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  targetObject: {fileID: 1910558882}
+  methodName: LoadKnifeBadEnd
   delay: 0
 --- !u!1 &2146428463
 GameObject:

@@ -883,7 +883,7 @@ MonoBehaviour:
     width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
+  useCustomTint: 1
   itemId: 0
   blockName: KnifeBadEnd
   description: 

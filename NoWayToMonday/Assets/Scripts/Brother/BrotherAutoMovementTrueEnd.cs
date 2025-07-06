@@ -35,7 +35,14 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
             //KnifeInverse.SetActive(true);
             //StabbingSound.SetActive(true);
             //Bleeding.SetActive(true);
-            SceneManager.LoadSceneAsync("TrueEnd");
+            if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV)
+            {
+                
+            }
+            else
+            {
+                SceneManager.LoadSceneAsync("TrueEnd");
+            }
         }
     }
 }

@@ -9,6 +9,8 @@ public class ExtrovertFanScript : MonoBehaviour
     AudioSource audioSource;
     bool isNearSwitch = false;
     bool isFanStopped = false;
+
+    public static bool hadBeenStoppedFan = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,17 +21,19 @@ public class ExtrovertFanScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isNearSwitch && !isFanStopped&& Input.GetKeyDown(KeyCode.Space))
+        if (isNearSwitch && !isFanStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsStopFan", true);
             audioSource.Pause();
             isFanStopped = true;
+            hadBeenStoppedFan = true;
         }
         else if (isNearSwitch && isFanStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsStopFan", false);
             audioSource.UnPause();
             isFanStopped = false;
+            hadBeenStoppedFan = false;
         }
     }
     void OnTriggerEnter2D(Collider2D other)

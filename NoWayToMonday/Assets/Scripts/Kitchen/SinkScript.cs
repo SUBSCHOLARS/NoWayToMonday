@@ -9,6 +9,7 @@ public class SinkScript : MonoBehaviour
     public AudioClip drippingSound;
     bool isNearFaucet = false;
     bool isDripStopped=false;
+    public static bool hadBeenStoppedDrip=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,16 +20,18 @@ public class SinkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isNearFaucet && !isDripStopped&& Input.GetKeyDown(KeyCode.Space))
+        if (isNearFaucet && !isDripStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsDripping", false);
             audioSource.PlayOneShot(audioSource.clip);
             isDripStopped = true;
+            hadBeenStoppedDrip = true;
         }
         else if (isNearFaucet && isDripStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsDripping", true);
             isDripStopped = false;
+            hadBeenStoppedDrip = false;
         }
     }
     public void DripSound()

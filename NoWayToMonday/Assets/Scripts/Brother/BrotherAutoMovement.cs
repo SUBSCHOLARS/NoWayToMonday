@@ -9,12 +9,14 @@ public class BrotherAutoMovement : MonoBehaviour
     public float switchinterval=0.1f;
     public float speed=30f;
     public bool isBrotherMove=false;
+    AudioSource audioSource;
     //public GameObject StabbingSound;
     //public GameObject Bleeding;
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log(isBrotherMove);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class BrotherAutoMovement : MonoBehaviour
         {
             //StabbingSound.SetActive(true);
             //Bleeding.SetActive(true);
+            audioSource.PlayOneShot(audioSource.clip);
             SceneManager.LoadSceneAsync("BadEnd");
         }
     }

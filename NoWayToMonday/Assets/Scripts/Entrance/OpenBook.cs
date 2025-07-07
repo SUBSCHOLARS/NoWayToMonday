@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 using UnityEngine;
 
 public class OpenBook : MonoBehaviour
@@ -11,6 +12,8 @@ public class OpenBook : MonoBehaviour
     public GameObject Player;
     public GameObject Navigation;
     AudioSource audioSource;
+    public Flowchart ExtendedTrueEvent;
+    int isFirstRead = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +50,11 @@ public class OpenBook : MonoBehaviour
             Player.SetActive(true);
             Navigation.SetActive(false);
             MainCamera.transform.position = new Vector3(94.9f, -0.19f, -10f);
+            if (isFirstRead == 0)
+            {
+                ExtendedTrueEvent.ExecuteBlock("AfterReadingBook");
+                isFirstRead++;
+            }
             CloseBook.SetActive(false);
             this.transform.gameObject.SetActive(false);
         }

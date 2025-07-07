@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (this.gameObject.transform.position.x > 106.15)
         {
-            this.gameObject.transform.position = new Vector3(106.15f, -7.7f, 0f);
+            this.gameObject.transform.position = new Vector3(106.15f, -7.2f, 0f);
         }
         if (autoMove)
             {

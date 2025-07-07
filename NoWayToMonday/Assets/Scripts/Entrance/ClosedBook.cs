@@ -17,7 +17,7 @@ public class ClosedBook : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            CloseBook.SetActive(false);
+            this.transform.gameObject.SetActive(false);
             OpenBook.SetActive(true);
         }
     }

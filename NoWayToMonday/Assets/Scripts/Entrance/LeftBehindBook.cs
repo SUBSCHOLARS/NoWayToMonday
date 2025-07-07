@@ -7,6 +7,7 @@ public class LeftBehindBook : MonoBehaviour
     public GameObject MainCamera;
     public GameObject Navigation;
     public GameObject CloseBook;
+    public GameObject Player;
     bool isNearBoook = false;
     // Start is called before the first frame update
     void Start()
@@ -19,9 +20,10 @@ public class LeftBehindBook : MonoBehaviour
     {
         if (isNearBoook && Input.GetKeyDown(KeyCode.Space))
         {
-            MainCamera.transform.position = new Vector3(165f, -0.2f, 0f);
             Navigation.SetActive(true);
             CloseBook.SetActive(true);
+            Player.SetActive(false);
+            MainCamera.transform.position = new Vector3(165f, -0.2f, -10f);
         }
     }
     public void OnTriggerEnter2D(Collider2D collision)

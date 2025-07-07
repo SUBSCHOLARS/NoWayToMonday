@@ -3269,6 +3269,7 @@ MonoBehaviour:
   MainCamera: {fileID: 519420028}
   Navigation: {fileID: 408520011}
   CloseBook: {fileID: 732052025}
+  Player: {fileID: 594145122}
 --- !u!1 &178733240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5536,8 +5537,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16777,6 +16778,7 @@ MonoBehaviour:
   - {fileID: 734309868}
   MainCamera: {fileID: 519420028}
   CloseBook: {fileID: 732052025}
+  Player: {fileID: 594145122}
 --- !u!1 &1410203476 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8236569831744954368, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}

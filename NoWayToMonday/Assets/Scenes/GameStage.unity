@@ -12279,6 +12279,7 @@ MonoBehaviour:
   - {fileID: 363200017}
   - {fileID: 518019935}
   gameObjectsToBeTrue: []
+  Bleeding: {fileID: 8300000, guid: 0e6789de04f1c42f296faab4307d0933, type: 3}
 --- !u!50 &1338643830
 Rigidbody2D:
   serializedVersion: 4
@@ -18865,6 +18866,7 @@ MonoBehaviour:
   switchinterval: 0.1
   speed: 45
   isBrotherMove: 0
+  Bleeding: {fileID: 8300000, guid: a40d7471c860d4c3fbac084314a9f964, type: 3}
 --- !u!50 &1710852510
 Rigidbody2D:
   serializedVersion: 4

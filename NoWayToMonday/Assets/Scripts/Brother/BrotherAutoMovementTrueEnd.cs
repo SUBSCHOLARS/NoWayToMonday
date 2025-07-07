@@ -12,9 +12,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     public GameObject[] gameObjectsToBeFalse;
     public GameObject[] gameObjectsToBeTrue;
     AudioSource audioSource;
-    //public GameObject KnifeInverse;
-    //public GameObject StabbingSound;
-    //public GameObject Bleeding;
+    public AudioClip Bleeding;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +22,10 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(BrotherMove)
+        transform.position += new Vector3(1, 0, 0) * 0.05f * Time.deltaTime;
+        if (BrotherMove)
         {
-            transform.position+=new Vector3(1,0,0)*speed*Time.deltaTime;
+            transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
         }
     }
     public void BrotherMoving(bool brotherEnable)
@@ -37,10 +36,8 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            //KnifeInverse.SetActive(true);
-            //StabbingSound.SetActive(true);
-            //Bleeding.SetActive(true);
-            audioSource.PlayOneShot(audioSource.clip);
+            audioSource.PlayOneShot(audioSource.clip,1.0f);
+            audioSource.PlayOneShot(Bleeding);
             if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("ExtendedTrueEvent");
@@ -52,6 +49,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
                 {
                     obj.SetActive(true);
                 }
+                transform.gameObject.SetActive(false);
             }
             else
             {

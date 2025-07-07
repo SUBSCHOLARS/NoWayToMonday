@@ -8,10 +8,9 @@ public class BrotherAutoMovement : MonoBehaviour
     //public GameObject[] Brothers;
     public float switchinterval=0.1f;
     public float speed=30f;
-    public bool isBrotherMove=false;
+    bool isBrotherMove=false;
     AudioSource audioSource;
-    //public GameObject StabbingSound;
-    //public GameObject Bleeding;
+    public AudioClip Bleeding;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +21,10 @@ public class BrotherAutoMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isBrotherMove)
+        transform.position += new Vector3(1, 0, 0) * 0.05f * Time.deltaTime;
+        if (isBrotherMove)
         {
-            transform.position+=new Vector3(1,0,0)*speed*Time.deltaTime;
+            transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
         }
     }
     public void BrotherMoving(bool brotherEnable)
@@ -36,9 +36,8 @@ public class BrotherAutoMovement : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            //StabbingSound.SetActive(true);
-            //Bleeding.SetActive(true);
             audioSource.PlayOneShot(audioSource.clip);
+            audioSource.PlayOneShot(Bleeding);
             SceneManager.LoadSceneAsync("BadEnd");
         }
     }

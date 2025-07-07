@@ -10,6 +10,8 @@ public class Teleporter2 : MonoBehaviour
     public GameObject Reason;
     public AudioManager audioManager;
     public Flowchart flowchart;
+    public Flowchart ComeBackAndFoundBrotherMissingFlowChart;
+    bool isMoveNormally = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class Teleporter2 : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !isMoveNormally)
         {
             player.transform.position = new Vector3(70f, -7.7f, 0f);
             MainCamera.transform.position = new Vector3(97.6f, 17.3f, -10f);
@@ -33,8 +35,8 @@ public class Teleporter2 : MonoBehaviour
             {
                 Reason.SetActive(true);
             }
-            
-            switch(DayCountManager.DayCount)
+
+            switch (DayCountManager.DayCount)
             {
                 case 1:
                     flowchart.ExecuteBlock("DayOne");
@@ -56,7 +58,18 @@ public class Teleporter2 : MonoBehaviour
                     break;
                 case 7:
                     flowchart.ExecuteBlock("DaySeven");
+                    isMoveNormally = true;
                     break;
+            }
+        }
+        if (other.gameObject.CompareTag("Player") && isMoveNormally)
+        {
+            audioManager.PlayAuido();
+            MainCamera.transform.position = new Vector3(94.9f, -0.19f, -10f);
+            player.transform.position = new Vector3(84.8f, -7.2f, 0f);
+            if (Teleporter6.ComeBackFlag)
+            {
+                ComeBackAndFoundBrotherMissingFlowChart.ExecuteBlock("Found");
             }
         }
     }

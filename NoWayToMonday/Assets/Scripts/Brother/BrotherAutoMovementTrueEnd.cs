@@ -9,6 +9,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     public float speed=10.0f;
     private bool BrotherMove=false;
     private float timer = 0f;
+    public GameObject UnitilDeathTimer;
     public Flowchart FlowchartExtendedTrueEnd;
     public GameObject[] gameObjectsToBeFalse;
     public GameObject[] gameObjectsToBeTrue;
@@ -29,9 +30,9 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
             transform.position += new Vector3(1, 0, 0) * 0.05f * Time.deltaTime;
         }
         if (BrotherMove)
-            {
-                transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
-            }
+        {
+            transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
+        }
     }
     public void BrotherMoving(bool brotherEnable)
     {
@@ -46,6 +47,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
             if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV&&PCScript.hadBeenStoppedPC&&RadioScript.hadBeenStoppedRadio)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("ExtendedTrueEvent");
+                UnitilDeathTimer.SetActive(true);
                 foreach (GameObject obj in gameObjectsToBeFalse)
                 {
                     obj.SetActive(false);

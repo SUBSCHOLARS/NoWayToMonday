@@ -7043,7 +7043,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -17060,6 +17060,7 @@ MonoBehaviour:
   CloseBook: {fileID: 732052025}
   Player: {fileID: 594145122}
   Navigation: {fileID: 408520011}
+  ExtendedTrueEvent: {fileID: 0}
 --- !u!1 &1410203476 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8236569831744954368, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}

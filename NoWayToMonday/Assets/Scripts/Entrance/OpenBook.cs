@@ -9,9 +9,12 @@ public class OpenBook : MonoBehaviour
     public GameObject MainCamera;
     public GameObject CloseBook;
     public GameObject Player;
+    public GameObject Navigation;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         MonologueText[pageCount].SetActive(true);
         pageCount++;
     }
@@ -21,6 +24,7 @@ public class OpenBook : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            audioSource.PlayOneShot(audioSource.clip);
             NextPage(pageCount);
             pageCount++;
         }
@@ -41,6 +45,7 @@ public class OpenBook : MonoBehaviour
         {
             pageCount = 0;
             Player.SetActive(true);
+            Navigation.SetActive(false);
             MainCamera.transform.position = new Vector3(94.9f, -0.19f, -10f);
             CloseBook.SetActive(false);
             this.transform.gameObject.SetActive(false);

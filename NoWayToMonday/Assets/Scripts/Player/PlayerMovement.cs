@@ -51,16 +51,20 @@ public class PlayerMovement : MonoBehaviour
         }
         if (this.gameObject.transform.position.x < -13f)
         {
-            this.gameObject.transform.position = new Vector3(-13f, -7.2f, 0);
+            this.gameObject.transform.position = new Vector3(-13f, -7.7f, 0f);
+        }
+        if (this.gameObject.transform.position.x > 106.15)
+        {
+            this.gameObject.transform.position = new Vector3(106.15f, -7.7f, 0f);
         }
         if (autoMove)
-        {
-            animator.SetBool("IsWalking", true);
-            Vector3 scale = transform.localScale;
-            scale.x = -1;
-            transform.localScale = scale;
-            transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
-        }
+            {
+                animator.SetBool("IsWalking", true);
+                Vector3 scale = transform.localScale;
+                scale.x = -1;
+                transform.localScale = scale;
+                transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+            }
         if (autoMoveRight)
         {
             animator.SetBool("IsWalking", true);
@@ -109,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
     public void WalkingSound()
     {
         audioSource.PlayOneShot(walkingSounds[soundIndex]);
-        if(soundIndex < walkingSounds.Length - 1)
+        if (soundIndex < walkingSounds.Length - 1)
         {
             soundIndex++;
         }
@@ -123,6 +127,14 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("PlayerStopper"))
         {
             animator.SetBool("IsWalking", false);
+        }
+    }
+    public void OisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("DoorFront"))
+        {
+            animator.SetBool("IsWalking", false);
+            transform.position = new Vector3(106.15f,-7.7f,0f);
         }
     }
 }

@@ -7,7 +7,8 @@ public class BrotherAutoMovement : MonoBehaviour
 {
     //public GameObject[] Brothers;
     public float switchinterval=0.1f;
-    public float speed=30f;
+    private float timer = 0f;
+    public float speed = 30f;
     bool isBrotherMove=false;
     AudioSource audioSource;
     public AudioClip Bleeding;
@@ -21,11 +22,15 @@ public class BrotherAutoMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(1, 0, 0) * 0.05f * Time.deltaTime;
-        if (isBrotherMove)
+        timer += Time.deltaTime;
+        if (timer <= 30f)
         {
-            transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
+            transform.position += new Vector3(1, 0, 0) * 0.05f * Time.deltaTime;
         }
+        if (isBrotherMove)
+            {
+                transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
+            }
     }
     public void BrotherMoving(bool brotherEnable)
     {

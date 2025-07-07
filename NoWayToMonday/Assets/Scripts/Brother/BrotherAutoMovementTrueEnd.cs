@@ -8,6 +8,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
 {
     public float speed=10.0f;
     private bool BrotherMove=false;
+    private float timer = 0f;
     public Flowchart FlowchartExtendedTrueEnd;
     public GameObject[] gameObjectsToBeFalse;
     public GameObject[] gameObjectsToBeTrue;
@@ -22,11 +23,15 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(1, 0, 0) * 0.05f * Time.deltaTime;
-        if (BrotherMove)
+        timer += Time.deltaTime;
+        if (timer <= 30f)
         {
-            transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
+            transform.position += new Vector3(1, 0, 0) * 0.05f * Time.deltaTime;
         }
+        if (BrotherMove)
+            {
+                transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
+            }
     }
     public void BrotherMoving(bool brotherEnable)
     {

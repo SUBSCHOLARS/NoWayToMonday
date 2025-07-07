@@ -9,6 +9,7 @@ TagManager:
   - Text
   - Reason
   - PlayerStopper
+  - DoorFront
   layers:
   - Default
   - TransparentFX

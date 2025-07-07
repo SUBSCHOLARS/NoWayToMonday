@@ -15,6 +15,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     public GameObject[] gameObjectsToBeTrue;
     AudioSource audioSource;
     public AudioClip Bleeding;
+    DeathTimer deathTimer;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +48,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
             if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV&&PCScript.hadBeenStoppedPC&&RadioScript.hadBeenStoppedRadio)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("ExtendedTrueEvent");
-                UnitilDeathTimer.SetActive(true);
+                deathTimer.TimerSet(true);
                 foreach (GameObject obj in gameObjectsToBeFalse)
                 {
                     obj.SetActive(false);

@@ -282,7 +282,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 083906ccfd7de41d49fc48187ef79d0d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.79607844, g: 0.85882354, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -466,7 +466,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 083906ccfd7de41d49fc48187ef79d0d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.79607844, g: 0.85882354, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4702,7 +4702,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 083906ccfd7de41d49fc48187ef79d0d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.79607844, g: 0.85882354, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8503,7 +8503,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 083906ccfd7de41d49fc48187ef79d0d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.79607844, g: 0.85882354, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10044,7 +10044,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 083906ccfd7de41d49fc48187ef79d0d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.79607844, g: 0.85882354, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12790,7 +12790,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 083906ccfd7de41d49fc48187ef79d0d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.79607844, g: 0.85882354, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14160,8 +14160,10 @@ MonoBehaviour:
   - {fileID: 1481823273}
   - {fileID: 1942732790}
   - {fileID: 788421053}
+  - {fileID: 1449719965}
   gameObjectsToBeTrue:
   - {fileID: 996150842}
+  - {fileID: 604742207}
   Bleeding: {fileID: 8300000, guid: 0e6789de04f1c42f296faab4307d0933, type: 3}
 --- !u!50 &1338643830
 Rigidbody2D:
@@ -15094,6 +15096,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 274017201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1449719965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9031779029733946153, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
+  m_PrefabInstance: {fileID: 651543056571042330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1455747435
 GameObject:
   m_ObjectHideFlags: 0

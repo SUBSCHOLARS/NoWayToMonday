@@ -38,7 +38,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
         {
             audioSource.PlayOneShot(audioSource.clip,1.0f);
             audioSource.PlayOneShot(Bleeding);
-            if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV&&PCScript.hadBeenStoppedPC)
+            if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV&&PCScript.hadBeenStoppedPC&&RadioScript.hadBeenStoppedRadio)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("ExtendedTrueEvent");
                 foreach (GameObject obj in gameObjectsToBeFalse)

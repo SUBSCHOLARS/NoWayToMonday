@@ -6,6 +6,9 @@ public class RadioScript : MonoBehaviour
 {
     [SerializeField] private AudioClip[] radioClips;
     AudioSource audioSource;
+    bool isNearRadio = false;
+    bool isRadioOff = false;
+    public static bool hadBeenStoppedRadio = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +19,22 @@ public class RadioScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (isNearRadio && !isRadioOff && Input.GetKeyDown(KeyCode.Space))
+        {
+            PauseRadio();
+            isRadioOff = true;
+            hadBeenStoppedRadio = true;
+        }
+        else if (isNearRadio && isRadioOff && Input.GetKeyDown(KeyCode.Space))
+        {
+            ResumeRadio();
+            isRadioOff = false;
+            hadBeenStoppedRadio = false;
+        }   
     }
     public void PlayRadio()
     {
-        audioSource.PlayOneShot(radioClips[DayCountManager.DayCount-1]);
+        audioSource.PlayOneShot(radioClips[DayCountManager.DayCount - 1]);
     }
     public void StopRadio()
     {
@@ -36,5 +50,19 @@ public class RadioScript : MonoBehaviour
     public void PauseRadio()
     {
         audioSource.Pause();
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            isNearRadio = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            isNearRadio = false;
+        }
     }
 }

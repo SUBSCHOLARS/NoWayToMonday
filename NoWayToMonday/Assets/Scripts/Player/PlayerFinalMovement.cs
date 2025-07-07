@@ -15,15 +15,13 @@ public class PlayerFinalMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Final)
-        {
-            Vector3 scale = player.transform.localScale;
-            scale.x = -1;
-            player.transform.localScale = scale;
-        }
+        
     }
     public void FinalMovement(bool finalEnable)
     {
-        Final=finalEnable;
+        Final = finalEnable;
+        Vector3 scale = player.transform.localScale;
+        scale.x = -1;
+        player.transform.localScale = scale;
     }
 }

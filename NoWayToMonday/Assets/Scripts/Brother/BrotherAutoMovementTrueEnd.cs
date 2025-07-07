@@ -9,6 +9,8 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     public float speed=10.0f;
     private bool BrotherMove=false;
     public Flowchart FlowchartExtendedTrueEnd;
+    public GameObject[] gameObjectsToBeFalse;
+    public GameObject[] gameObjectsToBeTrue;
     AudioSource audioSource;
     //public GameObject KnifeInverse;
     //public GameObject StabbingSound;
@@ -42,6 +44,14 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
             if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("ExtendedTrueEvent");
+                foreach (GameObject obj in gameObjectsToBeFalse)
+                {
+                    obj.SetActive(false);
+                }
+                foreach (GameObject obj in gameObjectsToBeTrue)
+                {
+                    obj.SetActive(true);
+                }
             }
             else
             {

@@ -397,6 +397,7 @@ GameObject:
   - component: {fileID: 67400583}
   - component: {fileID: 67400582}
   - component: {fileID: 67400580}
+  - component: {fileID: 67400586}
   m_Layer: 0
   m_Name: FlowchartExtendedTrueEnd
   m_TagString: Untagged
@@ -447,9 +448,10 @@ MonoBehaviour:
   - {fileID: 67400571}
   - {fileID: 67400574}
   - {fileID: 67400573}
+  - {fileID: 67400586}
+  - {fileID: 67400575}
   - {fileID: 67400572}
   - {fileID: 67400576}
-  - {fileID: 67400575}
   - {fileID: 67400578}
   - {fileID: 67400577}
   - {fileID: 67400579}
@@ -479,8 +481,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 67400569}
-  selectedCommands: []
+  - {fileID: 67400585}
+  selectedCommands:
+  - {fileID: 67400584}
   variables: []
   description: 
   stepPause: 0
@@ -550,10 +553,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  duration: 1
+  duration: 0.1
   targetAlpha: 1
   waitUntilFinished: 1
-  fadeColor: {r: 0.031238874, g: 0.050652403, b: 0.24528301, a: 1}
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
 --- !u!114 &67400574
@@ -590,7 +593,7 @@ MonoBehaviour:
   duration: 1
   targetAlpha: 0
   waitUntilFinished: 1
-  fadeColor: {r: 0.03137255, g: 0.050980393, b: 0.24705882, a: 1}
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
 --- !u!114 &67400576
@@ -825,6 +828,24 @@ MonoBehaviour:
   commandList:
   - {fileID: 67400584}
   suppressAllAutoSelections: 0
+--- !u!114 &67400586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67400567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
 --- !u!1 &73419604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,7 +2429,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5249,7 +5270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 67400570}
+  selectedFlowchart: {fileID: 1833071035}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -10150,6 +10171,7 @@ GameObject:
   - component: {fileID: 1229691082}
   - component: {fileID: 1229691085}
   - component: {fileID: 1229691084}
+  - component: {fileID: 1229691086}
   m_Layer: 0
   m_Name: DoorFront
   m_TagString: Untagged
@@ -10281,10 +10303,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -10296,6 +10318,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1229691086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229691081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68bf1245cde5416eab17135bca3131f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OpenFlowchat: {fileID: 67400570}
 --- !u!1 &1238875384
 GameObject:
   m_ObjectHideFlags: 0
@@ -10518,7 +10553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 1
+  scope: 0
   key: Specific
   value: 
 --- !u!114 &1255832065
@@ -10535,8 +10570,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
-    y: 70
+    x: 68.36799
+    y: 71.36799
     width: 94.45964
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -12238,7 +12273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b797580e39e146d5bd0bf1b616db062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 45
   FlowchartExtendedTrueEnd: {fileID: 67400570}
   gameObjectsToBeFalse:
   - {fileID: 363200017}
@@ -20168,11 +20203,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
-    y: 70
+    x: 57.055244
+    y: 64.475136
     width: 100.828735
     height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
+  tint: {r: 1, g: 0.92892253, b: 0, a: 1}
   useCustomTint: 1
   itemId: 0
   blockName: HasKnife
@@ -20233,7 +20268,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1833071034}
   selectedCommands:
-  - {fileID: 1833071059}
+  - {fileID: 1833071044}
   variables:
   - {fileID: 1833071053}
   description: 
@@ -20699,7 +20734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 1
+  scope: 0
   key: Specific
   value: 
 --- !u!114 &1833071054

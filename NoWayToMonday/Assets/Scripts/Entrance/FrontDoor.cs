@@ -16,7 +16,7 @@ public class FrontDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isOnDoor && Input.GetKey(KeyCode.Space))
+        if (isOnDoor && Input.GetKeyDown(KeyCode.Space))
         {
             OpenFlowchat.ExecuteBlock("Open");
         }

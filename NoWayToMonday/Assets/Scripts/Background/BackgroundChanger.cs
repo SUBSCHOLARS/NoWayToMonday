@@ -18,14 +18,14 @@ public class BackgroundChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(DayCountManager.DayCount==7)
-        {
-            Room.SetActive(false);
-            AlteredRoom.SetActive(true);
-            Destroy(Brother);
-            Reason2.SetActive(true);
-            Debug.Log("Altered!");
-        }
+        // if(DayCountManager.DayCount==7)
+        // {
+        //     Room.SetActive(false);
+        //     AlteredRoom.SetActive(true);
+        //     Destroy(Brother);
+        //     Reason2.SetActive(true);
+        //     Debug.Log("Altered!");
+        // }
     }
 
     // Update is called once per frame

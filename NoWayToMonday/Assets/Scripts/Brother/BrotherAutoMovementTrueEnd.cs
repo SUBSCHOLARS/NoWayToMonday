@@ -43,7 +43,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            audioSource.PlayOneShot(Bleeding);
+            audioSource.PlayOneShot(Bleeding,1.0f);
             TrueKnife.SetActive(false);
             if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV && PCScript.hadBeenStoppedPC && RadioScript.hadBeenStoppedRadio)
             {

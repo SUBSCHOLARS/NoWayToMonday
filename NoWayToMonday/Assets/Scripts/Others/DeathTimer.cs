@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Fungus;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DeathTimer : MonoBehaviour
 {
     private float UntilDeathTimer = 0f;
-    bool StartTimer = true;
+    bool StartTimer = false;
+    bool isFading = true;
     [SerializeField] Image damageImg;
     AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        damageImg.color = Color.clear;
     }
 
     // Update is called once per frame
@@ -23,15 +24,23 @@ public class DeathTimer : MonoBehaviour
         if (StartTimer)
         {
             UntilDeathTimer += Time.deltaTime;
-            if (UntilDeathTimer >= 900f)
+            if (UntilDeathTimer >= 10f&&isFading)
             {
-                damageImg.DOFade(1f, 0.5f).OnComplete(
-                    () =>
+                isFading = false;
+                damageImg.DOFade(0.4f, 2.0f).OnComplete(()
+                =>
+                {
+                    audioSource.PlayOneShot(audioSource.clip);
+                    damageImg.DOFade(0, 2.0f).OnComplete(()
+                    =>
                     {
-                        audioSource.PlayOneShot(audioSource.clip);
-                        damageImg.DOFade(0f, 0.5f);
-                    }
-                );
+                        isFading = true;
+                    });
+                });
+            }
+            if (UntilDeathTimer >= 30f)
+            {
+                Debug.Log("You are dead!");
             }
         }
     }

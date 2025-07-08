@@ -9,13 +9,12 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     public float speed=10.0f;
     private bool BrotherMove=false;
     private float timer = 0f;
-    public GameObject UnitilDeathTimer;
     public Flowchart FlowchartExtendedTrueEnd;
     public GameObject[] gameObjectsToBeFalse;
     public GameObject[] gameObjectsToBeTrue;
     AudioSource audioSource;
     public AudioClip Bleeding;
-    DeathTimer deathTimer;
+    public DeathTimer deathTimer;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +42,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            audioSource.PlayOneShot(audioSource.clip,1.0f);
+            audioSource.PlayOneShot(audioSource.clip);
             audioSource.PlayOneShot(Bleeding);
             if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV&&PCScript.hadBeenStoppedPC&&RadioScript.hadBeenStoppedRadio)
             {

@@ -4286,8 +4286,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 96a24f861c64c4df4b686b58fad7d4a5, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 4ad7b35aa3aa34e2db6958fa52075bd2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
@@ -16451,7 +16451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 45
-  UnitilDeathTimer: {fileID: 0}
   FlowchartExtendedTrueEnd: {fileID: 67400570}
   gameObjectsToBeFalse:
   - {fileID: 363200017}
@@ -16469,6 +16468,8 @@ MonoBehaviour:
   - {fileID: 604742207}
   - {fileID: 1276281270}
   Bleeding: {fileID: 8300000, guid: 0e6789de04f1c42f296faab4307d0933, type: 3}
+  RedScreen: {fileID: 308779056}
+  deathTimer: {fileID: 308779058}
 --- !u!50 &1338643830
 Rigidbody2D:
   serializedVersion: 4

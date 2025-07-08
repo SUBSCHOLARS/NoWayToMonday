@@ -24,7 +24,7 @@ public class DeathTimer : MonoBehaviour
         if (StartTimer)
         {
             UntilDeathTimer += Time.deltaTime;
-            if (UntilDeathTimer >= 10f&&isFading)
+            if (UntilDeathTimer >= 600f&&UntilDeathTimer<720f&&isFading)
             {
                 isFading = false;
                 damageImg.DOFade(0.4f, 2.0f).OnComplete(()
@@ -38,7 +38,7 @@ public class DeathTimer : MonoBehaviour
                     });
                 });
             }
-            if (UntilDeathTimer >= 30f)
+            if (UntilDeathTimer >= 720f)
             {
                 Debug.Log("You are dead!");
             }

@@ -16468,8 +16468,8 @@ MonoBehaviour:
   - {fileID: 604742207}
   - {fileID: 1276281270}
   Bleeding: {fileID: 8300000, guid: 0e6789de04f1c42f296faab4307d0933, type: 3}
-  RedScreen: {fileID: 308779056}
   deathTimer: {fileID: 308779058}
+  TrueKnife: {fileID: 779420349}
 --- !u!50 &1338643830
 Rigidbody2D:
   serializedVersion: 4

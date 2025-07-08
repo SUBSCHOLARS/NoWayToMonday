@@ -15,6 +15,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     AudioSource audioSource;
     public AudioClip Bleeding;
     public DeathTimer deathTimer;
+    public GameObject TrueKnife;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
         timer += Time.deltaTime;
         if (timer <= 30f)
         {
-            transform.position += new Vector3(1, 0, 0) * 0.05f * Time.deltaTime;
+            transform.position += new Vector3(1, 0, 0) * 0.01f * Time.deltaTime;
         }
         if (BrotherMove)
         {
@@ -42,9 +43,9 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            audioSource.PlayOneShot(audioSource.clip);
             audioSource.PlayOneShot(Bleeding);
-            if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV&&PCScript.hadBeenStoppedPC&&RadioScript.hadBeenStoppedRadio)
+            TrueKnife.SetActive(false);
+            if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV && PCScript.hadBeenStoppedPC && RadioScript.hadBeenStoppedRadio)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("ExtendedTrueEvent");
                 deathTimer.TimerSet(true);

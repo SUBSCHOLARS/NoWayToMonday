@@ -23,7 +23,6 @@ public class AnimationStateChecker : StateMachineBehaviour
         {
             BlackOut.gameObject.SetActive(true);
             BlackOut.DOFade(1, 2.0f);
-            
         }
     }
     // Start is called before the first frame update

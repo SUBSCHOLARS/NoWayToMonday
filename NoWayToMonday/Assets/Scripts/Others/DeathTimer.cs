@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Fungus;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ public class DeathTimer : MonoBehaviour
     bool isFading = true;
     [SerializeField] Image damageImg;
     AudioSource audioSource;
+    public Flowchart FlowchartExtendedTrueEnd;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +42,7 @@ public class DeathTimer : MonoBehaviour
             }
             if (UntilDeathTimer >= 720f)
             {
-                Debug.Log("You are dead!");
+                FlowchartExtendedTrueEnd.ExecuteBlock("TimeOver");
             }
         }
     }

@@ -806,7 +806,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 67400604}
   selectedCommands:
-  - {fileID: 67400606}
+  - {fileID: 67400600}
   variables: []
   description: 
   stepPause: 0
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   parameterNameOLD: 
 --- !u!114 &67400607
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3587,7 +3587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7509,7 +7509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2141021495}
+  selectedFlowchart: {fileID: 67400570}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -10563,7 +10563,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ccb651353b057406987304f9fafcc782, type: 3}
+    m_Font: {fileID: 12800000, guid: 28a6a851ec39d454ea42d16eb69bfddb, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0

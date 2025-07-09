@@ -26,7 +26,7 @@ public class DeathTimer : MonoBehaviour
         if (StartTimer)
         {
             UntilDeathTimer += Time.deltaTime;
-            if (UntilDeathTimer >= 10f&&UntilDeathTimer<20f&&isFading)
+            if (UntilDeathTimer >= 600f&&UntilDeathTimer<720f&&isFading)
             {
                 isFading = false;
                 damageImg.DOFade(0.4f, 2.0f).OnComplete(()
@@ -40,7 +40,7 @@ public class DeathTimer : MonoBehaviour
                     });
                 });
             }
-            if (UntilDeathTimer >= 20f)
+            if (UntilDeathTimer >= 720f)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("TimeOver");
                 StartTimer = false;

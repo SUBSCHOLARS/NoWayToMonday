@@ -43,6 +43,8 @@ public class DeathTimer : MonoBehaviour
             if (UntilDeathTimer >= 20f)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("TimeOver");
+                StartTimer = false;
+                UntilDeathTimer = 0f;
             }
         }
     }

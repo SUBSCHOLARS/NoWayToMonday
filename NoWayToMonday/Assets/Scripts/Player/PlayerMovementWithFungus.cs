@@ -23,6 +23,8 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public GameObject TextAppearer;
     public GameObject TriggerZone3;
     public AudioClip Noise;
+    public GameObject MainCamera;
+    public GameObject Player;
     private AudioSource audioSource;
     public void DisableMovement()
     {
@@ -106,6 +108,26 @@ public class PlayerMovementWithFungus : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(Noise);
         SceneManager.LoadSceneAsync("KnifeBadEnd");
+    }
+    public void CameraMove()
+    {
+        float playerPos = Player.transform.position.x;
+        if (playerPos > 13f && playerPos < 11)
+        {
+            MainCamera.transform.position = new Vector3(-1.6f, -0.19f, -10f);
+        }
+        else if (playerPos > 20 && playerPos < 44)
+        {
+            MainCamera.transform.position = new Vector3(32f, -0.19f, -10f);
+        }
+        else if (playerPos > 50 && playerPos < 74)
+        {
+            MainCamera.transform.position = new Vector3(62.4f, -0.19f, -10f);
+        }
+        else if (playerPos > 83)
+        {
+            MainCamera.transform.position = new Vector3(94.9f, -0.19f, -10f);
+        }
     }
     // Start is called before the first frame update
     void Start()

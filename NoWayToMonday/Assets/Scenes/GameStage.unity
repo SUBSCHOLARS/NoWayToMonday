@@ -719,6 +719,7 @@ GameObject:
   - component: {fileID: 67400599}
   - component: {fileID: 67400605}
   - component: {fileID: 67400606}
+  - component: {fileID: 67400607}
   m_Layer: 0
   m_Name: FlowchartExtendedTrueEnd
   m_TagString: Untagged
@@ -794,7 +795,7 @@ MonoBehaviour:
   scrollPos: {x: -61, y: 3}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 365
+  blockViewHeight: 227
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -1579,6 +1580,7 @@ MonoBehaviour:
   - {fileID: 67400600}
   - {fileID: 67400599}
   - {fileID: 67400601}
+  - {fileID: 67400607}
   - {fileID: 67400606}
   suppressAllAutoSelections: 0
 --- !u!114 &67400605
@@ -1628,9 +1630,26 @@ MonoBehaviour:
     stringVal: TimeOver
   value:
     booleanRef: {fileID: 0}
-    booleanVal: 0
+    booleanVal: 1
   animatorOLD: {fileID: 0}
   parameterNameOLD: 
+--- !u!114 &67400607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67400567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  targetObject: {fileID: 1910558882}
+  methodName: CameraMove
+  delay: 0
 --- !u!1 &71325880
 GameObject:
   m_ObjectHideFlags: 0
@@ -5171,6 +5190,8 @@ MonoBehaviour:
   TextAppearer: {fileID: 0}
   TriggerZone3: {fileID: 0}
   Noise: {fileID: 0}
+  MainCamera: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!114 &337235536
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7488,7 +7509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 905157677}
+  selectedFlowchart: {fileID: 2141021495}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -14085,6 +14106,8 @@ MonoBehaviour:
   TextAppearer: {fileID: 0}
   TriggerZone3: {fileID: 0}
   Noise: {fileID: 0}
+  MainCamera: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!114 &1192274795
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19594,6 +19617,8 @@ MonoBehaviour:
   TextAppearer: {fileID: 0}
   TriggerZone3: {fileID: 0}
   Noise: {fileID: 0}
+  MainCamera: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!114 &1643264168
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -26943,6 +26968,8 @@ MonoBehaviour:
   TextAppearer: {fileID: 1328636598}
   TriggerZone3: {fileID: 1434829295}
   Noise: {fileID: 8300000, guid: 2e6f5aa80169846958c4304e42688740, type: 3}
+  MainCamera: {fileID: 519420028}
+  Player: {fileID: 594145122}
 --- !u!4 &1910558884
 Transform:
   m_ObjectHideFlags: 0
@@ -28720,9 +28747,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2141021494}
+  - {fileID: 2141021506}
   selectedCommands:
-  - {fileID: 2141021502}
+  - {fileID: 2141021541}
   variables:
   - {fileID: 2141021508}
   - {fileID: 2141021507}

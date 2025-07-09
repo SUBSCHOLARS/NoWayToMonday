@@ -758,7 +758,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 9
     y: 42
-    width: 160
+    width: 163.17831
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -792,11 +792,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -63.484955, y: 3}
+  scrollPos: {x: -58.41259, y: 8.744199}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 227
-  zoom: 1
+  zoom: 0.9674999
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -805,8 +805,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 67400604}
-  selectedCommands:
-  - {fileID: 67400607}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1087,7 +1086,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 138
     y: 134.5
-    width: 85
+    width: 85.65892
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1147,7 +1146,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25
     y: 100.5
-    width: 80
+    width: 80.49096
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1439,7 +1438,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 6
     y: 140.5
-    width: 152
+    width: 153.87598
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1566,7 +1565,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 177
     y: 95.5
-    width: 105
+    width: 105.297165
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23635,7 +23634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1685435797
 Animator:
   serializedVersion: 5
@@ -26297,7 +26296,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1863930527
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -26314,7 +26313,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1863930528
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -26341,7 +26340,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1863930529
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -26368,7 +26367,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1863930530
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30386,6 +30385,10 @@ PrefabInstance:
       propertyPath: WalkingSound
       value: 
       objectReference: {fileID: 2049550813}
+    - target: {fileID: 6756010313625688972, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
+      propertyPath: bleedingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e6789de04f1c42f296faab4307d0933, type: 3}
     - target: {fileID: 6756010313625688972, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
       propertyPath: walkingSounds.Array.size
       value: 5

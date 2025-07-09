@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private bool backMove = false;
     private int soundIndex = 0;
     public AudioClip[] walkingSounds;
+    public AudioClip bleedingSound;
     //public GameObject WalkingSound;
     Rigidbody2D rb2D;
     Animator animator;
@@ -121,6 +122,10 @@ public class PlayerMovement : MonoBehaviour
         {
             soundIndex = 0;
         }
+    }
+    public void PlayBleedingSound()
+    {
+        audioSource.PlayOneShot(bleedingSound);
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {

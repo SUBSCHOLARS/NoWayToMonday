@@ -23,7 +23,7 @@ public class Teleporter5 : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             player.transform.position=new Vector3(51.7f,-7.7f,0f);
-            MainCamera.transform.position=new Vector3(62.4f,-0.19f,-10f);
+            MainCamera.transform.position=new Vector3(62.4f,-0.66f,-10f);
             audioManager.PlayAuido();
         }
     }

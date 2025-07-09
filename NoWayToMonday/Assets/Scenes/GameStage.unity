@@ -4148,7 +4148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7964,7 +7964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 67400570}
+  selectedFlowchart: {fileID: 1863930532}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -27108,8 +27108,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1863930531}
-  selectedCommands:
-  - {fileID: 1863930527}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0

@@ -13,6 +13,8 @@ public class OpenBook : MonoBehaviour
     public GameObject Navigation;
     AudioSource audioSource;
     public Flowchart ExtendedTrueEvent;
+    public GameObject Sink;
+    Animator animator;
     int isFirstRead = 0;
     // Start is called before the first frame update
     void Start()
@@ -38,6 +40,12 @@ public class OpenBook : MonoBehaviour
         {
             MonologueText[page - 1].SetActive(false);
             MonologueText[page].SetActive(true);
+            if (page == 7)
+            {
+                SinkScript.isSand = true;
+                animator = Sink.GetComponent<Animator>();
+                animator.SetBool("IsSand", true);
+            }
         }
         else if (page == MonologueText.Length)
         {

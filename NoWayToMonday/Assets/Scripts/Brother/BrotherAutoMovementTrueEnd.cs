@@ -52,7 +52,6 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
                 FlowchartExtendedTrueEnd.ExecuteBlock("ExtendedTrueEvent");
                 animator = Sink.GetComponent<Animator>();
                 animator.SetBool("IsDripping", false);
-                animator.SetBool("IsSand", true);
                 deathTimer.TimerSet(true);
                 foreach (GameObject obj in gameObjectsToBeFalse)
                 {

@@ -4,16 +4,5 @@ using UnityEngine;
 
 public class DayCountManager : MonoBehaviour
 {
-    public static int DayCount=7;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static int DayCount=1; 
 }

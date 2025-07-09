@@ -11,10 +11,10 @@ public class AnimationStateChecker : StateMachineBehaviour
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Debug.Log("アニメーションの再生が終了しました！");
-            Debug.Log("スタビングアニメーションが終了しました。");
-            // ここでスタビングアニメーションが終了した後の処理を追加できます。
-            // 例えば、次のシーンに遷移するなど。
-            SceneManager.LoadSceneAsync("KnifeBadEndText"); // 適切なシーン名に置き換えてください
+        Debug.Log("スタビングアニメーションが終了しました。");
+        // ここでスタビングアニメーションが終了した後の処理を追加できます。
+        // 例えば、次のシーンに遷移するなど。
+        SceneManager.LoadSceneAsync("KnifeBadEndText"); // 適切なシーン名に置き換えてください
 
     }
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

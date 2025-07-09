@@ -758,7 +758,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 9
     y: 42
-    width: 160
+    width: 157.42087
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -792,11 +792,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -61, y: 3}
+  scrollPos: {x: -57.81784, y: 5.954859}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 227
-  zoom: 1
+  zoom: 0.9634999
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -804,9 +804,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 67400604}
-  selectedCommands:
-  - {fileID: 67400600}
+  - {fileID: 67400569}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1087,7 +1086,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 138
     y: 134.5
-    width: 85
+    width: 84.76907
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1147,7 +1146,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25
     y: 100.5
-    width: 80
+    width: 79.060715
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1295,7 +1294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  storyText: "\u3069\u3053\u306B\u3084\u3063\u305F\u3063\u3051"
+  storyText: "\u306A\u3093\u3067\u5185\u5074\u306B?"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1439,7 +1438,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 6
     y: 140.5
-    width: 152
+    width: 149.63675
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1566,7 +1565,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 177
     y: 95.5
-    width: 105
+    width: 103.96991
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15480,6 +15479,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1261256804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6655434502278967578, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
+  m_PrefabInstance: {fileID: 651543056571042330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1272742662
 GameObject:
   m_ObjectHideFlags: 0
@@ -16912,10 +16916,12 @@ MonoBehaviour:
   - {fileID: 1449719965}
   - {fileID: 1191837142}
   - {fileID: 1410203476}
+  - {fileID: 1261256804}
   gameObjectsToBeTrue:
   - {fileID: 996150842}
   - {fileID: 604742207}
   - {fileID: 1276281270}
+  - {fileID: 1096044138}
   Bleeding: {fileID: 8300000, guid: 0e6789de04f1c42f296faab4307d0933, type: 3}
   deathTimer: {fileID: 308779058}
   TrueKnife: {fileID: 779420349}

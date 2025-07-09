@@ -794,7 +794,7 @@ MonoBehaviour:
   scrollPos: {x: -61, y: 3}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 317
+  blockViewHeight: 365
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -1453,7 +1453,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &67400599
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1480,7 +1480,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &67400600
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1507,7 +1507,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &67400601
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &67400603
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1551,7 +1551,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &67400604
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1583,7 +1583,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &67400605
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1608,14 +1608,14 @@ MonoBehaviour:
   rotTweenType: 4
 --- !u!114 &67400606
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67400567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb1f6a369ef8c40bda77241018ab6bd6, type: 3}
+  m_Script: {fileID: 11500000, guid: ee63e642958494f1ebed8116ae4b1103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 36
@@ -1627,8 +1627,8 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: TimeOver
   value:
-    floatRef: {fileID: 0}
-    floatVal: 0
+    booleanRef: {fileID: 0}
+    booleanVal: 0
   animatorOLD: {fileID: 0}
   parameterNameOLD: 
 --- !u!1 &71325880
@@ -4578,6 +4578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageImg: {fileID: 308779059}
+  FlowchartExtendedTrueEnd: {fileID: 0}
 --- !u!114 &308779059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7487,7 +7488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 67400570}
+  selectedFlowchart: {fileID: 905157677}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -11201,7 +11202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "\u623B\u3063\u3066\u306F\u3044\u3051\u306A\u3044\u6C17\u304C\u3059\u308B..."
+  storyText: "\u623B\u3063\u3066\u306F\u3044\u3051\u306A\u3044"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -11270,7 +11271,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 905157676}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 905157675}
   variables: []
   description: 
   stepPause: 0
@@ -19533,7 +19535,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1643264163}
+  - {fileID: 1643264283}
   selectedCommands: []
   variables:
   - {fileID: 1643264176}
@@ -29929,7 +29931,7 @@ MonoBehaviour:
   parameterNameOLD: 
 --- !u!114 &2141021542
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

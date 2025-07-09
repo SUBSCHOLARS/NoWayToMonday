@@ -98,9 +98,9 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public void TextAppearerDeactivate(){
         TextAppearer.SetActive(false);
     }
-    public void TriggerZone3Deactivate(){
-        TriggerZone3.SetActive(false);
-    }
+    // public void TriggerZone3Deactivate(){
+    //     TriggerZone3.SetActive(false);
+    // }
     public void LoadKnifeBadEnd()
     {
         audioSource = GetComponent<AudioSource>();

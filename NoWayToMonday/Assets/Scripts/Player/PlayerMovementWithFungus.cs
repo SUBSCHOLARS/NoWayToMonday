@@ -114,19 +114,19 @@ public class PlayerMovementWithFungus : MonoBehaviour
         float playerPos = Player.transform.position.x;
         if (playerPos > 13f && playerPos < 11)
         {
-            MainCamera.transform.position = new Vector3(-1.6f, -0.19f, -10f);
+            MainCamera.transform.position = new Vector3(-1.6f, -0.66f, -10f);
         }
         else if (playerPos > 20 && playerPos < 44)
         {
-            MainCamera.transform.position = new Vector3(32f, -0.19f, -10f);
+            MainCamera.transform.position = new Vector3(32f, -0.66f, -10f);
         }
         else if (playerPos > 50 && playerPos < 74)
         {
-            MainCamera.transform.position = new Vector3(62.4f, -0.19f, -10f);
+            MainCamera.transform.position = new Vector3(62.4f, -0.66f, -10f);
         }
         else if (playerPos > 83)
         {
-            MainCamera.transform.position = new Vector3(94.9f, -0.19f, -10f);
+            MainCamera.transform.position = new Vector3(94.9f, -0.66f, -10f);
         }
     }
     // Start is called before the first frame update

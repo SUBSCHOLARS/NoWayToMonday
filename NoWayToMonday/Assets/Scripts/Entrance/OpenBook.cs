@@ -57,7 +57,7 @@ public class OpenBook : MonoBehaviour
             pageCount = 0;
             Player.SetActive(true);
             Navigation.SetActive(false);
-            MainCamera.transform.position = new Vector3(94.9f, -0.19f, -10f);
+            MainCamera.transform.position = new Vector3(94.9f, -0.66f, -10f);
             if (isFirstRead == 0)
             {
                 ExtendedTrueEvent.ExecuteBlock("AfterReadingBook");

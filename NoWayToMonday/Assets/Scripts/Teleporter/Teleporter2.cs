@@ -65,8 +65,8 @@ public class Teleporter2 : MonoBehaviour
         else if (other.gameObject.CompareTag("Player") && isMoveNormally)
         {
             audioManager.PlayAuido();
-            MainCamera.transform.position = new Vector3(94.9f, -0.66f, -10f);
             player.transform.position = new Vector3(84.8f, -7.7f, 0f);
+            MainCamera.transform.position = new Vector3(94.9f, -0.66f, -10f);
             if (Teleporter6.ComeBackFlag)
             {
                 ComeBackAndFoundBrotherMissingFlowChart.ExecuteBlock("Found");

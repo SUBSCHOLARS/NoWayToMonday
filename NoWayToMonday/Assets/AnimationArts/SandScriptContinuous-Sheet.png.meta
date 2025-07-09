@@ -113,10 +113,10 @@ TextureImporter:
       name: SandScriptContinuous-Sheet_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 84
-        width: 602
-        height: 273
+        x: 20
+        y: 120
+        width: 860
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e81675efcecb4396aa965b09b17fdc3
-      internalID: -2014742199
+      spriteID: 5d65649c8e12046f29d57f74f588ed28
+      internalID: -259479852
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: SandScriptContinuous-Sheet_1
       rect:
         serializedVersion: 2
-        x: 686
-        y: 84
-        width: 602
-        height: 273
+        x: 980
+        y: 120
+        width: 860
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 576d1a3863c484d9db12c04a01471e69
-      internalID: 1171625342
+      spriteID: 286660543cd774b27bf342ccd855f49c
+      internalID: -1173553529
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SandScriptContinuous-Sheet_0: -2014742199
-      SandScriptContinuous-Sheet_1: 1171625342
+      SandScriptContinuous-Sheet_0: -259479852
+      SandScriptContinuous-Sheet_1: -1173553529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

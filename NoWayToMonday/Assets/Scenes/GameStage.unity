@@ -724,6 +724,7 @@ GameObject:
   - component: {fileID: 67400608}
   - component: {fileID: 67400610}
   - component: {fileID: 67400609}
+  - component: {fileID: 67400612}
   m_Layer: 0
   m_Name: FlowchartExtendedTrueEnd
   m_TagString: Untagged
@@ -762,7 +763,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 9
     y: 42
-    width: 160.34009
+    width: 161.19879
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -796,11 +797,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -27.939898, y: 48.07528}
+  scrollPos: {x: 0.84319305, y: 69.85193}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 227
-  zoom: 0.7204997
+  zoom: 0.63399965
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1092,7 +1093,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 138
     y: 134.5
-    width: 85.392105
+    width: 85.48898
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1152,7 +1153,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25
     y: 100.5
-    width: 79.8404
+    width: 79.968475
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1447,7 +1448,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 6
     y: 140.5
-    width: 152.7065
+    width: 152.52371
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1574,7 +1575,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 177
     y: 95.5
-    width: 104.82306
+    width: 105.20508
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1687,9 +1688,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 1
-  text: "\u9375\u3092\u958B\u3051\u308B"
+  text: "\u5916\u306B\u51FA\u308B"
   description: 
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 67400612}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -2184,6 +2185,32 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &67400612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67400567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 323.56808
+    y: 82.38973
+    width: 97.318634
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 41
+  blockName: TrueEnd
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+  suppressAllAutoSelections: 0
 --- !u!1 &71325880
 GameObject:
   m_ObjectHideFlags: 0

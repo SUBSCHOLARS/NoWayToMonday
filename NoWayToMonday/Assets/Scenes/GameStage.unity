@@ -3587,7 +3587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17510,7 +17510,7 @@ MonoBehaviour:
   CloseBook: {fileID: 732052025}
   Player: {fileID: 594145122}
   Navigation: {fileID: 408520011}
-  ExtendedTrueEvent: {fileID: 0}
+  ExtendedTrueEvent: {fileID: 67400570}
 --- !u!1 &1410203476 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8236569831744954368, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}

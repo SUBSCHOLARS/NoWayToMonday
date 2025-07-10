@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Fungus;
 using UnityEngine;
 
 public class SinkScript : MonoBehaviour
@@ -12,6 +13,7 @@ public class SinkScript : MonoBehaviour
     bool isSandStopped = false;
     public static bool hadBeenStoppedDrip = false;
     public static bool isSand = false;
+    public Flowchart PodFlowchart;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,18 +37,23 @@ public class SinkScript : MonoBehaviour
             isDripStopped = false;
             hadBeenStoppedDrip = false;
         }
-        else if(isSand && isNearFaucet && !isDripStopped && Input.GetKeyDown(KeyCode.Space))
+        else if (isSand && isNearFaucet && !isDripStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsSand", false);
             audioSource.PlayOneShot(audioSource.clip);
             isSandStopped = true;
             hadBeenStoppedDrip = true;
         }
-        else if(isSand && isNearFaucet && isDripStopped && Input.GetKeyDown(KeyCode.Space))
+        else if (isSand && isNearFaucet && isDripStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsSand", true);
             isSandStopped = false;
             hadBeenStoppedDrip = false;
+        }
+        else if (PodScript.isPodTaken && isNearFaucet && Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetBool("IsSand", false);
+            PodFlowchart.ExecuteBlock("PodFill");
         }
     }
     public void DripSound()

@@ -7,6 +7,7 @@ public class PodScript : MonoBehaviour
 {
     public Flowchart PodFlowchart;
     public static bool isPodTaken = false;
+    bool isNearPod = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,21 +17,30 @@ public class PodScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(isNearPod && Input.GetKeyDown(KeyCode.Space) && !isPodTaken)
+        {
+            isPodTaken = true;
+            this.gameObject.SetActive(false);
+            PodFlowchart.ExecuteBlock("PodTaken");
+        }
     }
     public void PodTaken()
     {
         isPodTaken = true;
         this.gameObject.SetActive(false);
     }
-    void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                PodFlowchart.ExecuteBlock("Pod");
-            }
+            isNearPod = true;
+        }
+    }
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isNearPod = false;
         }
     }
 }

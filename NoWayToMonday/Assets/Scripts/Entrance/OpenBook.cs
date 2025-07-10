@@ -15,7 +15,11 @@ public class OpenBook : MonoBehaviour
     public Flowchart ExtendedTrueEvent;
     public GameObject Sink;
     Animator animator;
+    bool isSandFirst = true;
+    public GameObject Pot;
+    bool isFirstPotEnable = true;
     int isFirstRead = 0;
+    BoxCollider2D boxCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,11 +44,12 @@ public class OpenBook : MonoBehaviour
         {
             MonologueText[page - 1].SetActive(false);
             MonologueText[page].SetActive(true);
-            if (page == 7)
+            if (page == 7 && isSandFirst)
             {
                 SinkScript.isSand = true;
                 animator = Sink.GetComponent<Animator>();
                 animator.SetBool("IsSand", true);
+                isSandFirst = false;
             }
         }
         else if (page == MonologueText.Length)
@@ -54,6 +59,12 @@ public class OpenBook : MonoBehaviour
         }
         else
         {
+            if (isFirstPotEnable)
+            {
+                boxCollider = Pot.GetComponent<BoxCollider2D>();
+                boxCollider.enabled = true;
+                isFirstPotEnable = false;
+            }
             pageCount = 0;
             Player.SetActive(true);
             Navigation.SetActive(false);

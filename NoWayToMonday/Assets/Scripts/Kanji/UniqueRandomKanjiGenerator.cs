@@ -29,7 +29,9 @@ public class UniqueRandomKanjiGenerator : MonoBehaviour
         LastGeneratedKanji=="木"||
         LastGeneratedKanji=="金"||
         LastGeneratedKanji=="土"||
-        LastGeneratedKanji=="日"){
+        LastGeneratedKanji=="日"||
+        LastGeneratedKanji=="目"||
+        LastGeneratedKanji=="眼"){
             LastGeneratedKanji="彁";
         }
         return LastGeneratedKanji;

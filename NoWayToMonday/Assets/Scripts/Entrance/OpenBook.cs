@@ -61,8 +61,8 @@ public class OpenBook : MonoBehaviour
         {
             if (isFirstPotEnable)
             {
-                // boxCollider = Pot.GetComponent<BoxCollider2D>();
-                // boxCollider.enabled = true;
+                boxCollider = Pot.GetComponent<BoxCollider2D>();
+                boxCollider.enabled = true;
                 isFirstPotEnable = false;
             }
             pageCount = 0;

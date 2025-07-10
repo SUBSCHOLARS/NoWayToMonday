@@ -47,8 +47,8 @@ public class OpenBook : MonoBehaviour
             if (page == 7 && isSandFirst)
             {
                 SinkScript.isSand = true;
-                animator = Sink.GetComponent<Animator>();
-                animator.SetBool("IsSand", true);
+                // animator = Sink.GetComponent<Animator>();
+                // animator.SetBool("IsSand", true);
                 isSandFirst = false;
             }
         }
@@ -61,8 +61,8 @@ public class OpenBook : MonoBehaviour
         {
             if (isFirstPotEnable)
             {
-                boxCollider = Pot.GetComponent<BoxCollider2D>();
-                boxCollider.enabled = true;
+                // boxCollider = Pot.GetComponent<BoxCollider2D>();
+                // boxCollider.enabled = true;
                 isFirstPotEnable = false;
             }
             pageCount = 0;

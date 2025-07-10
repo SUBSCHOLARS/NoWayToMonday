@@ -14,6 +14,7 @@ public class SinkScript : MonoBehaviour
     public static bool hadBeenStoppedDrip = false;
     public static bool isSand = false;
     public Flowchart PodFlowchart;
+    public static bool isPodFilled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +55,7 @@ public class SinkScript : MonoBehaviour
         {
             animator.SetBool("IsSand", false);
             PodFlowchart.ExecuteBlock("PodFill");
+            isPodFilled = true;
         }
     }
     public void DripSound()

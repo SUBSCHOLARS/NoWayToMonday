@@ -20,4 +20,8 @@ public class LoadKnifeScene : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("KnifeBadEndText");
     }
+    public void LoadDemoEndScene()
+    {
+        SceneManager.LoadSceneAsync("DemoEndScene");
+    }
 }

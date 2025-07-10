@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: 55d372da3deef4dc590b561459cbe028
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1928
+        width: 354
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9536fb8eebf741519b0bc2075f1a1a3
+      internalID: -1037630721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1928
+        width: 353
+        height: 614
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcc71caaaab34126b5a2aab25753053
+      internalID: -272448378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1928
+        width: 354
+        height: 614
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18a88e885e6e4933b0037e1968e2a03
+      internalID: 1666569711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 1939
+        width: 353
+        height: 603
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c490ea4b8a354e648a9c6ddfbb89869
+      internalID: 739193150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 1928
+        width: 354
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fd488a14c1043ddb3c9dbe8138003b
+      internalID: -916576169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1289
+        width: 354
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b249959e4284030aeef29deff4e870
+      internalID: -1540206358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1289
+        width: 353
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f6ed2efb8614e538416f4b2ab51313
+      internalID: -1364745249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1289
+        width: 354
+        height: 612
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3320da8108a644f8c96b641d7a1871a5
+      internalID: -1627711636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 1289
+        width: 353
+        height: 612
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee34c38444b27415d9c0e7bcfd1b7f57
+      internalID: 425368596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 1289
+        width: 354
+        height: 612
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58079a859cd5e40ee9b6240fa24bc000
+      internalID: -874040108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 648
+        width: 354
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ae1dcc1f633498e83f3e5c2cd1b8e3
+      internalID: 1782057057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 648
+        width: 353
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64772a57c8f4147508a379d3ad45c09d
+      internalID: 1741819656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 648
+        width: 354
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad16504fc1e64d2d8da2c2249300266
+      internalID: 1454721056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 648
+        width: 353
+        height: 614
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9901cf244d8c4238971300fefc8ca67
+      internalID: 1301090533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 648
+        width: 354
+        height: 614
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973bac579977a45e9b7bc40cb759c2d0
+      internalID: 1528731850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 9
+        width: 354
+        height: 612
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed56ad992799a40cd9c711b30d25bf38
+      internalID: -141924683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 9
+        width: 353
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e8e447c2151474fbfba76309bd2d08
+      internalID: -479114194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayNewPlayerWithPod-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 9
+        width: 354
+        height: 623
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45897a859d631472cb4bc246bf3381b6
+      internalID: -1430420614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NoWayToMondayNewPlayerWithPod-Sheet_0: -1037630721
+      NoWayToMondayNewPlayerWithPod-Sheet_1: -272448378
+      NoWayToMondayNewPlayerWithPod-Sheet_10: 1782057057
+      NoWayToMondayNewPlayerWithPod-Sheet_11: 1741819656
+      NoWayToMondayNewPlayerWithPod-Sheet_12: 1454721056
+      NoWayToMondayNewPlayerWithPod-Sheet_13: 1301090533
+      NoWayToMondayNewPlayerWithPod-Sheet_14: 1528731850
+      NoWayToMondayNewPlayerWithPod-Sheet_15: -141924683
+      NoWayToMondayNewPlayerWithPod-Sheet_16: -479114194
+      NoWayToMondayNewPlayerWithPod-Sheet_17: -1430420614
+      NoWayToMondayNewPlayerWithPod-Sheet_2: 1666569711
+      NoWayToMondayNewPlayerWithPod-Sheet_3: 739193150
+      NoWayToMondayNewPlayerWithPod-Sheet_4: -916576169
+      NoWayToMondayNewPlayerWithPod-Sheet_5: -1540206358
+      NoWayToMondayNewPlayerWithPod-Sheet_6: -1364745249
+      NoWayToMondayNewPlayerWithPod-Sheet_7: -1627711636
+      NoWayToMondayNewPlayerWithPod-Sheet_8: 425368596
+      NoWayToMondayNewPlayerWithPod-Sheet_9: -874040108
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

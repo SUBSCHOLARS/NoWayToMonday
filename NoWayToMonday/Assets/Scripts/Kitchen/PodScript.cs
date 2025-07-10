@@ -8,6 +8,8 @@ public class PodScript : MonoBehaviour
     public Flowchart PodFlowchart;
     public static bool isPodTaken = false;
     bool isNearPod = false;
+    public GameObject Player;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,7 @@ public class PodScript : MonoBehaviour
     {
         if(isNearPod && Input.GetKeyDown(KeyCode.Space) && !isPodTaken)
         {
-            isPodTaken = true;
-            this.gameObject.SetActive(false);
-            PodFlowchart.ExecuteBlock("PodTaken");
+            PodFlowchart.ExecuteBlock("Pod");
         }
     }
     public void PodTaken()

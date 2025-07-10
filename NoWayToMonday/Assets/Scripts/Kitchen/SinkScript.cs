@@ -38,21 +38,20 @@ public class SinkScript : MonoBehaviour
             isDripStopped = false;
             hadBeenStoppedDrip = false;
         }
-        else if (isSand && isNearFaucet && !isDripStopped && Input.GetKeyDown(KeyCode.Space))
+        else if (!PodScript.isPodTaken&&isSand && isNearFaucet && !isDripStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsSand", false);
             audioSource.PlayOneShot(audioSource.clip);
             isSandStopped = true;
-            hadBeenStoppedDrip = true;
         }
-        else if (isSand && isNearFaucet && isDripStopped && Input.GetKeyDown(KeyCode.Space))
+        else if (!PodScript.isPodTaken&&isSand && isNearFaucet && isDripStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("IsSand", true);
             isSandStopped = false;
-            hadBeenStoppedDrip = false;
         }
-        else if (PodScript.isPodTaken && isNearFaucet && Input.GetKeyDown(KeyCode.Space))
+        else if (isSand&&PodScript.isPodTaken && isNearFaucet && Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("Filled");
             animator.SetBool("IsSand", false);
             PodFlowchart.ExecuteBlock("PodFill");
             isPodFilled = true;

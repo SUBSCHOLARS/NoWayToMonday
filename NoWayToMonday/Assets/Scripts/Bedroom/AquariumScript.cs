@@ -7,10 +7,11 @@ public class AquariumScript : MonoBehaviour
 {
     bool isNearAquarium = false;
     public Flowchart AquariumFlowchart;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class AquariumScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            isNearAquarium= true;
+            isNearAquarium = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -35,5 +36,9 @@ public class AquariumScript : MonoBehaviour
         {
             isNearAquarium = false;
         }
+    }
+    public void PlayAquariumSound()
+    {
+        audioSource.PlayOneShot(audioSource.clip);
     }
 }

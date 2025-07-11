@@ -5132,8 +5132,8 @@ GameObject:
   - component: {fileID: 277918073}
   - component: {fileID: 277918072}
   - component: {fileID: 277918070}
-  - component: {fileID: 277918079}
   - component: {fileID: 277918078}
+  - component: {fileID: 277918080}
   m_Layer: 0
   m_Name: PotFlowchart
   m_TagString: Untagged
@@ -5560,11 +5560,11 @@ MonoBehaviour:
   - {fileID: 277918077}
   - {fileID: 277918076}
   - {fileID: 277918075}
+  - {fileID: 277918080}
   - {fileID: 277918074}
   - {fileID: 277918073}
   - {fileID: 277918072}
   - {fileID: 277918070}
-  - {fileID: 277918079}
   - {fileID: 277918078}
   suppressAllAutoSelections: 0
 --- !u!114 &277918072
@@ -5736,7 +5736,7 @@ MonoBehaviour:
   targetObject: {fileID: 1910558882}
   methodName: EnableMovement
   delay: 0
---- !u!114 &277918079
+--- !u!114 &277918080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5745,24 +5745,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 277918054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 21
+  itemId: 23
   indentLevel: 0
-  storyText: "\u5168\u3066\u5E7B\u899A...?"
-  description: 
-  character: {fileID: 1258936049}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  targetObject: {fileID: 1096044138}
+  methodName: PlayAquariumSound
+  delay: 0
 --- !u!1 &289729249 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4755300148863522955, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
@@ -14658,6 +14648,8 @@ GameObject:
   - component: {fileID: 1096044140}
   - component: {fileID: 1096044142}
   - component: {fileID: 1096044141}
+  - component: {fileID: 1096044143}
+  - component: {fileID: 1096044144}
   m_Layer: 0
   m_Name: AquariumAltered
   m_TagString: Untagged
@@ -14804,6 +14796,115 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1096044143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096044138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a983fa1d5fbf4465a00fe598b3abadc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AquariumFlowchart: {fileID: 67400570}
+--- !u!82 &1096044144
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096044138}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a2b4c7e73671644238f67abf1412ae6d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1106007256
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ExtendedTrueEndBoolManager : MonoBehaviour
 {
     public static bool foundSandisWater = false;
+    public static bool foundLunastatsisisSleepingPills = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +20,9 @@ public class ExtendedTrueEndBoolManager : MonoBehaviour
     public void SetFoundSandIsWaterTrue()
     {
         foundSandisWater = true;
+    }
+    public void SetFoundLunastatsisSleepingPillsTrue()
+    {
+        foundLunastatsisisSleepingPills = true;
     }
 }

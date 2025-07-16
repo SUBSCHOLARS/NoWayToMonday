@@ -48,5 +48,12 @@ public class TVScript : MonoBehaviour
             isNearTV = false;
         }
     }
-    
+    public void PauseTVSound()
+    {
+        audioSource.Pause();
+    }
+    public void UnpauseTVSound()
+    {
+        audioSource.UnPause();
+    }    
 }

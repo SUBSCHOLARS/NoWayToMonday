@@ -13,7 +13,7 @@ public class PCScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = PC.GetComponent<AudioSource>();   
+        audioSource = PC.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class PCScript : MonoBehaviour
             audioSource.UnPause();
             isPCOff = false;
             hadBeenStoppedPC = false;
-        }   
+        }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -47,5 +47,13 @@ public class PCScript : MonoBehaviour
         {
             isNearPC = false;
         }
+    }
+    public void PausePCSound()
+    {
+        audioSource.Pause();
+    }
+    public void UnpausePCSound()
+    {
+        audioSource.UnPause();
     }
 }

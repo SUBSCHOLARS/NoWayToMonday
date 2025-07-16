@@ -4148,7 +4148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8815,7 +8815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 277918057}
+  selectedFlowchart: {fileID: 2141021495}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -30760,6 +30760,8 @@ GameObject:
   - component: {fileID: 2141021534}
   - component: {fileID: 2141021541}
   - component: {fileID: 2141021542}
+  - component: {fileID: 2141021543}
+  - component: {fileID: 2141021544}
   m_Layer: 0
   m_Name: FlowchartKnife
   m_TagString: Untagged
@@ -30824,7 +30826,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2141021506}
   selectedCommands:
-  - {fileID: 2141021541}
+  - {fileID: 2141021544}
   variables:
   - {fileID: 2141021508}
   - {fileID: 2141021507}
@@ -31079,6 +31081,8 @@ MonoBehaviour:
   - {fileID: 2141021511}
   - {fileID: 2141021533}
   - {fileID: 2141021540}
+  - {fileID: 2141021543}
+  - {fileID: 2141021544}
   - {fileID: 2141021539}
   - {fileID: 2141021538}
   - {fileID: 2141021537}
@@ -32047,6 +32051,40 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1307319193}
   methodName: AlteringKitchen
+  delay: 0
+--- !u!114 &2141021543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141021493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 45
+  indentLevel: 0
+  targetObject: {fileID: 944397064}
+  methodName: PausePCSound
+  delay: 0
+--- !u!114 &2141021544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141021493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 0
+  targetObject: {fileID: 97033682}
+  methodName: PauseTVSound
   delay: 0
 --- !u!1 &2146428463
 GameObject:

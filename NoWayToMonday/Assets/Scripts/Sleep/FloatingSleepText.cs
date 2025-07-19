@@ -7,16 +7,21 @@ using DG.Tweening;
 
 public class FloatingSleepText : MonoBehaviour
 {
-    public TextMeshPro floatingText;
+    //public TextMeshPro floatingText;
+    public GameObject floatingSleepIcon;
     public Flowchart SleepFlowChart;
     public float fadeDuration = 1.0f;
     private bool menuTriggered=false;
     private bool isFadingIn=false;
     private bool isFadingOut=false;
     private bool PlayerInRange=false;
+    SpriteRenderer spriteRenderer;
     void Start()
     {
-        floatingText.alpha = 0f;
+        //floatingText.alpha = 0f;
+        spriteRenderer = floatingSleepIcon.GetComponent<SpriteRenderer>();
+        float currentSpriteRendererAlpha = spriteRenderer.color.a;
+        currentSpriteRendererAlpha = 0f;
     }
     void Update()
     {
@@ -31,7 +36,7 @@ public class FloatingSleepText : MonoBehaviour
         PlayerInRange=true;
         if (other.CompareTag("Player"))
         {
-            if (!isFadingIn && floatingText.alpha < 1f)
+            if (!isFadingIn && spriteRenderer.color.a < 1f)
             {
                 FadeIn();
             }
@@ -43,7 +48,7 @@ public class FloatingSleepText : MonoBehaviour
         PlayerInRange=false;
         if (other.CompareTag("Player"))
         {
-            if (!isFadingOut && floatingText.alpha > 0f)
+            if (!isFadingOut && spriteRenderer.color.a > 0f)
             {
                 FadeOut();
             }
@@ -54,7 +59,7 @@ public class FloatingSleepText : MonoBehaviour
     {
         isFadingIn = true;
         isFadingOut = false;
-        floatingText.DOFade(1f, fadeDuration).OnComplete(() =>
+        spriteRenderer.DOFade(0.5f, fadeDuration).OnComplete(() =>
         {
             isFadingIn = false;
         });
@@ -64,7 +69,7 @@ public class FloatingSleepText : MonoBehaviour
     {
         isFadingOut = true;
         isFadingIn = false;
-        floatingText.DOFade(0f, fadeDuration).OnComplete(() =>
+        spriteRenderer.DOFade(0f, fadeDuration).OnComplete(() =>
         {
             isFadingOut = false;
         });

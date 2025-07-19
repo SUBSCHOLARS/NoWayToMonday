@@ -20,7 +20,6 @@ public class TitleFader : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             fadeImage.gameObject.SetActive(true);
-            // Exit the game when Escape is pressed
             fadeImage.DOFade(1f,2f).OnComplete(() =>
             {
                 SceneManager.LoadScene("GameStage");

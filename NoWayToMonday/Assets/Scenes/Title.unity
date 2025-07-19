@@ -156,7 +156,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.26415092, g: 0.18565324, b: 0.18565324, a: 1}
+  m_Color: {r: 0.35702205, g: 0.56217533, b: 0.6698113, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -564,7 +564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115.9, y: -90}
+  m_AnchoredPosition: {x: 99.7, y: -90}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &406973869
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\u3067\u8D77\u304D\u308B"
+  m_text: "\u30A8\u30B9\u30B1\u30FC\u30D7\u30AD\u30FC\u3067\u8D77\u304D\u308B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bc42951fe154451983974da27332f74, type: 2}
   m_sharedMaterial: {fileID: 3363058889422199235, guid: 0bc42951fe154451983974da27332f74, type: 2}
@@ -1157,7 +1157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press space key to wake up
+  m_text: Press escape key to wake up
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bc42951fe154451983974da27332f74, type: 2}
   m_sharedMaterial: {fileID: 3363058889422199235, guid: 0bc42951fe154451983974da27332f74, type: 2}

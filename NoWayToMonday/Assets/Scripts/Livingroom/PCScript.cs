@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PCScript : MonoBehaviour
 {
@@ -9,11 +10,14 @@ public class PCScript : MonoBehaviour
     public static bool hadBeenStoppedPC = false;
     public GameObject PC;
     public GameObject PCScreen;
+    public GameObject pcInteractableIcon;
+    SpriteRenderer spriteRenderer;
     AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         audioSource = PC.GetComponent<AudioSource>();
+        spriteRenderer = pcInteractableIcon.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -39,6 +43,7 @@ public class PCScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isNearPC = true;
+            spriteRenderer.DOFade(0.5f, 2.5f);
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -46,6 +51,7 @@ public class PCScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isNearPC = false;
+            spriteRenderer.DOFade(0f, 2.5f);
         }
     }
     public void PausePCSound()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class RadioScript : MonoBehaviour
@@ -9,10 +10,13 @@ public class RadioScript : MonoBehaviour
     bool isNearRadio = false;
     bool isRadioOff = false;
     public static bool hadBeenStoppedRadio = false;
+    public GameObject radioInteractableIcon;
+    SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer = radioInteractableIcon.GetComponent<SpriteRenderer>();
         PlayRadio();
     }
 
@@ -34,7 +38,8 @@ public class RadioScript : MonoBehaviour
     }
     public void PlayRadio()
     {
-        audioSource.PlayOneShot(radioClips[DayCountManager.DayCount - 1]);
+        audioSource.clip = radioClips[DayCountManager.DayCount - 1];
+        audioSource.Play();
     }
     public void StopRadio()
     {
@@ -56,6 +61,7 @@ public class RadioScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isNearRadio = true;
+            spriteRenderer.DOFade(0.5f, 2.5f);
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -63,6 +69,7 @@ public class RadioScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isNearRadio = false;
+            spriteRenderer.DOFade(0f, 2.5f);
         }
     }
 }

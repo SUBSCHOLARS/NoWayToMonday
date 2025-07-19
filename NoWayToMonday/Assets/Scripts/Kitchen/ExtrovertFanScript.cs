@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class ExtrovertFanScript : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class ExtrovertFanScript : MonoBehaviour
     AudioSource audioSource;
     bool isNearSwitch = false;
     bool isFanStopped = false;
+    public GameObject fanInteractableIcon;
+    SpriteRenderer spriteRenderer;
 
     public static bool hadBeenStoppedFan = false;
     // Start is called before the first frame update
@@ -16,6 +19,7 @@ public class ExtrovertFanScript : MonoBehaviour
     {
         animator = ExtrovertFan.GetComponent<Animator>();
         audioSource = ExtrovertFan.GetComponent<AudioSource>();
+        spriteRenderer = fanInteractableIcon.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,7 @@ public class ExtrovertFanScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isNearSwitch = true;
+            spriteRenderer.DOFade(0.5f, 2.5f);
             Debug.Log(isNearSwitch);
         }
     }
@@ -49,6 +54,7 @@ public class ExtrovertFanScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isNearSwitch = false;
+            spriteRenderer.DOFade(0f, 2.5f);
             Debug.Log(isNearSwitch);
         }
     }

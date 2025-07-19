@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class TVScript : MonoBehaviour
 {
@@ -9,11 +10,14 @@ public class TVScript : MonoBehaviour
     public static bool hadBeenStoppedTV = false;
     public GameObject TV;
     public GameObject Screen;
+    public GameObject tvInteractableIcon;
     AudioSource audioSource;
+    SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
         audioSource = TV.GetComponent<AudioSource>();
+        spriteRenderer = tvInteractableIcon.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -39,6 +43,7 @@ public class TVScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isNearTV = true;
+            spriteRenderer.DOFade(0.5f, 2.5f);
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -46,6 +51,7 @@ public class TVScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             isNearTV = false;
+            spriteRenderer.DOFade(0f, 2.5f);
         }
     }
     public void PauseTVSound()

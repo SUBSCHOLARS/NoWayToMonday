@@ -868,6 +868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bedroom
       objectReference: {fileID: 0}
+    - target: {fileID: 8263659761100278640, guid: f1bd51f7b10da48b49caa347d82f4405, type: 3}
+      propertyPath: m_SortingOrder
+      value: -6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

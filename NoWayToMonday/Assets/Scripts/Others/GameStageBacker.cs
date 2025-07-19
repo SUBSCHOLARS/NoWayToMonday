@@ -8,16 +8,22 @@ public class GameStageBacker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    public void GameStageBack(){
-        DayCountManager.DayCount=1;
+    public void GameStageBack()
+    {
+        DayCountManager.DayCount = 1;
         SceneManager.LoadScene("GameStage");
+    }
+    public void TitleBack()
+    {
+        DayCountManager.DayCount = 1;
+        SceneManager.LoadScene("Title");
     }
 }

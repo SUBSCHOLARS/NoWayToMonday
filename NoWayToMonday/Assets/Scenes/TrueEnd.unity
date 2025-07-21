@@ -684,6 +684,10 @@ GameObject:
   - component: {fileID: 284962013}
   - component: {fileID: 284962020}
   - component: {fileID: 284962021}
+  - component: {fileID: 284962025}
+  - component: {fileID: 284962024}
+  - component: {fileID: 284962023}
+  - component: {fileID: 284962022}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -788,6 +792,10 @@ MonoBehaviour:
   - {fileID: 284962014}
   - {fileID: 284962020}
   - {fileID: 284962013}
+  - {fileID: 284962025}
+  - {fileID: 284962024}
+  - {fileID: 284962023}
+  - {fileID: 284962022}
   - {fileID: 284962021}
   suppressAllAutoSelections: 0
 --- !u!114 &284961990
@@ -817,7 +825,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 284961989}
   selectedCommands:
-  - {fileID: 284962021}
+  - {fileID: 284962013}
   variables: []
   description: 
   stepPause: 0
@@ -1634,6 +1642,105 @@ MonoBehaviour:
   targetObject: {fileID: 1855232660}
   methodName: TitleBack
   delay: 0
+--- !u!114 &284962022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284961986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  storyText: "\u307E\u305F\u3001\u662F\u975E\u30B9\u30AF\u30EA\u30FC\u30F3\u306E\u8FD1\u304F\u306B\u3042\u308B\u300C\u6708\u66DC\u65E5\u304C\u6765\u306A\u3044\u6A29\u5229\u300D\u306E\u5238\u3092\u304A\u6C17\u8EFD\u306B\u304A\u6301\u3061\u304F\u3060\u3055\u3044\uFF01"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &284962023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284961986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  storyText: "\u30D7\u30EC\u30A4\u3057\u3066\u304F\u308C\u3066\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059\uFF01\n\u307E\u3060\u307E\u3060\u30C7\u30E2\u7248\u3067\u3042\u308A\u3001\u3053\u308C\u304B\u3089\u3082\u958B\u767A\u3092\u3057\u3066\u3044\u304F\u4E88\u5B9A\u3067\u3059\u306E\u3067\u3001\u304A\u624B\u5143\u306E\u767D\u7D19\u7B49\u306B\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF\u306A\u3069\u3092\u3057\u3066\u3044\u305F\u3060\u3051\u308B\u3068\u5E78\u3044\u3067\u3059\uFF01\uFF08\u79C1\u304C\u305D\u3070\u306B\u3044\u307E\u3057\u305F\u3089\u53E3\u982D\u3067\u3082\u69CB\u3044\u307E\u305B\u3093\u3002\uFF09"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &284962024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284961986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  storyText: "\u5236\u4F5C\u8005\u3088\u308A"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &284962025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284961986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1.5
+  durationOLD: 0
 --- !u!1 &307408933
 GameObject:
   m_ObjectHideFlags: 0

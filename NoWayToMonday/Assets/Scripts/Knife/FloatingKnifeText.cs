@@ -14,9 +14,12 @@ public class FloatingKnifeText : MonoBehaviour
     private bool isFadingIn = false;
     private bool isFadingOut = false;
     private bool PlayerInRange=false;
+    public GameObject knifeInteractableIcon;
+    SpriteRenderer spriteRenderer;
     void Start()
     {
         floatingText.alpha = 0f;
+        spriteRenderer = knifeInteractableIcon.GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -31,7 +34,7 @@ public class FloatingKnifeText : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerInRange=true;
-            if (!isFadingIn && floatingText.alpha < 1f)
+            if (!isFadingIn)
             {
                 FadeIn();
             }
@@ -43,7 +46,7 @@ public class FloatingKnifeText : MonoBehaviour
         PlayerInRange=false;
         if (other.CompareTag("Player"))
         {
-            if (!isFadingOut && floatingText.alpha > 0f)
+            if (!isFadingOut)
             {
                 FadeOut();
             }
@@ -54,7 +57,7 @@ public class FloatingKnifeText : MonoBehaviour
     {
         isFadingIn = true;
         isFadingOut = false;
-        floatingText.DOFade(1f, fadeDuration).OnComplete(() =>
+        spriteRenderer.DOFade(1f, fadeDuration).OnComplete(() =>
         {
             isFadingIn = false;
         });
@@ -64,7 +67,7 @@ public class FloatingKnifeText : MonoBehaviour
     {
         isFadingOut = true;
         isFadingIn = false;
-        floatingText.DOFade(0f, fadeDuration).OnComplete(() =>
+        spriteRenderer.DOFade(0f, fadeDuration).OnComplete(() =>
         {
             isFadingOut = false;
         });

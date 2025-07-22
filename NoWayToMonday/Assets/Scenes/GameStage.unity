@@ -8824,7 +8824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2141021495}
+  selectedFlowchart: {fileID: 1833071035}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -21893,7 +21893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 55.49758, y: 28.5}
+  scrollPos: {x: -11.8064575, y: -17.770172}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 312.5
@@ -27889,7 +27889,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1833071034}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1833071040}
   variables:
   - {fileID: 1833071053}
   description: 
@@ -31294,7 +31295,7 @@ MonoBehaviour:
   scrollPos: {x: 171.0532, y: 43.70314}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 317
   zoom: 0.58850014
   scrollViewRect:
     serializedVersion: 2
@@ -31302,10 +31303,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2141021494}
-  selectedCommands:
-  - {fileID: 2141021497}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 2141021508}
   - {fileID: 2141021507}
@@ -32533,7 +32532,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &2141021543
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -32550,7 +32549,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &2141021544
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

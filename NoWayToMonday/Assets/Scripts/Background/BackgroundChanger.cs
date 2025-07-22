@@ -49,7 +49,7 @@ public class BackgroundChanger : MonoBehaviour
             Reason2.SetActive(true);
             Debug.Log("Altered!");
         }
-        else if (counter == 2)
+        else if (counter == 3)
         {
             NormalCalendar.SetActive(false);
             AlteredCalendar.SetActive(true);

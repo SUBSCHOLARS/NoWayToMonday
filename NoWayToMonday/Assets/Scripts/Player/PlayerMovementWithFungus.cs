@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -30,28 +31,36 @@ public class PlayerMovementWithFungus : MonoBehaviour
     {
         playerMovement.SetMovement(false);
     }
-    public void EnableMovement(){
+    public void EnableMovement()
+    {
         playerMovement.SetMovement(true);
     }
-    public void AutoMovement(){
+    public void AutoMovement()
+    {
         playerMovement.AutoMovement(true);
     }
-    public void AutoMovementDisable(){
+    public void AutoMovementDisable()
+    {
         playerMovement.AutoMovement(false);
     }
-    public void BackMovement(){
+    public void BackMovement()
+    {
         playerMovement.BackMovement(true);
     }
-    public void BackMovementDisable(){
+    public void BackMovementDisable()
+    {
         playerMovement.BackMovement(false);
     }
-    public void AutoMoveRightDisable(){
+    public void AutoMoveRightDisable()
+    {
         playerMovement.AutoMovementRight(false);
     }
-    public void AutoMoveRightEnable(){
+    public void AutoMoveRightEnable()
+    {
         playerMovement.AutoMovementRight(true);
     }
-    public void DOMoveRightEnable(){
+    public void DOMoveRightEnable()
+    {
         playerMovement.DOMoveRight();
     }
     public void DOMoveRightDisable()
@@ -62,42 +71,53 @@ public class PlayerMovementWithFungus : MonoBehaviour
     {
         KnifeText.alpha = 0;
     }
-    public void SleepActivate(){
+    public void SleepActivate()
+    {
         SleepActivator.SetActive(true);
         SleepText.gameObject.SetActive(true);
     }
-    public void SleepDeactivate(){
+    public void SleepDeactivate()
+    {
         SleepActivator.SetActive(false);
         SleepText.gameObject.SetActive(false);
     }
-    public void BGMStop(){
+    public void BGMStop()
+    {
         BGMs.SetActive(false);
     }
-    public void BGMPlay(){
+    public void BGMPlay()
+    {
         BGMs.SetActive(true);
     }
-    public void ReasonDeactivate(){
+    public void ReasonDeactivate()
+    {
         Reason.SetActive(false);
         Teleporter2.SetActive(true);
     }
-    public void FinalMove(){
+    public void FinalMove()
+    {
         playerFinalMovement.FinalMovement(true);
     }
-    public void BrotherMoveEnableBadEnd(){
+    public void BrotherMoveEnableBadEnd()
+    {
         brotherAutoMovement.BrotherMoving(true);
         Knife.SetActive(true);
     }
-    public void BrotherMoveEnableTrueEnd(){
+    public void BrotherMoveEnableTrueEnd()
+    {
         brotherAutoMovementTrueEnd.BrotherMoving(true);
         TrueKnife.SetActive(true);
     }
-    public void InstantiateBrotherBadEnd(){
+    public void InstantiateBrotherBadEnd()
+    {
         BrotherBadEnd.SetActive(true);
     }
-    public void InstantiateBrotherTrueEnd(){
+    public void InstantiateBrotherTrueEnd()
+    {
         BrotherTrueEnd.SetActive(true);
     }
-    public void TextAppearerDeactivate(){
+    public void TextAppearerDeactivate()
+    {
         TextAppearer.SetActive(false);
     }
     // public void TriggerZone3Deactivate(){
@@ -129,15 +149,18 @@ public class PlayerMovementWithFungus : MonoBehaviour
             MainCamera.transform.position = new Vector3(94.9f, -0.66f, -10f);
         }
     }
-    // Start is called before the first frame update
-    void Start()
+    public void DisableMenuAction(GameObject menu)
     {
-        
+        if (menu != null)
+        {
+            menu.SetActive(false);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    public void EnableMenuAction(GameObject menu)
     {
-        
+        if (menu != null)
+        {
+            menu.SetActive(true);
+        }
     }
 }

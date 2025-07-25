@@ -6,7 +6,7 @@ using DG.Tweening;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 2.0f;
-    [SerializeField] private float insanityRate = 0.0f;
+    [SerializeField] private static float insanityRate = 0.0f;
     private bool canMove = true;
     private bool autoMove = false;
     private bool autoMoveRight = false;

@@ -2278,7 +2278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: "\u30CB\u30E5\u30FC\u30B9\u30AD\u30E3\u30B9\u30BF\u30FC"
-  nameColor: {r: 0, g: 0, b: 0, a: 1}
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -2767,7 +2767,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1635763899}
   selectedCommands:
-  - {fileID: 1635763912}
+  - {fileID: 1635763897}
   variables: []
   description: 
   stepPause: 0

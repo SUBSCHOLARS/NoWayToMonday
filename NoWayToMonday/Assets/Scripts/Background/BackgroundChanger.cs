@@ -58,5 +58,9 @@ public class BackgroundChanger : MonoBehaviour
         {
             Lunastasis.SetActive(true);
         }
+        else if (counter == 8)
+        {
+            Debug.Log("惰眠を貪るエンド");
+        }
     }
 }

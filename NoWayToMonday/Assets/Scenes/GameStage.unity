@@ -4149,7 +4149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6097,7 +6097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &316916024
 Rigidbody2D:
   serializedVersion: 4
@@ -8824,7 +8824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2141021495}
+  selectedFlowchart: {fileID: 1654938294}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -25223,7 +25223,6 @@ GameObject:
   - component: {fileID: 1654938308}
   - component: {fileID: 1654938309}
   - component: {fileID: 1654938310}
-  - component: {fileID: 1654938311}
   - component: {fileID: 1654938313}
   - component: {fileID: 1654938314}
   - component: {fileID: 1654938316}
@@ -25304,8 +25303,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1654938293}
-  selectedCommands: []
+  - {fileID: 1654938298}
+  selectedCommands:
+  - {fileID: 1654938307}
   variables:
   - {fileID: 1654938309}
   description: 
@@ -25418,7 +25418,6 @@ MonoBehaviour:
   - {fileID: 1654938316}
   - {fileID: 1654938315}
   - {fileID: 1654938307}
-  - {fileID: 1654938311}
   - {fileID: 1654938304}
   - {fileID: 1654938303}
   - {fileID: 1654938305}
@@ -25618,23 +25617,6 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1307319193}
   methodName: AlteringRoom
-  delay: 0
---- !u!114 &1654938311
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654938291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 17
-  indentLevel: 0
-  targetObject: {fileID: 1910558882}
-  methodName: SleepDeactivate
   delay: 0
 --- !u!114 &1654938313
 MonoBehaviour:

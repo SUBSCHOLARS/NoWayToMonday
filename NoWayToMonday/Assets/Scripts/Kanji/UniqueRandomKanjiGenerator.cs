@@ -5,6 +5,10 @@ using UnityEngine;
 public class UniqueRandomKanjiGenerator : MonoBehaviour
 {
     public string LastGeneratedKanji;
+    private string[] refinedKanjis= new string[]
+    {
+        "衊", "火", "水", "木", "金", "土", "日", "目", "眼"
+    };
     // Start is called before the first frame update
     void Start()
     {

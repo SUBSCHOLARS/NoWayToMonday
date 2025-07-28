@@ -22319,6 +22319,8 @@ GameObject:
   - component: {fileID: 1643264314}
   - component: {fileID: 1643264315}
   - component: {fileID: 1643264316}
+  - component: {fileID: 1643264318}
+  - component: {fileID: 1643264317}
   m_Layer: 0
   m_Name: Flowchart2
   m_TagString: Untagged
@@ -22414,7 +22416,7 @@ MonoBehaviour:
   scrollPos: {x: -11.8064575, y: -17.770172}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 312.5
+  blockViewHeight: 297
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -22424,10 +22426,13 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1643264163}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1643264170}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
+  - {fileID: 1643264318}
+  - {fileID: 1643264317}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -22532,7 +22537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "\u6628\u65E5\u65E5\u66DC\u306A\u3089\u4ECA\u65E5\u306F{$Specific}\u66DC\u65E5\u3060\u308D\u3002"
+  storyText: "\u6628\u65E5\u65E5\u66DC\u306A\u3089\u4ECA\u65E5\u306F<mspace=1.2em><voffset=1em><size=60%>{$currentReading}</size></voffset>{$currentKanji}</mspace>\u66DC\u65E5\u3060\u308D\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -22668,7 +22673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 0
-  key: Specific
+  key: currentReading
   value: 
 --- !u!114 &1643264177
 MonoBehaviour:
@@ -23226,7 +23231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 0
-  key: RepeatKanji
+  key: repeatKanji
   value: 
 --- !u!114 &1643264203
 MonoBehaviour:
@@ -25545,6 +25550,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flowchart: {fileID: 1643264164}
+--- !u!114 &1643264317
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643264160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: repeatReading
+  value: 
+--- !u!114 &1643264318
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643264160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: currentKanji
+  value: 
 --- !u!1 &1643500432
 GameObject:
   m_ObjectHideFlags: 0

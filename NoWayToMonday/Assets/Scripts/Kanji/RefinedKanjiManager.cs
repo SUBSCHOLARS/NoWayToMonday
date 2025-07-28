@@ -22,10 +22,10 @@ public class RefinedKanjiManager : MonoBehaviour
     };
     private Dictionary<string, string> rareKanjiDictionary = new Dictionary<string, string>
     {
-        { "彁", "◼︎◼︎" },
-        { "墸", "◼︎" },
-        { "妛", "◼︎◼︎◼︎◼︎" },
-        { "蟐", "◼︎◼︎◼︎" }
+        { "彁", " " },
+        { "墸", "  " },
+        { "妛", "    " },
+        { "蟐", "   " }
     };
     public string CurrentKanji { get; private set; }
     public string CurrentReading { get; private set; }
@@ -59,7 +59,7 @@ public class RefinedKanjiManager : MonoBehaviour
         GetRandomRefinedKanji();
         if (!string.IsNullOrEmpty(CurrentKanji))
         {
-            string furiganaText = $"<nobr><mspace=1.2em><voffset=1em><size=60%>{CurrentReading}</size></voffset>{CurrentKanji}</mspace></nobr>";
+            string furiganaText = $"<noparse><mspace=1.2em><voffset=1em><size=60%>{CurrentReading}</size></voffset><pos=0>{CurrentKanji}</mspace></noparse>";
             flowchart.SetStringVariable("Specific", "");
             flowchart.SetStringVariable("Specific", furiganaText);
             randomKanji = CurrentKanji; // Store the current kanji for repeat use

@@ -20431,6 +20431,7 @@ GameObject:
   - component: {fileID: 1434154173}
   - component: {fileID: 1434154172}
   - component: {fileID: 1434154171}
+  - component: {fileID: 1434154174}
   m_Layer: 5
   m_Name: StoryText
   m_TagString: Untagged
@@ -20498,7 +20499,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Story Text
+  m_text: "\u611B<space=-1.00em><voffset=1em><size=50%>\u3042\u3044</size></voffset>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a0bf0c331f3c46bdbab736fc21cb872, type: 2}
   m_sharedMaterial: {fileID: 4028452438625272003, guid: 3a0bf0c331f3c46bdbab736fc21cb872, type: 2}
@@ -20617,6 +20618,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1434154174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434154168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8765114703be401999244387c19feb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmpText: {fileID: 1434154171}
+  text: "<r=\u3042\u3044>\u611B</r>"
+  fixedLineHeight: 0
+  autoMarginTop: 1
 --- !u!1 &1434829295
 GameObject:
   m_ObjectHideFlags: 0
@@ -22371,7 +22388,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 96
+    width: 96.46361
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22413,11 +22430,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -11.8064575, y: -17.770172}
+  scrollPos: {x: -6.700107, y: -17.054636}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 297
-  zoom: 1
+  zoom: 0.96849996
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -22425,9 +22442,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1643264163}
+  - {fileID: 1643264201}
   selectedCommands:
-  - {fileID: 1643264170}
+  - {fileID: 1643264191}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -22537,7 +22554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "\u6628\u65E5\u65E5\u66DC\u306A\u3089\u4ECA\u65E5\u306F<mspace=1.2em><voffset=1em><size=60%>{$currentReading}</size></voffset>{$currentKanji}</mspace>\u66DC\u65E5\u3060\u308D\u3002"
+  storyText: "\u6628\u65E5\u65E5\u66DC\u306A\u3089\u4ECA\u65E5\u306F{$currentKanji}\u66DC\u65E5\u3060\u308D\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -22933,7 +22950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: "{$RepeatKanji}\u66DC\u65E5\u306F\u90F5\u4FBF\u4F11\u307F\u3060\u308D\u3002"
+  storyText: "{$currentKanji}\u66DC\u65E5\u306F\u90F5\u4FBF\u4F11\u307F\u3060\u308D\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -23043,7 +23060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 23
   indentLevel: 0
-  storyText: "\u3044\u3084\u3044\u3084\u6628\u65E5{$RepeatKanji}\u66DC\u306A\u3089\u4ECA\u65E5\u306F{$Specific}\u66DC\u65E5\u3060\u308D\u3002"
+  storyText: "\u3044\u3084\u3044\u3084\u6628\u65E5{$repeatKanji}\u66DC\u306A\u3089\u4ECA\u65E5\u306F{$currentKanji}\u66DC\u65E5\u3060\u308D\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -23070,7 +23087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
-  storyText: "\u3044\u3084\u6628\u65E5{$RepeatKanji}\u66DC\u306A\u3089\u4ECA\u65E5\u6708\u66DC\u65E5\u304B\u306A\u3042\u3063\u3066"
+  storyText: "\u3044\u3084\u6628\u65E5{$repeatKanji}\u66DC\u306A\u3089\u4ECA\u65E5\u6708\u66DC\u65E5\u304B\u306A\u3042\u3063\u3066"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -23187,7 +23204,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.2984
     y: 69.06633
-    width: 98
+    width: 98.01239
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23630,7 +23647,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.4758
     y: 118.270164
-    width: 98
+    width: 99.04492
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24041,7 +24058,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.15332
     y: 68.875015
-    width: 106
+    width: 106.78885
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24452,7 +24469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 283.67346
     y: 117.2621
-    width: 90
+    width: 90.26846
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24863,7 +24880,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 175.30646
     y: 116.270164
-    width: 97
+    width: 98.01239
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24971,7 +24988,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 86.39516
     y: 173.0484
-    width: 109
+    width: 109.88643
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

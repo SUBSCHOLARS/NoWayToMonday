@@ -8,6 +8,8 @@ public class RefinedKanjiManager : MonoBehaviour
     public Flowchart flowchart;
     private string savedKanji;
     private string savedReading;
+    int sizePercentage;
+    float horizontalOffset;
     private Dictionary<string, string> kanjiDictionary = new Dictionary<string, string>
     {
         { "衊", "ばつ" },
@@ -53,6 +55,25 @@ public class RefinedKanjiManager : MonoBehaviour
         string randomValue = sourceDictionary[randomKey];
         CurrentKanji = randomKey;
         CurrentReading = randomValue;
+        switch (CurrentReading.Length)
+        {
+            case 1:
+                sizePercentage = 75;
+                horizontalOffset = -0.9f;
+                break;
+            case 2:
+                sizePercentage = 50;
+                horizontalOffset = -1.0f;
+                break;
+            case 3:
+                sizePercentage = 40;
+                horizontalOffset = -1.15f;
+                break;
+            default:
+                sizePercentage = 30;
+                horizontalOffset = -1.3f;
+                break;
+        }
         sourceDictionary.Remove(randomKey); // Remove the selected kanji to ensure uniqueness
     }
     public void SetRandomKanjiForSpecificSay()
@@ -60,7 +81,7 @@ public class RefinedKanjiManager : MonoBehaviour
         GetRandomRefinedKanji();
         if (!string.IsNullOrEmpty(CurrentKanji))
         {
-            string furiganaText = $"<noparse><mspace=1.2em><voffset=1em><size=60%>{CurrentReading}</size></voffset><pos=0>{CurrentKanji}</mspace></noparse>";
+            string furiganaText = $"{CurrentKanji}<space={horizontalOffset}em><voffset=1em><size={sizePercentage}%>{CurrentReading}</size></voffset>";
             flowchart.SetStringVariable("currentKanji", furiganaText);
             flowchart.SetStringVariable("currentReading", CurrentReading);
             savedKanji = furiganaText; // Store the current kanji for repeat use

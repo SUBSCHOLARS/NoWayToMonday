@@ -56,9 +56,10 @@ public class RefinedKanjiManager : MonoBehaviour
     }
     public void SetRandomKanjiForSpecificSay()
     {
-        if(!string.IsNullOrEmpty(CurrentKanji))
+        GetRandomRefinedKanji();
+        if (!string.IsNullOrEmpty(CurrentKanji))
         {
-            string furiganaText=$"<voffset=0.9em><size=60%>{CurrentReading}</size></voffset>{CurrentKanji}";
+            string furiganaText = $"<mspace=1.2em><voffset=1em><size=60%>{CurrentReading}</size></voffset><pos=0>{CurrentKanji}</mspace>";
             flowchart.SetStringVariable("Specific", "");
             flowchart.SetStringVariable("Specific", furiganaText);
             randomKanji = CurrentKanji; // Store the current kanji for repeat use

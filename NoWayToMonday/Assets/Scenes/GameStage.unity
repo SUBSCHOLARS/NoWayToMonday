@@ -4446,6 +4446,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3806867144092326538, guid: 8db0053268ce34eddbc3686feda77c98, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6608875531714412530, guid: 8db0053268ce34eddbc3686feda77c98, type: 3}
       propertyPath: m_Name
       value: AbnormalKitchen
@@ -36621,6 +36625,10 @@ PrefabInstance:
       propertyPath: fanInteractableIcon
       value: 
       objectReference: {fileID: 734816504}
+    - target: {fileID: 3806867144092326538, guid: 8db0053268ce34eddbc3686feda77c98, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9
+      objectReference: {fileID: 0}
     - target: {fileID: 4714222117660025751, guid: 8db0053268ce34eddbc3686feda77c98, type: 3}
       propertyPath: PodFlowchart
       value: 

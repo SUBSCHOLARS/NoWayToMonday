@@ -7,6 +7,7 @@ public class KnifeHandler : MonoBehaviour
 {
     public Flowchart KnifeFlowchart;
     public Flowchart SleepFlowchart;
+    public Flowchart flowchart;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class KnifeHandler : MonoBehaviour
         DayCountManager.DayCount++;
         KnifeFlowchart.SetIntegerVariable("DayCount",DayCountManager.DayCount);
         SleepFlowchart.SetIntegerVariable("DayCount",DayCountManager.DayCount);
+        flowchart.SetIntegerVariable("DayCount",DayCountManager.DayCount);
         Debug.Log("count up:");
         Debug.Log(DayCountManager.DayCount);
     }

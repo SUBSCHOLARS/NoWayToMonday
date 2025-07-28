@@ -11,6 +11,10 @@ public class RefinedKanjiManager : MonoBehaviour
     {
         "衊", "寢", "蔽", "瞵", "錆", "靈", "蕐", "翳", "蠱","瀛"
     };
+    private string[] rareKanjis = new string[]
+    {
+        "彁","墸","妛","蟐"
+    };
     public string GetRandomRefinedKanji()
     {
         int randomIndex = Random.Range(0, refinedKanjis.Length);

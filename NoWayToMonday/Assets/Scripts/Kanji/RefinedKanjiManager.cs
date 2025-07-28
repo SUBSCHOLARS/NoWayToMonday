@@ -84,6 +84,7 @@ public class RefinedKanjiManager : MonoBehaviour
             string furiganaText = $"{CurrentKanji}<space={horizontalOffset}em><voffset=1em><size={sizePercentage}%>{CurrentReading}</size></voffset>";
             flowchart.SetStringVariable("currentKanji", furiganaText);
             flowchart.SetStringVariable("currentReading", CurrentReading);
+            flowchart.SetStringVariable("pureCurrentKanji", CurrentKanji);
             savedKanji = furiganaText; // Store the current kanji for repeat use
             savedReading = CurrentReading; // Store the current reading for repeat use
         }

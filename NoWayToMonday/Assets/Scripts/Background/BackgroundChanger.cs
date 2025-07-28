@@ -15,6 +15,7 @@ public class BackgroundChanger : MonoBehaviour
     public GameObject AlteredCalendar;
     public GameObject Lunastasis;
     public Flowchart SleepFlowchart;
+    public Flowchart Monologue;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +48,7 @@ public class BackgroundChanger : MonoBehaviour
             AlteredRoom.SetActive(true);
             Destroy(Brother);
             Reason2.SetActive(true);
+            Monologue.ExecuteBlock("Monologue");
             Debug.Log("Altered!");
         }
         else if (counter == 3)

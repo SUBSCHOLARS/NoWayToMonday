@@ -26,6 +26,8 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public AudioClip Noise;
     public GameObject MainCamera;
     public GameObject Player;
+    public GameObject BrotherNormal;
+    public GameObject BrotherFlower;
     private AudioSource audioSource;
     public void DisableMovement()
     {

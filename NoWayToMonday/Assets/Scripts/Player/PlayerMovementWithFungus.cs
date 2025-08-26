@@ -131,6 +131,10 @@ public class PlayerMovementWithFungus : MonoBehaviour
         audioSource.PlayOneShot(Noise);
         SceneManager.LoadSceneAsync("KnifeBadEnd");
     }
+    public void NormalBrotherActivate()
+    {
+        BrotherNormal.SetActive(true);
+    }
     public void CameraMove()
     {
         float playerPos = Player.transform.position.x;

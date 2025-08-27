@@ -6257,7 +6257,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 335181005}
-  - component: {fileID: 335181007}
   - component: {fileID: 335181006}
   - component: {fileID: 335181008}
   m_Layer: 0
@@ -6327,21 +6326,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 11.651802}
   m_EdgeRadius: 0
---- !u!114 &335181007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335181004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7c8db35e93248279e36efef31132cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 335181005}
-  parentRoom: {fileID: 0}
-  connectedDoor: {fileID: 0}
 --- !u!50 &335181008
 Rigidbody2D:
   serializedVersion: 4
@@ -8302,7 +8286,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8428,19 +8411,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!114 &519420035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ab0443797987402fba8fb3608f2e097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smoothSpeed: 5
 --- !u!1 &545543066
 GameObject:
   m_ObjectHideFlags: 1
@@ -10560,7 +10530,6 @@ GameObject:
   - component: {fileID: 775327696}
   - component: {fileID: 775327698}
   - component: {fileID: 775327697}
-  - component: {fileID: 775327699}
   m_Layer: 0
   m_Name: LeftConnection
   m_TagString: Untagged
@@ -10655,21 +10624,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &775327699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 775327695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7c8db35e93248279e36efef31132cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 775327696}
-  parentRoom: {fileID: 0}
-  connectedDoor: {fileID: 0}
 --- !u!1 &777990292
 GameObject:
   m_ObjectHideFlags: 0
@@ -11225,7 +11179,6 @@ GameObject:
   - component: {fileID: 844465548}
   - component: {fileID: 844465550}
   - component: {fileID: 844465549}
-  - component: {fileID: 844465551}
   m_Layer: 0
   m_Name: RightConnection
   m_TagString: Untagged
@@ -11320,21 +11273,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 12.919464}
   m_EdgeRadius: 0
---- !u!114 &844465551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844465547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7c8db35e93248279e36efef31132cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 844465548}
-  parentRoom: {fileID: 0}
-  connectedDoor: {fileID: 0}
 --- !u!1 &846972015
 GameObject:
   m_ObjectHideFlags: 0
@@ -13198,7 +13136,6 @@ GameObject:
   - component: {fileID: 1134504892}
   - component: {fileID: 1134504894}
   - component: {fileID: 1134504893}
-  - component: {fileID: 1134504895}
   m_Layer: 0
   m_Name: RightConnection
   m_TagString: Untagged
@@ -13293,21 +13230,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 13.026848}
   m_EdgeRadius: 0
---- !u!114 &1134504895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134504891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7c8db35e93248279e36efef31132cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1134504892}
-  parentRoom: {fileID: 0}
-  connectedDoor: {fileID: 0}
 --- !u!1 &1144175590
 GameObject:
   m_ObjectHideFlags: 0
@@ -31582,7 +31504,6 @@ GameObject:
   - component: {fileID: 2013836749}
   - component: {fileID: 2013836751}
   - component: {fileID: 2013836750}
-  - component: {fileID: 2013836752}
   m_Layer: 0
   m_Name: LeftConnection
   m_TagString: Untagged
@@ -31677,21 +31598,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2013836752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013836748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7c8db35e93248279e36efef31132cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 2013836749}
-  parentRoom: {fileID: 0}
-  connectedDoor: {fileID: 0}
 --- !u!1 &2043359744
 GameObject:
   m_ObjectHideFlags: 0
@@ -31701,7 +31607,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2043359745}
-  - component: {fileID: 2043359747}
   - component: {fileID: 2043359746}
   - component: {fileID: 2043359748}
   m_Layer: 0
@@ -31771,21 +31676,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 11.908928}
   m_EdgeRadius: 0
---- !u!114 &2043359747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043359744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7c8db35e93248279e36efef31132cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 775327696}
-  parentRoom: {fileID: 0}
-  connectedDoor: {fileID: 0}
 --- !u!50 &2043359748
 Rigidbody2D:
   serializedVersion: 4
@@ -38362,7 +38252,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 582087791326521167}
-  - component: {fileID: 2873529855973327705}
   m_Layer: 0
   m_Name: LivingroomAbn
   m_TagString: Untagged
@@ -38370,23 +38259,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2873529855973327705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2873529855973327704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 269d6898733234253a84ebcbfb71189f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entryDoor: {fileID: 1134504895}
-  exitDoor: {fileID: 2013836752}
-  cameraPoint: {fileID: 1471352891}
-  previousRoom: {fileID: 0}
-  nextRoom: {fileID: 0}
 --- !u!4 &2876416853083613781
 Transform:
   m_ObjectHideFlags: 0
@@ -40007,9 +39879,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 989174105313279419, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3815448241276708230}
-    - targetCorrespondingSourceObject: {fileID: 989174105313279419, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3815448241276708236}
   m_SourcePrefab: {fileID: 100100000, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
 --- !u!95 &3815448241276708226 stripped
 Animator:
@@ -40053,19 +39922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fdcf9db64db4bd385a4e6ec55d06ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3815448241276708236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594145122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b35fc63aa8744260b06e3a3c78b1496, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canTeleport: 1
 --- !u!50 &3817765352105981146
 Rigidbody2D:
   serializedVersion: 4
@@ -41902,7 +41758,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3187463842183848434}
-  - component: {fileID: 5328412294809789140}
   m_Layer: 0
   m_Name: BedroomAbn
   m_TagString: Untagged
@@ -41910,23 +41765,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5328412294809789140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328412294809789139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 269d6898733234253a84ebcbfb71189f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entryDoor: {fileID: 775327699}
-  exitDoor: {fileID: 844465551}
-  cameraPoint: {fileID: 1630508829}
-  previousRoom: {fileID: 0}
-  nextRoom: {fileID: 0}
 --- !u!1 &5363303380128070763
 GameObject:
   m_ObjectHideFlags: 0
@@ -44043,7 +43881,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8704305678675575441}
-  - component: {fileID: 8704305678675575442}
   m_Layer: 0
   m_Name: KitchenAbn
   m_TagString: Untagged
@@ -46175,23 +46012,6 @@ Transform:
   - {fileID: 2069910507769560917}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8704305678675575442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6694303251386549359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 269d6898733234253a84ebcbfb71189f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entryDoor: {fileID: 2043359747}
-  exitDoor: {fileID: 335181007}
-  cameraPoint: {fileID: 2069910507769560917}
-  previousRoom: {fileID: 0}
-  nextRoom: {fileID: 0}
 --- !u!4 &8724036515941708176
 Transform:
   m_ObjectHideFlags: 0

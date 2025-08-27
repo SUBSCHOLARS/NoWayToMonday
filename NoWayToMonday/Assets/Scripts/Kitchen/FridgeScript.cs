@@ -28,11 +28,7 @@ public class FridgeScript : MonoBehaviour
         if (isNearFridge && !isMove && Input.GetMouseButtonDown(0))
         {
             isMove = true;
-            mainCamera.transform.position = new Vector3(55f,25f,-10f);
-        }
-        else if (isNearFridge && Input.GetMouseButtonDown(0))
-        {
-            
+            mainCamera.transform.position = new Vector3(transform.position.x,25f,-10f);
         }
     }
     void OnTriggerEnter2D(Collider2D other)
@@ -41,6 +37,7 @@ public class FridgeScript : MonoBehaviour
         {
             isNearFridge = true;
             spriteRenderer.DOFade(0.5f, 2.5f);
+            Debug.Log("Triggered!");
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -49,6 +46,7 @@ public class FridgeScript : MonoBehaviour
         {
             isNearFridge = false;
             spriteRenderer.DOFade(0f, 2.5f);
+            Debug.Log("Untriggered!");
         }
     }
 }

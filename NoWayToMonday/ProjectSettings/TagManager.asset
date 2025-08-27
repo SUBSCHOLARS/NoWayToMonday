@@ -10,6 +10,7 @@ TagManager:
   - Reason
   - PlayerStopper
   - DoorFront
+  - Flower
   layers:
   - Default
   - TransparentFX

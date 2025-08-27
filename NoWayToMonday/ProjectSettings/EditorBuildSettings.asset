@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DemoEndScene.unity
     guid: 1da53e5c92aa64e1ea410a5e66c6c7f5
+  - enabled: 1
+    path: Assets/Scenes/BlossoDay.unity
+    guid: 80feeba73ed244f67a0c5238c2eb8511
   m_configObjects: {}

@@ -24,7 +24,7 @@ public class FridgeScript : MonoBehaviour
         if (isNearFridge && !isMove && Input.GetKeyDown(KeyCode.Space))
         {
             isMove = true;
-            mainCamera.transform.position = new Vector3(transform.position.x,25f,-10f);
+            mainCamera.transform.position = new Vector3(transform.position.x+6,25f,-10f);
         }
     }
     void OnTriggerEnter2D(Collider2D other)

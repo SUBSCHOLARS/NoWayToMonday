@@ -24,7 +24,7 @@ public class BlossoDayRoomsSetting : MonoBehaviour
         {
             GameObject selectedRoomPrefab = roomPrefabs[Random.Range(0, roomPrefabs.Length)];
             // 部屋を生成（位置や繋ぎ方はゲームの仕様に合わせて調整）
-            Vector3 spawnPos = new Vector3(62.5f + i * -30, 0, 0); // 仮の位置
+            Vector3 spawnPos = new Vector3(63f + i * -45, 0, 0); // 仮の位置
             GameObject newRoom = Instantiate(selectedRoomPrefab, spawnPos, Quaternion.identity);
 
             // 3. 生成した部屋の異常発生ポイントを処理する

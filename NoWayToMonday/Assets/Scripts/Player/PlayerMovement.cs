@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed = 2.0f;
     [SerializeField] private static float insanityLevel = 0.0f;
     private bool canMove = true;
+    private bool isExploring = false;
     private bool autoMove = false;
     private bool autoMoveRight = false;
     private bool backMove = false;
@@ -29,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PodScript.isPodTaken &&( (Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
+        if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
         {
             Vector3 scale = transform.localScale;
             scale.x = 1; // Flip the sprite to face right
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsWalking", true);
             transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
         }
-        if (!PodScript.isPodTaken&&((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove)))
+        if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove)))
         {
             Vector3 scale = transform.localScale;
             scale.x = -1;
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
             transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
         }
 
-        if (PodScript.isPodTaken &&( (Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
+        if (PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
         {
             Vector3 scale = transform.localScale;
             scale.x = 1; // Flip the sprite to face right
@@ -54,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsWalkingWithPod", true);
             transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
         }
-        if (PodScript.isPodTaken&&((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove)))
+        if (PodScript.isPodTaken && ((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove)))
         {
             Vector3 scale = transform.localScale;
             scale.x = -1;
@@ -79,13 +80,13 @@ public class PlayerMovement : MonoBehaviour
             this.gameObject.transform.position = new Vector3(106.15f, -7.2f, 0f);
         }
         if (autoMove)
-            {
-                animator.SetBool("IsWalking", true);
-                Vector3 scale = transform.localScale;
-                scale.x = -1;
-                transform.localScale = scale;
-                transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
-            }
+        {
+            animator.SetBool("IsWalking", true);
+            Vector3 scale = transform.localScale;
+            scale.x = -1;
+            transform.localScale = scale;
+            transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+        }
         if (autoMoveRight)
         {
             animator.SetBool("IsWalking", true);
@@ -98,6 +99,10 @@ public class PlayerMovement : MonoBehaviour
             scale.x = -1;
             transform.localScale = scale;
             transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+        }
+        if (isExploring)
+        {
+            insanityLevel += 0.01f * Time.deltaTime;
         }
     }
     public void SetMovement(bool enable)
@@ -159,7 +164,15 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("DoorFront"))
         {
             animator.SetBool("IsWalking", false);
-            transform.position = new Vector3(106.15f,-7.7f,0f);
+            transform.position = new Vector3(106.15f, -7.7f, 0f);
         }
+    }
+    public void ExploringStart(bool exploring)
+    {
+        isExploring = exploring;
+    }
+    public void ExploringFinish()
+    {
+        isExploring = false;
     }
 }

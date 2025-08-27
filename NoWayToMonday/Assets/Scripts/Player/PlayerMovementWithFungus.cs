@@ -169,4 +169,12 @@ public class PlayerMovementWithFungus : MonoBehaviour
             menu.SetActive(true);
         }
     }
+    public void ExploringStartSet()
+    {
+        playerMovement.ExploringStart(true);
+    }
+    public void ExploringFinishSet()
+    {
+        playerMovement.ExploringFinish();
+    }
 }

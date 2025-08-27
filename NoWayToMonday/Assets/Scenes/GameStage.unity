@@ -21309,6 +21309,7 @@ GameObject:
   - component: {fileID: 1643264401}
   - component: {fileID: 1643264403}
   - component: {fileID: 1643264404}
+  - component: {fileID: 1643264405}
   m_Layer: 0
   m_Name: Flowchart2
   m_TagString: Untagged
@@ -21428,9 +21429,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1643264377}
+  - {fileID: 1643264349}
   selectedCommands:
-  - {fileID: 1643264394}
+  - {fileID: 1643264348}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -25970,7 +25971,7 @@ MonoBehaviour:
   itemId: 195
   indentLevel: 0
   targetObject: {fileID: 1511723585}
-  methodName: FadeToBlackThenToClearWithSound
+  methodName: FadeToBlackThenToClearWithSoundBloosoDay
   delay: 0
 --- !u!114 &1643264349
 MonoBehaviour:
@@ -26000,6 +26001,7 @@ MonoBehaviour:
   - {fileID: 1643264348}
   - {fileID: 1643264347}
   - {fileID: 1643264346}
+  - {fileID: 1643264405}
   - {fileID: 1643264345}
   suppressAllAutoSelections: 0
 --- !u!114 &1643264350
@@ -30052,6 +30054,23 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1643264405
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643264160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 249
+  indentLevel: 0
+  targetObject: {fileID: 1929079718}
+  methodName: ExploringStartSet
+  delay: 0
 --- !u!1 &1643500432
 GameObject:
   m_ObjectHideFlags: 0
@@ -30251,6 +30270,7 @@ GameObject:
   - component: {fileID: 1654938314}
   - component: {fileID: 1654938316}
   - component: {fileID: 1654938315}
+  - component: {fileID: 1654938317}
   m_Layer: 0
   m_Name: FlowchartSleep
   m_TagString: Untagged
@@ -30328,7 +30348,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1654938298}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1654938317}
   variables:
   - {fileID: 1654938309}
   description: 
@@ -30441,6 +30462,7 @@ MonoBehaviour:
   - {fileID: 1654938316}
   - {fileID: 1654938315}
   - {fileID: 1654938307}
+  - {fileID: 1654938317}
   - {fileID: 1654938304}
   - {fileID: 1654938303}
   - {fileID: 1654938305}
@@ -30710,6 +30732,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 641629274}
   methodName: StopRadio
+  delay: 0
+--- !u!114 &1654938317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654938291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 23
+  indentLevel: 0
+  targetObject: {fileID: 1929079718}
+  methodName: ExploringFinishSet
   delay: 0
 --- !u!1 &1661838220
 GameObject:

@@ -6,8 +6,6 @@ using DG.Tweening;
 
 public class FridgeScript : MonoBehaviour
 {
-    Animator animator;
-    AudioSource audioSource;
     bool isNearFridge = false;
     bool isMove = false;
     public GameObject faucetInteractableIcon;
@@ -17,8 +15,6 @@ public class FridgeScript : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
-        animator = this.gameObject.GetComponent<Animator>();
-        audioSource = this.gameObject.GetComponent<AudioSource>();
         spriteRenderer = faucetInteractableIcon.GetComponent<SpriteRenderer>();
     }
 

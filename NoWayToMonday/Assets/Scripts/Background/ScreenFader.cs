@@ -43,7 +43,7 @@ public class ScreenFader : MonoBehaviour
             fadeImage.DOFade(0, clearFadeDuration).SetEase(Ease.InOutQuad);
         });
     }
-    public void FadeToBlackThenToClearWithSoundBloosoDay()
+    public void FadeToBlackThenToClearWithSoundAbnormalDay()
     {
         fadeImage.DOFade(1, fadeDuration).SetEase(Ease.InOutQuad).OnComplete(() =>
         {

@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AbnTeleporter5 : MonoBehaviour
+{
+    public GameObject Player;
+    public GameObject Camera;
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Player.SendMessage("ThroughDoor");
+            Player.transform.position = new Vector3(6f, -7.7f, 0);
+            Camera.transform.position = new Vector3(16.5f, -0.7f, -10f);
+        }
+    }
+}

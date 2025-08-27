@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -72,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsWalking", false);
             animator.SetBool("IsWalkingWithPod", false);
         }
-        if (this.gameObject.transform.position.x < -13f)
+        if (this.gameObject.transform.position.x < -13f&&SceneManager.GetActiveScene().name=="GameStage")
         {
             this.gameObject.transform.position = new Vector3(-13f, -7.7f, 0f);
         }

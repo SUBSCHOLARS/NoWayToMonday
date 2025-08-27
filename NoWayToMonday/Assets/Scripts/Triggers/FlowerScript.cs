@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlowerScript : MonoBehaviour
 {
     AudioSource audioSource;
+    bool isNear = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +18,24 @@ public class FlowerScript : MonoBehaviour
 
     }
     void OnMouseDown()
+    {if (isNear)
+        {
+            audioSource.PlayOneShot(audioSource.clip);
+            Destroy(gameObject);
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        audioSource.PlayOneShot(audioSource.clip);
-        Destroy(gameObject);
+        if (collision.gameObject.tag == "Player")
+        {
+            isNear = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            isNear = false;
+        }
     }
 }

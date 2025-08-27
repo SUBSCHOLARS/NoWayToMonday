@@ -9,12 +9,12 @@ public class FridgeScript : MonoBehaviour
     bool isNearFridge = false;
     bool isMove = false;
     public GameObject faucetInteractableIcon;
-    Camera mainCamera;
+    public GameObject mainCamera;
     SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        mainCamera = Camera.main;
+        Debug.Log("Camera set!");
         spriteRenderer = faucetInteractableIcon.GetComponent<SpriteRenderer>();
     }
 

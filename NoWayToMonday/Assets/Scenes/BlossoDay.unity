@@ -39012,7 +39012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfde2f9ad60d34663ad7e44b4f96c984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  faucetInteractableIcon: {fileID: 3505405541637826743}
+  fridgeInteractableIcon: {fileID: 3505405541637826743}
   mainCamera: {fileID: 519420028}
 --- !u!212 &4306605071671466744
 SpriteRenderer:

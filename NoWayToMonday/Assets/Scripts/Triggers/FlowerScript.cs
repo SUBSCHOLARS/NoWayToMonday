@@ -23,17 +23,14 @@ public class FlowerScript : MonoBehaviour
     }
     void OnMouseDown()
     {
-        if (isNear)
-        {
-            audioSource.PlayOneShot(audioSource.clip);
-            Destroy(gameObject);
-        }
+        
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             isNear = true;
+            Debug.Log("Triggered!");
         }
     }
     void OnTriggerExit2D(Collider2D collision)
@@ -41,6 +38,7 @@ public class FlowerScript : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             isNear = false;
+            Debug.Log("Exit!");
         }
     }
 }

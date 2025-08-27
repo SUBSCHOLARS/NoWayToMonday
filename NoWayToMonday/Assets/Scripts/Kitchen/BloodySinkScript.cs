@@ -21,7 +21,7 @@ public class BloodySinkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isNearFaucet && !isDripStopped && Input.GetMouseButtonDown(0))
+        if (isNearFaucet && !isDripStopped && Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("BleedingStop");
             audioSource.PlayOneShot(stopSound);

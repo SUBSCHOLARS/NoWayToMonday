@@ -15,10 +15,15 @@ public class FlowerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (isNear && Input.GetKeyDown(KeyCode.Space))
+        {
+            audioSource.PlayOneShot(audioSource.clip);
+            Destroy(gameObject);
+        }
     }
     void OnMouseDown()
-    {if (isNear)
+    {
+        if (isNear)
         {
             audioSource.PlayOneShot(audioSource.clip);
             Destroy(gameObject);

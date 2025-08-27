@@ -177,4 +177,13 @@ public class PlayerMovementWithFungus : MonoBehaviour
     {
         playerMovement.ExploringFinish();
     }
+    public void LoadGameStage()
+    {
+        SceneManager.LoadSceneAsync("GameStage");
+    }
+    public void FlowerBrotherActivate()
+    {
+        BrotherNormal.SetActive(false);
+        BrotherFlower.SetActive(true);
+    }
 }

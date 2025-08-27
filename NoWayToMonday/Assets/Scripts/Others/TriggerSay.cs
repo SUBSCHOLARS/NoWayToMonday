@@ -23,11 +23,26 @@ public class TriggerSay : MonoBehaviour
         {
             switch (DayCountManager.DayCount)
             {
+                case 1:
+                    flowchart.ExecuteBlock("DayOne");
+                    break;
+                case 2:
+                    flowchart.ExecuteBlock("DayTwo");
+                    break;
+                case 3:
+                    flowchart.ExecuteBlock("DayThree");
+                    break;
+                case 4:
+                    flowchart.ExecuteBlock("DayFour");
+                    break;
+                case 5:
+                    flowchart.ExecuteBlock("DayFive");
+                    break;
+                case 6:
+                    flowchart.ExecuteBlock("DaySix");
+                    break;
                 case 7:
                     flowchart.ExecuteBlock("DaySeven");
-                    break;
-                default:
-                    flowchart.ExecuteBlock("DayOne");
                     break;
             }
         }

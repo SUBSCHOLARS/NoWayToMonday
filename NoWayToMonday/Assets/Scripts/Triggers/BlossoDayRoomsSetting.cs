@@ -1,88 +1,64 @@
-using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
-using Fungus;
 using UnityEngine;
 
-public class BlossoDayRoomsSetting : MonoBehaviour
+/// <summary>
+/// ステージの部屋を安全に生成し、接続する管理者。
+/// </summary>
+public class StageManager : MonoBehaviour
 {
-    [Header("ステージ設定")]
-    public GameObject[] roomPrefabs; // 部屋のテンプレートプレハブを複数登録
-    public GameObject[] corridorPrefabs; // 部屋を繋ぐ廊下など
-    int randomRoomNum;
-    float anomalyChance;
-    public Flowchart flowchart;
-    [Header("テレポート設定")]
-    public GameObject teleporterPrefab;
-    public GameObject teleporterCameraPrefab;
+    [Header("部屋のプレハブ")]
+    public GameObject[] randomRoomPrefabs;
+    public GameObject bedroomPrefab; // 固定の最後の部屋
 
-    // Start is called before the first frame update
+    [Header("ステージ設定")]
+    public int numberOfRandomRooms = 5;
+    public float roomSpacing = 45f;
+    public Vector3 startPosition = new Vector3(63f, 0, 0);
+
     void Start()
     {
-        // 「一つ前に生成した部屋」の右側（出口）の接続ポイントを覚えておくための変数
-        Transform previousLeftConnection = null;
-        Transform previousRoomCameraPoint = null;
-        if (PlayerMovement.insanityLevel <= 50f)
-        {
-            randomRoomNum = Random.Range(3, 6);
-            anomalyChance = Random.Range(0.2f, 0.5f);
-        }
-        for (int i = 0; i < randomRoomNum; i++)
-        {
-            GameObject selectedRoomPrefab = roomPrefabs[Random.Range(0, roomPrefabs.Length)];
-            // 部屋を生成（位置や繋ぎ方はゲームの仕様に合わせて調整）
-            Vector3 spawnPos = new Vector3(63f + i * -45, 0, 0); // 仮の位置
-            GameObject newRoom = Instantiate(selectedRoomPrefab, spawnPos, Quaternion.identity);
-
-            Transform currentRoomLeftConnection = FindConnectionPoint(newRoom, "LeftConnection");
-            Transform currentRoomRightConnection = FindConnectionPoint(newRoom, "RightConnection");
-            Transform currentRoomCameraPoint = FindConnectionPoint(newRoom, "CameraPoint");
-
-            if (i > 0 && previousLeftConnection != null && currentRoomLeftConnection != null)
-            {
-                GameObject teleporterA_GO = Instantiate(teleporterPrefab, previousLeftConnection.position, Quaternion.identity, previousLeftConnection);
-                RoomTeleporter roomTeleporterA = teleporterA_GO.GetComponent<RoomTeleporter>();
-                //GameObject teleporterCameraA_GO = Instantiate(teleporterCameraPrefab, previousRoomCameraPoint.position, Quaternion.identity, previousRoomCameraPoint);
-
-                GameObject teleporter_B_GO = Instantiate(teleporterPrefab, currentRoomRightConnection.position, Quaternion.identity, currentRoomRightConnection);
-                RoomTeleporter roomTeleporterB = teleporter_B_GO.GetComponent<RoomTeleporter>();
-                //GameObject teleporterCameraB_GO = Instantiate(teleporterCameraPrefab, currentRoomCameraPoint.position, Quaternion.identity, currentRoomCameraPoint);
-
-                roomTeleporterA.destination = roomTeleporterB.transform;
-                roomTeleporterA.cameraDestination = currentRoomCameraPoint.transform;
-
-                roomTeleporterB.destination = roomTeleporterA.transform;
-                roomTeleporterB.cameraDestination = previousRoomCameraPoint.transform;
-
-                // roomTeleporterA.cameraDestination = currentRoomCameraPoint;
-                // roomTeleporterB.cameraDestination = previousRoomCameraPoint;
-            }
-            previousLeftConnection = currentRoomLeftConnection;
-            previousRoomCameraPoint = currentRoomCameraPoint;
-
-            // 3. 生成した部屋の異常発生ポイントを処理する
-            ActivateAnomaliesInRoom(newRoom, anomalyChance);
-        }
-    }
-    Transform FindConnectionPoint(GameObject room, string pointName)
-    {
-        Transform point = room.transform.Find(pointName);
-        if (pointName == null)
-        {
-            Debug.LogError("接続ポイントが見つかりません！");
-        }
-        return point;
+        GenerateStage();
     }
 
-    public static void ActivateAnomaliesInRoom(GameObject roomObject, float chance)
+    void GenerateStage()
     {
-        AnomalyActivator[] spawnPoints = roomObject.GetComponentsInChildren<AnomalyActivator>();
-        Debug.Log(roomObject.name + " 内に " + spawnPoints.Length + " 個の異常発生ポイントを発見");
-        foreach (AnomalyActivator anomalyActivator in spawnPoints)
+        List<Room> spawnedRooms = new List<Room>();
+
+        // --- フェーズ1: 全ての部屋をインスタンス化 ---
+        // ランダムな部屋を生成
+        for (int i = 0; i < numberOfRandomRooms; i++)
         {
-            if (Random.value < chance)
+            GameObject roomPrefab = randomRoomPrefabs[Random.Range(0, randomRoomPrefabs.Length)];
+            Vector3 spawnPos = startPosition + new Vector3(i * -roomSpacing, 0, 0);
+            GameObject roomGO = Instantiate(roomPrefab, spawnPos, Quaternion.identity);
+            spawnedRooms.Add(roomGO.GetComponent<Room>());
+        }
+
+        // 最後の部屋（寝室）を生成
+        Vector3 finalRoomPos = startPosition + new Vector3(numberOfRandomRooms * -roomSpacing, 0, 0);
+        GameObject finalRoomGO = Instantiate(bedroomPrefab, finalRoomPos, Quaternion.identity);
+        spawnedRooms.Add(finalRoomGO.GetComponent<Room>());
+
+        // --- フェーズ2: 全ての部屋を安全に接続 ---
+        for (int i = 0; i < spawnedRooms.Count - 1; i++)
+        {
+            Room currentRoom = spawnedRooms[i];
+            Room nextRoom = spawnedRooms[i + 1];
+
+            // 部屋同士の参照を設定
+            currentRoom.nextRoom = nextRoom;
+            nextRoom.previousRoom = currentRoom;
+
+            // ドア同士の参照を設定
+            if (currentRoom.exitDoor != null && nextRoom.entryDoor != null)
             {
-                anomalyActivator.Activate();
+                // ドアがどの部屋に属しているかを設定
+                currentRoom.exitDoor.parentRoom = currentRoom;
+                nextRoom.entryDoor.parentRoom = nextRoom;
+
+                // ドア同士を双方向に接続
+                currentRoom.exitDoor.connectedDoor = nextRoom.entryDoor;
+                nextRoom.entryDoor.connectedDoor = currentRoom.exitDoor;
             }
         }
     }

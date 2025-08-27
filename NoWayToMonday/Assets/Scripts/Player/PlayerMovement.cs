@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private int soundIndex = 0;
     public AudioClip[] walkingSounds;
     public AudioClip bleedingSound;
+    public AudioClip openDoor;
     //public GameObject WalkingSound;
     Rigidbody2D rb2D;
     Animator animator;
@@ -104,6 +105,10 @@ public class PlayerMovement : MonoBehaviour
         {
             insanityLevel += 0.01f * Time.deltaTime;
         }
+    }
+    public void ThroughDoor()
+    {
+        audioSource.PlayOneShot(openDoor);
     }
     public void SetMovement(bool enable)
     {

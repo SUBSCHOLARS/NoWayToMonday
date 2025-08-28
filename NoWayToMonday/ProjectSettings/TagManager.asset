@@ -11,6 +11,7 @@ TagManager:
   - PlayerStopper
   - DoorFront
   - Flower
+  - Blood
   layers:
   - Default
   - TransparentFX

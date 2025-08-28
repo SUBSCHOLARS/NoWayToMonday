@@ -28,25 +28,35 @@ public class SinkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isSand && isNearFaucet && !isDripStopped && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            animator.SetBool("IsDripping", false);
-            audioSource.PlayOneShot(audioSource.clip);
-            isDripStopped = true;
-            hadBeenStoppedDrip = true;
-        }
-        else if (!isSand && isNearFaucet && isDripStopped && Input.GetKeyDown(KeyCode.Space))
-        {
-            animator.SetBool("IsDripping", true);
-            isDripStopped = false;
-            hadBeenStoppedDrip = false;
-        }
-        else if (isSand&&PodScript.isPodTaken && isNearFaucet && Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Filled");
-            animator.SetBool("IsSand", false);
-            PodFlowchart.ExecuteBlock("PodFill");
-            isPodFilled = true;
+            AnimatorStateInfo currentStateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            if (!isSand && isNearFaucet && !isDripStopped && currentStateInfo.IsName("WaterDrip"))
+            {
+                animator.SetBool("IsDripping", false);
+                audioSource.PlayOneShot(audioSource.clip);
+                isDripStopped = true;
+                hadBeenStoppedDrip = true;
+            }
+            else if (!isSand && isNearFaucet && isDripStopped && currentStateInfo.IsName("Idle"))
+            {
+                animator.SetBool("IsDripping", true);
+                isDripStopped = false;
+                hadBeenStoppedDrip = false;
+            }
+            else if (!isSand && isNearFaucet && currentStateInfo.IsName("BloodySinkAnimation"))
+            {
+                isDripStopped = true;
+                animator.SetTrigger("isBloodStopped");
+                audioSource.PlayOneShot(audioSource.clip);
+            }
+            else if (isSand && PodScript.isPodTaken && isNearFaucet)
+            {
+                Debug.Log("Filled");
+                animator.SetBool("IsSand", false);
+                PodFlowchart.ExecuteBlock("PodFill");
+                isPodFilled = true;
+            }
         }
     }
     public void DripSound()

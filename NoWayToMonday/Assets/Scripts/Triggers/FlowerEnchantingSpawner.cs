@@ -35,6 +35,7 @@ public class FlowerEnchantingSpawner : MonoBehaviour
         {
             penaltyNames = new string[0];
         }
+        PenaltyManager.Instance.RegisterPenaltyZone(spawned, penaltyNames);
         isActivated = true;
     }
 }

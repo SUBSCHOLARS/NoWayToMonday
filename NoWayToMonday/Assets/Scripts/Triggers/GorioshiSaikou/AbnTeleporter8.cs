@@ -6,6 +6,7 @@ public class AbnTeleporter8 : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Camera;
+    bool isFinal = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +20,19 @@ public class AbnTeleporter8 : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !isFinal)
         {
             Player.transform.position = new Vector3(-110f, -7.7f, 0);
             Camera.transform.position = new Vector3(-118.5f, -0.7f, -10f);
         }
+        else
+        {
+            Player.transform.position = new Vector3(-174f, -6.5f, 0);
+            Camera.transform.position = new Vector3(-163.5f, 0.1f, -10f);
+        }
+    }
+    public void IsFinalEnable()
+    {
+        isFinal = true;
     }
 }

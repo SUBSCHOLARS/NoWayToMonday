@@ -186,4 +186,8 @@ public class PlayerMovementWithFungus : MonoBehaviour
         BrotherNormal.SetActive(false);
         BrotherFlower.SetActive(true);
     }
+    public void BrotherActivate()
+    {
+        BrotherNormal.SetActive(true);
+    }
 }

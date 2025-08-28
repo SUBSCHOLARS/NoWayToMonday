@@ -22,8 +22,8 @@ public class AbnTeleporter3 : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Player.SendMessage("ThroughDoor");
-            Player.transform.position = new Vector3(51f, -7.7f, 0);
-            Camera.transform.position = new Vector3(61.5f, -0.7f, -10f);
+            Player.transform.position = new Vector3(51f, -8.48f, 0);
+            Camera.transform.position = new Vector3(61.5f, -1.5f, -10f);
         }
     }
 }

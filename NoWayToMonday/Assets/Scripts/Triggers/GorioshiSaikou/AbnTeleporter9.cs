@@ -21,8 +21,8 @@ public class AbnTeleporter9 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Player.transform.position = new Vector3(-89f, -7.7f, 0);
-            Camera.transform.position = new Vector3(-73.5f, -0.7f, -10f);
+            Player.transform.position = new Vector3(-89f, -8.48f, 0);
+            Camera.transform.position = new Vector3(-73.5f,-1.5f, -10f);
         }
     }
 }

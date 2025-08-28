@@ -43696,7 +43696,7 @@ MonoBehaviour:
   PCScreen: {fileID: 569128317}
   pcInteractableIcon: {fileID: 3205944117496631739}
   PlayerMovementWithFungus: {fileID: 5870712809568637876}
-  PCDesktop: {fileID: 0}
+  PCDesktop: {fileID: 237424626}
 --- !u!212 &3592535067563476156
 SpriteRenderer:
   m_ObjectHideFlags: 0

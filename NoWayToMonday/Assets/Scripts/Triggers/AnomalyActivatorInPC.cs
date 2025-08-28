@@ -17,7 +17,8 @@ public class AnomalyActivatorInPC : MonoBehaviour
         }
 
         Image selectedAnomaly = anomalyPrefabs[Random.Range(0, anomalyPrefabs.Length)];
-        Instantiate(selectedAnomaly.gameObject, transform.position, transform.rotation);
+        Image spawned = Instantiate(selectedAnomaly, transform);
+        spawned.rectTransform.anchoredPosition = Vector2.zero; // 親の位置に合わせる
         isActivated = true;
         Debug.Log(gameObject.name + "で異常が発生しました！");
     }

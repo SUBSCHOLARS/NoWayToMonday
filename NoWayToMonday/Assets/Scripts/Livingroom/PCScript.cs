@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class PCScript : MonoBehaviour
 {
     bool isNearPC = false;
-    bool isPCOff = false;
     public static bool hadBeenStoppedPC = false;
     public GameObject PC;
     public GameObject PCScreen;
     public GameObject pcInteractableIcon;
+    public GameObject PlayerMovementWithFungus;
+    public Image PCDesktop;
     SpriteRenderer spriteRenderer;
     AudioSource audioSource;
     // Start is called before the first frame update
@@ -23,20 +25,19 @@ public class PCScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isNearPC && !isPCOff && Input.GetKeyDown(KeyCode.Space))
+        if (isNearPC && Input.GetKeyDown(KeyCode.Space))
         {
-            PCScreen.SetActive(false);
+            //PCScreen.SetActive(false);
+            PlayerMovementWithFungus.SendMessage("DisableMovement");
+            PCDesktop.gameObject.SetActive(true);
             audioSource.Pause();
-            isPCOff = true;
-            hadBeenStoppedPC = true;
         }
-        else if (isNearPC && isPCOff && Input.GetKeyDown(KeyCode.Space))
-        {
-            PCScreen.SetActive(true);
-            audioSource.UnPause();
-            isPCOff = false;
-            hadBeenStoppedPC = false;
-        }
+        // else if (isNearPC && isPCOff && Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     //PCScreen.SetActive(true);
+        //     audioSource.UnPause();
+        //     isPCOff = false;
+        // }
     }
     void OnTriggerEnter2D(Collider2D other)
     {

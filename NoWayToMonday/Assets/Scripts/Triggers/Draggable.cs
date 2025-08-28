@@ -1,56 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems; // Unityのイベントシステムを使うために必要
 
-[RequireComponent(typeof(Collider2D))]
-public class Draggable : MonoBehaviour
+/// <summary>
+/// オブジェクトをドラッグできるようにするスクリプト
+/// </summary>
+public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    private Vector3 offset;
-    private Vector3 originalPosition;
-    private Camera mainCamera;
+    private RectTransform rectTransform;
+    private CanvasGroup canvasGroup;
+    private Vector2 originalPosition;
+
     void Awake()
     {
-        mainCamera = Camera.main;
-    }
-    void OnMouseDown()
-    {
-        originalPosition = transform.position;
-        offset = transform.position - GetMouseWorldPos();
-    }
-    void OnMouseDrag()
-    {
-        transform.position = GetMouseWorldPos() + offset;
-    }
-    void OnMouseUp()
-    {
-        RaycastHit2D hit2D = Physics2D.Raycast(GetMouseWorldPos(), Vector2.zero);
-        if (hit2D.collider != null)
+        rectTransform = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
+        if (canvasGroup == null)
         {
-            DropZone dropZone = hit2D.collider.GetComponent<DropZone>();
-            if (dropZone != null)
-            {
-                dropZone.OnObjectDropped(this.gameObject);
-                return;
-            }
-            //ドロップに成功しなかった場合
-            transform.position = originalPosition;
+            canvasGroup = gameObject.AddComponent<CanvasGroup>();
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    // ドラッグが開始された時に一度だけ呼ばれる
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        Debug.Log("ドラッグ開始");
+        originalPosition = rectTransform.anchoredPosition; // 元の位置を記憶
+        canvasGroup.alpha = 0.6f; // 少し半透明にして、掴んでいる感を出す
+        canvasGroup.blocksRaycasts = false; // ドロップ先の検知ができるように
     }
 
-    // Update is called once per frame
-    void Update()
+    // ドラッグ中に毎フレーム呼ばれる
+    public void OnDrag(PointerEventData eventData)
     {
-
+        // オブジェクトをマウスカーソルの位置に追従させる
+        rectTransform.anchoredPosition += eventData.delta / transform.parent.localScale.x;
     }
-    private Vector3 GetMouseWorldPos()
+
+    // ドラッグが終了した時に一度だけ呼ばれる
+    public void OnEndDrag(PointerEventData eventData)
     {
-        Vector3 mousePoint = Input.mousePosition;
-        mousePoint.z = mainCamera.WorldToScreenPoint(transform.position).z;
-        return mainCamera.ScreenToWorldPoint(mousePoint);
+        Debug.Log("ドラッグ終了");
+        canvasGroup.alpha = 1f; // 透明度を元に戻す
+        canvasGroup.blocksRaycasts = true; // 元に戻す
+
+        // eventData.pointerDragがnullになっていなければ、ドロップに成功していない
+        // （DropZoneでDestroyされなかったということ）
+        if (eventData.pointerDrag != null)
+        {
+            // 元の位置に戻す
+            rectTransform.anchoredPosition = originalPosition;
+        }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class BlossoDayRoomsSetting : MonoBehaviour
@@ -23,6 +24,7 @@ public class BlossoDayRoomsSetting : MonoBehaviour
     public float insanityThreshold = 50f; // 狂気レベルの高低を分けるしきい値
                                           // ▲ Unityエディタで設定する項目ここまで ▲
     public float roomSpacing = 45f;
+    public GameObject canvasObject;
     public Vector3 startPosition = new Vector3(63f, 0, 0);
     void Start()
     {
@@ -71,14 +73,16 @@ public class BlossoDayRoomsSetting : MonoBehaviour
         //         break;
         // }
     }
-    public static void ActivateAnomaliesInRoom(GameObject roomObject, float chance)
+    public void ActivateAnomaliesInRoom(GameObject roomObject, float chance)
     {
         // 1. 部屋の中にある全ての「AnomalySpawnPoint」コンポーネントを探し出す
         AnomalyActivator[] spawnPoints = roomObject.GetComponentsInChildren<AnomalyActivator>();
         AnomalyActivatorInFridge[] fridgeSpawnPoints = roomObject.GetComponentsInChildren<AnomalyActivatorInFridge>();
+        AnomalyActivatorInPC[] pcSpawnPoints = canvasObject.GetComponentsInChildren<AnomalyActivatorInPC>();
 
         Debug.Log(roomObject.name + " 内に " + spawnPoints.Length + " 個の異常発生ポイントを発見。");
         Debug.Log(roomObject.name + " 内に " + fridgeSpawnPoints.Length + " 個の異常発生ポイントを発見。");
+        Debug.Log(canvasObject.name + " 内に " + pcSpawnPoints.Length + " 個の異常発生ポイントを発見。");
 
         // 2. 見つかった全てのポイントを1つずつチェックする
         foreach (AnomalyActivator point in spawnPoints)
@@ -91,6 +95,15 @@ public class BlossoDayRoomsSetting : MonoBehaviour
             }
         }
         foreach (AnomalyActivatorInFridge point in fridgeSpawnPoints)
+        {
+            // 3. 確率の抽選を行う (0.0～1.0のランダムな値を生成し、chanceより小さいか判定)
+            if (Random.value < chance)
+            {
+                // 4. 抽選に当たったら、そのポイントのActivate()メソッドを呼び出す
+                point.Activate();
+            }
+        }
+        foreach (AnomalyActivatorInPC point in pcSpawnPoints)
         {
             // 3. 確率の抽選を行う (0.0～1.0のランダムな値を生成し、chanceより小さいか判定)
             if (Random.value < chance)

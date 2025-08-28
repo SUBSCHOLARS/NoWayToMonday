@@ -111,5 +111,9 @@ public class MaulsdayRoomsSetting : MonoBehaviour
             Debug.Log("キッチンの異常アニメーションを発動させました！");
             animator.SetTrigger("isAbnormal");
         }
+        else
+        {
+            Debug.Log("不発");
+        }
     }
 }

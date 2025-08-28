@@ -2290,7 +2290,7 @@ Transform:
   m_GameObject: {fileID: 94589733}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.62, y: -3.44, z: 0.15843596}
+  m_LocalPosition: {x: -4.18, y: -3.44, z: 0.15843596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19928,6 +19928,7 @@ MonoBehaviour:
   - {fileID: 2873529855973327704}
   - {fileID: 6694303251386549359}
   bedroomPrefab: {fileID: 843538804703465989}
+  kitchenAnomalyChance: 0.3
   rooms_Min_LowInsanity: 3
   rooms_Max_LowInsanity: 5
   anomalyChance_LowInsanity: 0.8
@@ -49785,7 +49786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6694221201337591909
 GameObject:
   m_ObjectHideFlags: 0
@@ -51544,7 +51545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &7827360798843561671
 MonoBehaviour:
   m_ObjectHideFlags: 2

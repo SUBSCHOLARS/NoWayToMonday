@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AbnTeleporter5 : MonoBehaviour
+public class AbnTeleporter9 : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Camera;
@@ -22,8 +22,8 @@ public class AbnTeleporter5 : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Player.SendMessage("ThroughDoor");
-            Player.transform.position = new Vector3(6f, -8.48f, 0);
-            Camera.transform.position = new Vector3(17.5f, -1.5f, -10f);
+            Player.transform.position = new Vector3(-89f, -8.48f, 0);
+            Camera.transform.position = new Vector3(-72.5f,-1.42f, -10f);
         }
     }
 }

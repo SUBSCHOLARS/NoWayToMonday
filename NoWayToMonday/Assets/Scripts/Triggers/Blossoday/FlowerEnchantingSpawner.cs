@@ -17,7 +17,7 @@ public class FlowerEnchantingSpawner : MonoBehaviour
         }
 
         GameObject selectedAnomaly = anomalyPrefabs[Random.Range(0, anomalyPrefabs.Length)];
-        GameObject spawned = Instantiate(selectedAnomaly, transform.position, transform.rotation);
+        GameObject spawned = Instantiate(selectedAnomaly, transform.position, transform.rotation, transform);
 
         if (spawned.name.Contains("TVBlueFlower"))
         {

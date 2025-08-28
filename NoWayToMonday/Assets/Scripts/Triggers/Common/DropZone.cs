@@ -40,6 +40,7 @@ public class DropZone : MonoBehaviour, IDropHandler
             isThrownOnce = true;
 
             // 2. ドラッグしていたオブジェクトを破壊する
+            PenaltyManager.Instance.OnFlowerDestroyed(gameObject);
             Destroy(droppedObject);
         }
     }

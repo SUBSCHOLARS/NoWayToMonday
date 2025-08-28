@@ -37,26 +37,26 @@ EditorBuildSettings:
     guid: 80feeba73ed244f67a0c5238c2eb8511
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/CurseDay.unity
-    guid: 13817fba384be4bb4aba6f83fc6f00a6
+    guid: 57f627211d10b429eb96ddd1fc53948a
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/GazeDay.unity
-    guid: 5663e4dccd04f4c2a925c3697a1750f9
+    guid: 5da951efa52c3475a8c3b37b14f8e9ba
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/LurksDay.unity
-    guid: 93bef0c0deed3432c95f0b20c61b476a
+    guid: bdddf91a5ccc64cd0999b50d599d536b
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/MaulsDay.unity
-    guid: 0236275823449414fa8d49e13f4e85ff
+    guid: cb59e92450ccb463c9fcd6dbc1aec302
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/RottsDay.unity
-    guid: 464f9e7b12f154e83b1fe951cd0d2502
+    guid: b7d86831c78b340f08b39ab6d8bece1d
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/SeepsDay.unity
-    guid: add9c65da8b6843a98ad177e3ca5debb
+    guid: 57ff60543ad104ea08cc9ad597ef30c0
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/ShurauDay.unity
-    guid: eff6e88486b6b4450b942b96d1dd4654
+    guid: c365025efca93491bb2dd2159d881754
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/UmbraDay.unity
-    guid: 8c78b6ae32bfb4349ae769b7e89d5cb2
+    guid: 33c1c0745185448aa8de884563755ca9
   m_configObjects: {}

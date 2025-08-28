@@ -17,7 +17,7 @@ public class FlowerScript : MonoBehaviour
     {
         if (isNear && Input.GetKeyDown(KeyCode.Space))
         {
-            audioSource.PlayOneShot(audioSource.clip);
+            AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
             Debug.Log("Sound!!");
             Destroy(gameObject);
         }

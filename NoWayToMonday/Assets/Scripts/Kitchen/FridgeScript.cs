@@ -7,10 +7,14 @@ using DG.Tweening;
 public class FridgeScript : MonoBehaviour
 {
     bool isNearFridge = false;
-    bool isMove = false;
+    //bool isMove = false;
     public GameObject fridgeInteractableIcon;
+    public GameObject PlayerMovementWithFungus;
     public GameObject mainCamera;
+    //bool isMoved = false;
     SpriteRenderer spriteRenderer;
+    public static FridgeScript lastUsedFridge;
+    public Vector3 CachedPos { get; private set; }
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +25,21 @@ public class FridgeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isNearFridge && !isMove && Input.GetKeyDown(KeyCode.Space))
+        if (isNearFridge && Input.GetKeyDown(KeyCode.Space))
         {
-            isMove = true;
-            mainCamera.transform.position = new Vector3(transform.position.x+6,25f,-10f);
+            CachedPos = mainCamera.transform.position;
+            lastUsedFridge = this;
+            Debug.Log("CashedPos: " + CachedPos);
+            PlayerMovementWithFungus.SendMessage("DisableMovement");
+            mainCamera.transform.position = new Vector3(transform.position.x + 6, 25f, -10f);
         }
+    }
+    void OnMouseDown()
+    {
+        // if (isNearFridge && isMoved)
+        // {
+        //     mainCamera.transform.position = CachedPos;
+        // }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -44,5 +58,9 @@ public class FridgeScript : MonoBehaviour
             spriteRenderer.DOFade(0f, 2.5f);
             Debug.Log("Untriggered!");
         }
+    }
+    public Vector3 GetCachedPos()
+    {
+        return CachedPos;
     }
 }

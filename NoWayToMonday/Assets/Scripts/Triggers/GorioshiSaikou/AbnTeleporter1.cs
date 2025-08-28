@@ -19,6 +19,6 @@ public class AbnTeleporter1 : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        flowchart.ExecuteBlock("BlossoDay");
+        //flowchart.ExecuteBlock("BlossoDay");
     }
 }

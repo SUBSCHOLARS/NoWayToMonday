@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnomalyActivator : MonoBehaviour
+public class AnomalyActivatorInFridge : MonoBehaviour
 {
     [Header("発生させる異常オブジェクト")]
     public GameObject[] anomalyPrefabs;

@@ -6,6 +6,7 @@ using UnityEngine;
 public class AbnormalDayReason : MonoBehaviour
 {
     public Flowchart flowchart;
+    public Flowchart kanjiFlowchart;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class AbnormalDayReason : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            string CurrentDay = flowchart.GetStringVariable("pureCurrentKanji");
+            string CurrentDay = kanjiFlowchart.GetStringVariable("pureCurrentKanji");
             switch (CurrentDay)
             {
                 case "蕐":

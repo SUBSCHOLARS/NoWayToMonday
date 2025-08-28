@@ -23,7 +23,7 @@ public class AbnTeleporter2 : MonoBehaviour
         {
             Player.SendMessage("ThroughDoor");
             Player.transform.position = new Vector3(27f, -8.48f, 0);
-            Camera.transform.position = new Vector3(16.3f, -1.5f, -10f);
+            Camera.transform.position = new Vector3(17.5f, -1.5f, -10f);
         }
     }
 }

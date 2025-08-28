@@ -24,8 +24,6 @@ public class BlossoDayRoomsSetting : MonoBehaviour
                                           // ▲ Unityエディタで設定する項目ここまで ▲
     public float roomSpacing = 45f;
     public Vector3 startPosition = new Vector3(63f, 0, 0);
-    AbnTeleporter6 abnTeleporter6;
-    AbnTeleporter8 abnTeleporter8;
     void Start()
     {
         GenerateStage();
@@ -77,11 +75,22 @@ public class BlossoDayRoomsSetting : MonoBehaviour
     {
         // 1. 部屋の中にある全ての「AnomalySpawnPoint」コンポーネントを探し出す
         AnomalyActivator[] spawnPoints = roomObject.GetComponentsInChildren<AnomalyActivator>();
+        AnomalyActivatorInFridge[] fridgeSpawnPoints = roomObject.GetComponentsInChildren<AnomalyActivatorInFridge>();
 
         Debug.Log(roomObject.name + " 内に " + spawnPoints.Length + " 個の異常発生ポイントを発見。");
+        Debug.Log(roomObject.name + " 内に " + fridgeSpawnPoints.Length + " 個の異常発生ポイントを発見。");
 
         // 2. 見つかった全てのポイントを1つずつチェックする
         foreach (AnomalyActivator point in spawnPoints)
+        {
+            // 3. 確率の抽選を行う (0.0～1.0のランダムな値を生成し、chanceより小さいか判定)
+            if (Random.value < chance)
+            {
+                // 4. 抽選に当たったら、そのポイントのActivate()メソッドを呼び出す
+                point.Activate();
+            }
+        }
+        foreach (AnomalyActivatorInFridge point in fridgeSpawnPoints)
         {
             // 3. 確率の抽選を行う (0.0～1.0のランダムな値を生成し、chanceより小さいか判定)
             if (Random.value < chance)

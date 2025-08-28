@@ -79,6 +79,7 @@ public class BlossoDayRoomsSetting : MonoBehaviour
         AnomalyActivator[] spawnPoints = roomObject.GetComponentsInChildren<AnomalyActivator>();
         AnomalyActivatorInFridge[] fridgeSpawnPoints = roomObject.GetComponentsInChildren<AnomalyActivatorInFridge>();
         AnomalyActivatorInPC[] pcSpawnPoints = canvasObject.GetComponentsInChildren<AnomalyActivatorInPC>(true);
+        FlowerEnchantingSpawner[] tvSpawnPoints = roomObject.GetComponentsInChildren<FlowerEnchantingSpawner>(true);
 
         Debug.Log(roomObject.name + " 内に " + spawnPoints.Length + " 個の異常発生ポイントを発見。");
         Debug.Log(roomObject.name + " 内に " + fridgeSpawnPoints.Length + " 個の異常発生ポイントを発見。");
@@ -111,6 +112,11 @@ public class BlossoDayRoomsSetting : MonoBehaviour
                 // 4. 抽選に当たったら、そのポイントのActivate()メソッドを呼び出す
                 point.Activate();
             }
+        }
+        foreach (FlowerEnchantingSpawner point in tvSpawnPoints)
+        {
+            // 4. 抽選に当たったら、そのポイントのActivate()メソッドを呼び出す
+            point.Activate();
         }
     }
 }

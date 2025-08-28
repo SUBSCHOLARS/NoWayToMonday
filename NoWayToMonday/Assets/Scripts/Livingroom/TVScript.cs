@@ -10,6 +10,7 @@ public class TVScript : MonoBehaviour
     public static bool hadBeenStoppedTV = false;
     public GameObject TV;
     public GameObject Screen;
+    public GameObject FlowerEnchanting;
     public GameObject tvInteractableIcon;
     AudioSource audioSource;
     SpriteRenderer spriteRenderer;
@@ -26,6 +27,7 @@ public class TVScript : MonoBehaviour
         if (isNearTV && !isTVOff && Input.GetKeyDown(KeyCode.Space))
         {
             Screen.SetActive(false);
+            FlowerEnchanting.SetActive(true);
             audioSource.Pause();
             isTVOff = true;
             hadBeenStoppedTV = true;
@@ -33,6 +35,7 @@ public class TVScript : MonoBehaviour
         else if (isNearTV && isTVOff && Input.GetKeyDown(KeyCode.Space))
         {
             Screen.SetActive(true);
+            FlowerEnchanting.SetActive(false);
             audioSource.UnPause();
             isTVOff = false;
             hadBeenStoppedTV = false;

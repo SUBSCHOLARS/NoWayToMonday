@@ -19,6 +19,7 @@ public class FlowerInFridgeScript : MonoBehaviour
     void OnMouseDown()
     {
         AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
+        PenaltyManager.Instance.OnFlowerDestroyed(gameObject);
         Destroy(gameObject);
     }
 }

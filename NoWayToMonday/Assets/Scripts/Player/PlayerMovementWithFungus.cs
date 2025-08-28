@@ -190,4 +190,9 @@ public class PlayerMovementWithFungus : MonoBehaviour
     {
         BrotherNormal.SetActive(true);
     }
+    public void CalculateFlowerNumAndChangeInsanityLevel()
+    {
+        GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
+        PlayerMovement.insanityLevel += flowers.Length;
+    }
 }

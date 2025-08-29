@@ -8,7 +8,7 @@ public class LunastacisInFridgeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class LunastacisInFridgeScript : MonoBehaviour
     }
     void OnMouseDown()
     {
-        AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
+        //AudioSource.PlayClipAtPoint(audioSource.clip, transform.position);
         LunastacisFlowchart.ExecuteBlock("Lunastacis");
     }
 }

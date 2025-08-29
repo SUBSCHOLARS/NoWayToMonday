@@ -220,4 +220,8 @@ public class PlayerMovementWithFungus : MonoBehaviour
             }
         );
     }
+    public void ShuraudayPenalty()
+    {
+        PlayerMovement.insanityLevel += 30f;
+    }
 }

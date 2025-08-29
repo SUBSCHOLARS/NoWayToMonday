@@ -10019,7 +10019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 238481841}
+  selectedFlowchart: {fileID: 1693432849274002333}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -45001,7 +45001,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67
-    y: 71.41443
+    y: 70
     width: 114.3564
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -49341,6 +49341,7 @@ MonoBehaviour:
   TV: {fileID: 2448035922704441077}
   Screen: {fileID: 838361023101753433}
   FlowerEnchanting: {fileID: 98659883}
+  RedProgram: {fileID: 0}
   tvInteractableIcon: {fileID: 8894820646863648231}
 --- !u!4 &6110090760521316550
 Transform:

@@ -8,7 +8,6 @@ public class ShuraudayRoomsSetting : MonoBehaviour
     [Header("ステージ設定")]
     public GameObject[] roomPrefabs; // 部屋のテンプレートプレハブを複数登録
     public GameObject bedroomPrefab;
-    public GameObject Kitchen;
     [Header("異常アニメーション設定")]
     [Tooltip("キッチンで異常アニメーションが発生する確率")]
     [Range(0, 1)] public float kitchenAnomalyChance = 0.3f; // 30%の確率
@@ -68,12 +67,12 @@ public class ShuraudayRoomsSetting : MonoBehaviour
     public void ActivateAnomaliesInRoom(GameObject roomObject, float chance)
     {
         // 1. 部屋の中にある全ての「AnomalySpawnPoint」コンポーネントを探し出す
-        MaulsdayAnomalyActivator[] spawnPoints = roomObject.GetComponentsInChildren<MaulsdayAnomalyActivator>();
+       ShuraudayAnomalyActivator[] spawnPoints = roomObject.GetComponentsInChildren<ShuraudayAnomalyActivator>();
 
         Debug.Log(roomObject.name + " 内に " + spawnPoints.Length + " 個の異常発生ポイントを発見。");
 
         // 2. 見つかった全てのポイントを1つずつチェックする
-        foreach (MaulsdayAnomalyActivator point in spawnPoints)
+        foreach (ShuraudayAnomalyActivator point in spawnPoints)
         {
             // 3. 確率の抽選を行う (0.0～1.0のランダムな値を生成し、chanceより小さいか判定)
             if (Random.value < chance)

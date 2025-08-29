@@ -220,7 +220,6 @@ GameObject:
   - component: {fileID: 12939945}
   - component: {fileID: 12939946}
   - component: {fileID: 12939948}
-  - component: {fileID: 12939947}
   m_Layer: 0
   m_Name: LunastasisBottle (2)
   m_TagString: Untagged
@@ -307,52 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
---- !u!61 &12939947
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12939943}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &12939948
 Rigidbody2D:
   serializedVersion: 4
@@ -2376,7 +2330,6 @@ GameObject:
   - component: {fileID: 71512363}
   - component: {fileID: 71512364}
   - component: {fileID: 71512365}
-  - component: {fileID: 71512367}
   - component: {fileID: 71512366}
   m_Layer: 0
   m_Name: LunastasisBottle (7)
@@ -2464,7 +2417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &71512366
 Rigidbody2D:
   serializedVersion: 4
@@ -2492,51 +2445,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &71512367
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71512362}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &73419604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,7 +2536,6 @@ GameObject:
   - component: {fileID: 77868364}
   - component: {fileID: 77868365}
   - component: {fileID: 77868367}
-  - component: {fileID: 77868366}
   m_Layer: 0
   m_Name: LunastasisBottle (5)
   m_TagString: Untagged
@@ -2715,52 +2622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
---- !u!61 &77868366
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77868362}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &77868367
 Rigidbody2D:
   serializedVersion: 4
@@ -2843,6 +2705,7 @@ GameObject:
   - component: {fileID: 89220343}
   - component: {fileID: 89220344}
   - component: {fileID: 89220345}
+  - component: {fileID: 89220346}
   m_Layer: 0
   m_Name: LunastasisBottle (3)
   m_TagString: Untagged
@@ -2929,7 +2792,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &89220346
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89220342}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &94589733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,13 +2861,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 94589733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &96928627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,9 +3055,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109486052}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2599994, y: -11.571999, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2110943545}
@@ -3180,7 +3068,7 @@ Transform:
   - {fileID: 1983846332}
   - {fileID: 659725828}
   - {fileID: 1957262947}
-  m_Father: {fileID: 8704305678675575441}
+  m_Father: {fileID: 4020986392626622803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &114615977
 GameObject:
@@ -6086,7 +5974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &238481838
 Transform:
   m_ObjectHideFlags: 0
@@ -6116,7 +6004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "\u4ECA\u65E5\u306F\u5BE2<space=-0.9em><voffset=1em><size=75%>{CurrentReading}</size></voffset>\u66DC\u65E5\u3089\u3057\u3044\u3002"
+  storyText: "\u4ECA\u65E5\u306F\u5BE2<space=-0.9em><voffset=1em><size=75%>\u306D</size></voffset>\u66DC\u65E5\u3089\u3057\u3044\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6186,7 +6074,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 238481840}
   selectedCommands:
-  - {fileID: 238481844}
+  - {fileID: 238481839}
   variables: []
   description: 
   stepPause: 0
@@ -6234,7 +6122,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &238481844
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6630,7 +6518,6 @@ GameObject:
   - component: {fileID: 276816036}
   - component: {fileID: 276816037}
   - component: {fileID: 276816038}
-  - component: {fileID: 276816040}
   - component: {fileID: 276816039}
   m_Layer: 0
   m_Name: LunastasisBottle (4)
@@ -6718,7 +6605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &276816039
 Rigidbody2D:
   serializedVersion: 4
@@ -6746,51 +6633,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &276816040
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276816035}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &276951797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6910,9 +6752,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277156783}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.59, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2599994, y: -8.484001, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2068102407}
@@ -6923,7 +6765,7 @@ Transform:
   - {fileID: 444602972}
   - {fileID: 1462928060}
   - {fileID: 71512363}
-  m_Father: {fileID: 8704305678675575441}
+  m_Father: {fileID: 4020986392626622803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &277918054
 GameObject:
@@ -7636,6 +7478,7 @@ GameObject:
   - component: {fileID: 282034574}
   - component: {fileID: 282034575}
   - component: {fileID: 282034576}
+  - component: {fileID: 282034577}
   m_Layer: 0
   m_Name: LunastasisBottle (5)
   m_TagString: Untagged
@@ -7722,7 +7565,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &282034577
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282034573}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &291188175
 GameObject:
   m_ObjectHideFlags: 0
@@ -8003,7 +7873,6 @@ GameObject:
   - component: {fileID: 315093308}
   - component: {fileID: 315093309}
   - component: {fileID: 315093310}
-  - component: {fileID: 315093312}
   - component: {fileID: 315093311}
   m_Layer: 0
   m_Name: LunastasisBottle (1)
@@ -8091,7 +7960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &315093311
 Rigidbody2D:
   serializedVersion: 4
@@ -8119,51 +7988,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &315093312
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315093307}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &325893629
 GameObject:
   m_ObjectHideFlags: 0
@@ -8188,9 +8012,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325893629}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.09, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2599994, y: -9.555999, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 487857278}
@@ -8201,7 +8025,7 @@ Transform:
   - {fileID: 282034574}
   - {fileID: 1321052626}
   - {fileID: 466012858}
-  m_Father: {fileID: 8704305678675575441}
+  m_Father: {fileID: 4020986392626622803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &335181004
 GameObject:
@@ -8215,7 +8039,6 @@ GameObject:
   - component: {fileID: 335181006}
   - component: {fileID: 335181008}
   - component: {fileID: 335181009}
-  - component: {fileID: 335181010}
   m_Layer: 0
   m_Name: RightConnection
   m_TagString: Untagged
@@ -8267,7 +8090,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.451519}
@@ -8317,26 +8140,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335181004}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3246e69bb38f4b4daae45458f205642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flowchart: {fileID: 238481841}
---- !u!114 &335181010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335181004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 101124304ed8040eeb89b25da034d40b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flowchart: {fileID: 238481841}
-  kanjiFlowchart: {fileID: 1643264164}
 --- !u!1 &337235528
 GameObject:
   m_ObjectHideFlags: 0
@@ -8869,9 +8678,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMeshPro1: {fileID: 458971209}
   textMeshPro2: {fileID: 1586632785}
-  typingSpeed: 0.05
+  typingSpeed: 0.2
   allTextShownWaitTime: 2
-  loopCycleWaitTime: 1
+  loopCycleWaitTime: 2
 --- !u!1 &354607822
 GameObject:
   m_ObjectHideFlags: 0
@@ -8964,7 +8773,8 @@ Transform:
   - {fileID: 277918055}
   - {fileID: 1661838221}
   - {fileID: 2093998965}
-  - {fileID: 828905105}
+  - {fileID: 2875491859058435897}
+  - {fileID: 814645951}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &362636740
@@ -10364,7 +10174,6 @@ GameObject:
   - component: {fileID: 444602972}
   - component: {fileID: 444602973}
   - component: {fileID: 444602974}
-  - component: {fileID: 444602976}
   - component: {fileID: 444602975}
   m_Layer: 0
   m_Name: LunastasisBottle (5)
@@ -10452,7 +10261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &444602975
 Rigidbody2D:
   serializedVersion: 4
@@ -10480,51 +10289,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &444602976
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444602971}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &458971207
 GameObject:
   m_ObjectHideFlags: 0
@@ -10880,6 +10644,7 @@ GameObject:
   - component: {fileID: 466012858}
   - component: {fileID: 466012859}
   - component: {fileID: 466012860}
+  - component: {fileID: 466012861}
   m_Layer: 0
   m_Name: LunastasisBottle (7)
   m_TagString: Untagged
@@ -10966,7 +10731,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &466012861
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466012857}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &474726342
 GameObject:
   m_ObjectHideFlags: 0
@@ -10978,7 +10770,6 @@ GameObject:
   - component: {fileID: 474726343}
   - component: {fileID: 474726344}
   - component: {fileID: 474726345}
-  - component: {fileID: 474726347}
   - component: {fileID: 474726346}
   m_Layer: 0
   m_Name: LunastasisBottle (2)
@@ -11066,7 +10857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &474726346
 Rigidbody2D:
   serializedVersion: 4
@@ -11094,51 +10885,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &474726347
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474726342}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &487857277
 GameObject:
   m_ObjectHideFlags: 0
@@ -11150,6 +10896,8 @@ GameObject:
   - component: {fileID: 487857278}
   - component: {fileID: 487857279}
   - component: {fileID: 487857280}
+  - component: {fileID: 487857281}
+  - component: {fileID: 487857282}
   m_Layer: 0
   m_Name: LunastasisBottle
   m_TagString: Untagged
@@ -11236,7 +10984,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &487857281
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487857277}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &487857282
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487857277}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.3879156, y: 0.0000035762787}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.24, y: 4.48}
+    newSize: {x: 2.24, y: 4.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.635508, y: 2.5783863}
+  m_EdgeRadius: 0
 --- !u!1 &492927792
 GameObject:
   m_ObjectHideFlags: 0
@@ -11709,7 +11529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 5363226159975256227, guid: 953bd78359f004591a223b9946e7d253, type: 3}
+  selectedFlowchart: {fileID: 814645967}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -12480,7 +12300,6 @@ GameObject:
   - component: {fileID: 632213898}
   - component: {fileID: 632213899}
   - component: {fileID: 632213901}
-  - component: {fileID: 632213900}
   m_Layer: 0
   m_Name: LunastasisBottle (1)
   m_TagString: Untagged
@@ -12567,52 +12386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
---- !u!61 &632213900
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632213896}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &632213901
 Rigidbody2D:
   serializedVersion: 4
@@ -12651,6 +12425,7 @@ GameObject:
   - component: {fileID: 637642413}
   - component: {fileID: 637642414}
   - component: {fileID: 637642415}
+  - component: {fileID: 637642416}
   m_Layer: 0
   m_Name: LunastasisBottle (2)
   m_TagString: Untagged
@@ -12737,7 +12512,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &637642416
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637642412}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &659725827
 GameObject:
   m_ObjectHideFlags: 0
@@ -12749,7 +12551,6 @@ GameObject:
   - component: {fileID: 659725828}
   - component: {fileID: 659725829}
   - component: {fileID: 659725830}
-  - component: {fileID: 659725832}
   - component: {fileID: 659725831}
   m_Layer: 0
   m_Name: LunastasisBottle (6)
@@ -12837,7 +12638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &659725831
 Rigidbody2D:
   serializedVersion: 4
@@ -12865,51 +12666,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &659725832
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659725827}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &660211274
 GameObject:
   m_ObjectHideFlags: 0
@@ -13351,6 +13107,7 @@ GameObject:
   - component: {fileID: 686809169}
   - component: {fileID: 686809170}
   - component: {fileID: 686809171}
+  - component: {fileID: 686809172}
   m_Layer: 0
   m_Name: LunastasisBottle (4)
   m_TagString: Untagged
@@ -13437,7 +13194,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &686809172
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686809168}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &699122644
 GameObject:
   m_ObjectHideFlags: 0
@@ -13719,7 +13503,6 @@ GameObject:
   - component: {fileID: 714357654}
   - component: {fileID: 714357655}
   - component: {fileID: 714357656}
-  - component: {fileID: 714357658}
   - component: {fileID: 714357657}
   m_Layer: 0
   m_Name: LunastasisBottle (2)
@@ -13807,7 +13590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &714357657
 Rigidbody2D:
   serializedVersion: 4
@@ -13835,51 +13618,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &714357658
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714357653}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &732052025
 GameObject:
   m_ObjectHideFlags: 0
@@ -15111,7 +14849,6 @@ GameObject:
   - component: {fileID: 794463913}
   - component: {fileID: 794463914}
   - component: {fileID: 794463915}
-  - component: {fileID: 794463917}
   - component: {fileID: 794463916}
   m_Layer: 0
   m_Name: LunastasisBottle (3)
@@ -15199,7 +14936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &794463916
 Rigidbody2D:
   serializedVersion: 4
@@ -15227,51 +14964,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &794463917
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794463912}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &798676794
 GameObject:
   m_ObjectHideFlags: 0
@@ -15380,9 +15072,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800603696}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.88, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2599994, y: -10.671999, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1817458028}
@@ -15393,8 +15085,434 @@ Transform:
   - {fileID: 77868363}
   - {fileID: 1779550850}
   - {fileID: 1198695806}
-  m_Father: {fileID: 8704305678675575441}
+  m_Father: {fileID: 4020986392626622803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &814645950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 814645951}
+  - component: {fileID: 814645967}
+  - component: {fileID: 814645966}
+  - component: {fileID: 814645965}
+  - component: {fileID: 814645964}
+  - component: {fileID: 814645963}
+  - component: {fileID: 814645962}
+  - component: {fileID: 814645961}
+  - component: {fileID: 814645960}
+  - component: {fileID: 814645959}
+  - component: {fileID: 814645958}
+  - component: {fileID: 814645957}
+  - component: {fileID: 814645956}
+  - component: {fileID: 814645955}
+  - component: {fileID: 814645954}
+  - component: {fileID: 814645953}
+  - component: {fileID: 814645952}
+  m_Layer: 0
+  m_Name: LunaStacisFlowchartInFridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &814645951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.996103, y: -1.6198992, z: 0.089444384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 361994973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814645952
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: ShuraudayPenalty
+  delay: 0
+--- !u!114 &814645953
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  storyText: ...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &814645954
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: EnableMovement
+  delay: 0
+--- !u!114 &814645955
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: EnableMovement
+  delay: 0
+--- !u!114 &814645956
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: LoadgameStage
+  delay: 0
+--- !u!114 &814645957
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &814645958
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  targetObject: {fileID: 1511723585}
+  methodName: FadeToBlack
+  delay: 0
+--- !u!114 &814645959
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  storyText: "\u8996\u754C\u304C\u307C\u3084\u3051\u3001\u610F\u8B58\u304C\u9060\u306E\u3044\u3066\u3044\u304F..."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &814645960
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  storyText: ...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &814645961
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: DisableMovement
+  delay: 0
+--- !u!114 &814645962
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 173
+    y: 130.5
+    width: 94
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 4
+  blockName: Undrink
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 814645953}
+  - {fileID: 814645954}
+  suppressAllAutoSelections: 0
+--- !u!114 &814645963
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  text: "\u98F2\u307E\u306A\u3044"
+  description: 
+  targetBlock: {fileID: 814645962}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &814645964
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 6
+    y: 123.5
+    width: 80
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 2
+  blockName: Drink
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 814645960}
+  - {fileID: 814645959}
+  - {fileID: 814645958}
+  - {fileID: 814645957}
+  - {fileID: 814645952}
+  - {fileID: 814645955}
+  - {fileID: 814645956}
+  suppressAllAutoSelections: 0
+--- !u!114 &814645965
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1
+  indentLevel: 0
+  text: "\u98F2\u3080"
+  description: 
+  targetBlock: {fileID: 814645964}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &814645966
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 67
+    y: 71
+    width: 111
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: Lunastacis
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 814645961}
+  - {fileID: 814645965}
+  - {fileID: 814645963}
+  suppressAllAutoSelections: 0
+--- !u!114 &814645967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  scrollPos: {x: 1, y: 0}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 1
+  scrollViewRect:
+    serializedVersion: 2
+    x: -343
+    y: -340
+    width: 1114
+    height: 859
+  selectedBlocks:
+  - {fileID: 814645962}
+  selectedCommands: []
+  variables: []
+  description: 
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  showLineNumbers: 0
+  hideCommands: []
+  luaEnvironment: {fileID: 0}
+  luaBindingName: flowchart
 --- !u!1 &817143834
 GameObject:
   m_ObjectHideFlags: 0
@@ -15619,7 +15737,6 @@ GameObject:
   - component: {fileID: 819773023}
   - component: {fileID: 819773024}
   - component: {fileID: 819773025}
-  - component: {fileID: 819773027}
   - component: {fileID: 819773026}
   m_Layer: 0
   m_Name: LunastasisBottle (1)
@@ -15707,7 +15824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &819773026
 Rigidbody2D:
   serializedVersion: 4
@@ -15735,67 +15852,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &819773027
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819773022}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
---- !u!114 &828905099 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5363226159975256227, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-  m_PrefabInstance: {fileID: 2009944524471410748}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &828905105 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-  m_PrefabInstance: {fileID: 2009944524471410748}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &838872956
 GameObject:
   m_ObjectHideFlags: 0
@@ -16535,7 +16591,6 @@ GameObject:
   - component: {fileID: 921697159}
   - component: {fileID: 921697160}
   - component: {fileID: 921697162}
-  - component: {fileID: 921697161}
   m_Layer: 0
   m_Name: LunastasisBottle (4)
   m_TagString: Untagged
@@ -16622,52 +16677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
---- !u!61 &921697161
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921697157}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &921697162
 Rigidbody2D:
   serializedVersion: 4
@@ -16820,13 +16830,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 964202258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &990861619
 GameObject:
   m_ObjectHideFlags: 0
@@ -19326,7 +19334,6 @@ GameObject:
   - component: {fileID: 1198695807}
   - component: {fileID: 1198695808}
   - component: {fileID: 1198695810}
-  - component: {fileID: 1198695809}
   m_Layer: 0
   m_Name: LunastasisBottle (7)
   m_TagString: Untagged
@@ -19413,52 +19420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
---- !u!61 &1198695809
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198695805}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &1198695810
 Rigidbody2D:
   serializedVersion: 4
@@ -19648,13 +19610,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1227187506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1229691081
 GameObject:
   m_ObjectHideFlags: 0
@@ -19884,6 +19844,7 @@ GameObject:
   - component: {fileID: 1244563465}
   - component: {fileID: 1244563466}
   - component: {fileID: 1244563467}
+  - component: {fileID: 1244563468}
   m_Layer: 0
   m_Name: LunastasisBottle (1)
   m_TagString: Untagged
@@ -19970,7 +19931,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &1244563468
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244563464}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1255832062
 GameObject:
   m_ObjectHideFlags: 0
@@ -21013,6 +21001,7 @@ GameObject:
   - component: {fileID: 1321052626}
   - component: {fileID: 1321052627}
   - component: {fileID: 1321052628}
+  - component: {fileID: 1321052629}
   m_Layer: 0
   m_Name: LunastasisBottle (6)
   m_TagString: Untagged
@@ -21099,7 +21088,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &1321052629
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321052625}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1324312130
 GameObject:
   m_ObjectHideFlags: 0
@@ -21457,7 +21473,7 @@ Transform:
   m_GameObject: {fileID: 1333095247}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.74, y: -4.66, z: 0.15843596}
+  m_LocalPosition: {x: 1.74, y: -4.93, z: 0.15843596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21472,13 +21488,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1333095247}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1338643824
 GameObject:
   m_ObjectHideFlags: 0
@@ -22237,13 +22251,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1380032612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1386007805
 GameObject:
   m_ObjectHideFlags: 0
@@ -23477,7 +23489,6 @@ GameObject:
   - component: {fileID: 1462928060}
   - component: {fileID: 1462928061}
   - component: {fileID: 1462928062}
-  - component: {fileID: 1462928064}
   - component: {fileID: 1462928063}
   m_Layer: 0
   m_Name: LunastasisBottle (6)
@@ -23565,7 +23576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &1462928063
 Rigidbody2D:
   serializedVersion: 4
@@ -23593,51 +23604,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1462928064
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462928059}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &1471352890
 GameObject:
   m_ObjectHideFlags: 0
@@ -24109,41 +24075,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1531935548}
-  - component: {fileID: 1531935547}
+  - component: {fileID: 1531935549}
   m_Layer: 0
-  m_Name: BlossoStageGenerator
+  m_Name: ShuraudStageGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1531935547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531935546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea4149bfce5bc4cceab96e62715d4ddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomPrefabs:
-  - {fileID: 6694303251386549359}
-  - {fileID: 5328412294809789139}
-  - {fileID: 2873529855973327704}
-  bedroomPrefab: {fileID: 843538804703465989}
-  rooms_Min_LowInsanity: 3
-  rooms_Max_LowInsanity: 5
-  anomalyChance_LowInsanity: 0.2
-  rooms_Min_HighInsanity: 6
-  rooms_Max_HighInsanity: 8
-  anomalyChance_HighInsanity: 0.6
-  insanityThreshold: 50
-  roomSpacing: 45
-  canvasObject: {fileID: 1603839543}
-  startPosition: {x: 63, y: 0, z: 0}
 --- !u!4 &1531935548
 Transform:
   m_ObjectHideFlags: 0
@@ -24159,6 +24098,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531935549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531935546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bbeb62b70b5415dbced3137bc55a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomPrefabs:
+  - {fileID: 6694303251386549359}
+  - {fileID: 5328412294809789139}
+  - {fileID: 2873529855973327704}
+  bedroomPrefab: {fileID: 843538804703465989}
+  kitchenAnomalyChance: 0.3
+  rooms_Min_LowInsanity: 3
+  rooms_Max_LowInsanity: 5
+  anomalyChance_LowInsanity: 0.8
+  rooms_Min_HighInsanity: 6
+  rooms_Max_HighInsanity: 8
+  anomalyChance_HighInsanity: 0.6
+  insanityThreshold: 50
+  roomSpacing: 45
+  canvasObject: {fileID: 1603839543}
+  startPosition: {x: 63, y: 0, z: 0}
 --- !u!1 &1545151467
 GameObject:
   m_ObjectHideFlags: 0
@@ -24187,7 +24154,7 @@ Transform:
   m_GameObject: {fileID: 1545151467}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.38, y: 10.86, z: 0.28766847}
+  m_LocalPosition: {x: 0.38, y: 10.7, z: 0.28766847}
   m_LocalScale: {x: 5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24346,13 +24313,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1554875998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1568637922
 GameObject:
   m_ObjectHideFlags: 0
@@ -25000,13 +24965,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1588505038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1603839543
 GameObject:
   m_ObjectHideFlags: 0
@@ -25400,7 +25363,7 @@ Transform:
   m_GameObject: {fileID: 1642623812}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.78, y: -5.11, z: 0.15843596}
+  m_LocalPosition: {x: -2.01, y: -5.11, z: 0.15843596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25415,13 +25378,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1642623812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1643264160
 GameObject:
   m_ObjectHideFlags: 0
@@ -34622,13 +34583,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1651393793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1661838220
 GameObject:
   m_ObjectHideFlags: 0
@@ -34971,7 +34930,6 @@ GameObject:
   - component: {fileID: 1684339050}
   - component: {fileID: 1684339051}
   - component: {fileID: 1684339053}
-  - component: {fileID: 1684339052}
   m_Layer: 0
   m_Name: LunastasisBottle (3)
   m_TagString: Untagged
@@ -35058,52 +35016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
---- !u!61 &1684339052
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1684339048}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &1684339053
 Rigidbody2D:
   serializedVersion: 4
@@ -36482,7 +36395,6 @@ GameObject:
   - component: {fileID: 1768967003}
   - component: {fileID: 1768967004}
   - component: {fileID: 1768967005}
-  - component: {fileID: 1768967007}
   - component: {fileID: 1768967006}
   m_Layer: 0
   m_Name: LunastasisBottle (3)
@@ -36570,7 +36482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &1768967006
 Rigidbody2D:
   serializedVersion: 4
@@ -36598,51 +36510,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1768967007
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768967002}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &1779550849
 GameObject:
   m_ObjectHideFlags: 0
@@ -36655,7 +36522,6 @@ GameObject:
   - component: {fileID: 1779550851}
   - component: {fileID: 1779550852}
   - component: {fileID: 1779550854}
-  - component: {fileID: 1779550853}
   m_Layer: 0
   m_Name: LunastasisBottle (6)
   m_TagString: Untagged
@@ -36742,52 +36608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
---- !u!61 &1779550853
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779550849}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &1779550854
 Rigidbody2D:
   serializedVersion: 4
@@ -36911,7 +36732,7 @@ GameObject:
   - component: {fileID: 1817458029}
   - component: {fileID: 1817458030}
   - component: {fileID: 1817458032}
-  - component: {fileID: 1817458031}
+  - component: {fileID: 1817458033}
   m_Layer: 0
   m_Name: LunastasisBottle
   m_TagString: Untagged
@@ -36998,8 +36819,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
---- !u!61 &1817458031
+  LunastacisFlowchart: {fileID: 5875719923437957279}
+--- !u!50 &1817458032
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817458027}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1817458033
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37031,7 +36879,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 5.4196076, y: 0.000005722046}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -37042,35 +36890,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
+  m_Size: {x: 12.445346, y: 2.4516077}
   m_EdgeRadius: 0
---- !u!50 &1817458032
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817458027}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1828424766
 GameObject:
   m_ObjectHideFlags: 0
@@ -38385,13 +38206,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865759735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1867366376
 GameObject:
   m_ObjectHideFlags: 0
@@ -39059,7 +38878,6 @@ GameObject:
   - component: {fileID: 1957162630}
   - component: {fileID: 1957162631}
   - component: {fileID: 1957162632}
-  - component: {fileID: 1957162634}
   - component: {fileID: 1957162633}
   m_Layer: 0
   m_Name: LunastasisBottle (4)
@@ -39147,7 +38965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &1957162633
 Rigidbody2D:
   serializedVersion: 4
@@ -39175,51 +38993,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1957162634
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957162629}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &1957262946
 GameObject:
   m_ObjectHideFlags: 0
@@ -39231,7 +39004,6 @@ GameObject:
   - component: {fileID: 1957262947}
   - component: {fileID: 1957262948}
   - component: {fileID: 1957262949}
-  - component: {fileID: 1957262951}
   - component: {fileID: 1957262950}
   m_Layer: 0
   m_Name: LunastasisBottle (7)
@@ -39319,7 +39091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &1957262950
 Rigidbody2D:
   serializedVersion: 4
@@ -39347,51 +39119,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1957262951
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957262946}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &1961048195
 GameObject:
   m_ObjectHideFlags: 0
@@ -39418,7 +39145,7 @@ Transform:
   m_GameObject: {fileID: 1961048195}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.24, y: -4.63, z: 0.15843596}
+  m_LocalPosition: {x: -8.24, y: -4.47, z: 0.15843596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39433,13 +39160,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1961048195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &1983846331
 GameObject:
   m_ObjectHideFlags: 0
@@ -39451,7 +39176,6 @@ GameObject:
   - component: {fileID: 1983846332}
   - component: {fileID: 1983846333}
   - component: {fileID: 1983846334}
-  - component: {fileID: 1983846336}
   - component: {fileID: 1983846335}
   m_Layer: 0
   m_Name: LunastasisBottle (5)
@@ -39539,7 +39263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &1983846335
 Rigidbody2D:
   serializedVersion: 4
@@ -39567,51 +39291,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1983846336
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983846331}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.24, y: 4.48}
-    newSize: {x: 2.24, y: 4.48}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
-  m_EdgeRadius: 0
 --- !u!1 &2013836748
 GameObject:
   m_ObjectHideFlags: 0
@@ -40021,13 +39700,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2050330054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052381be5a2b7455da506df714b48af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30540ad4d45614f72994de9e73b503cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 3216279045689435885, guid: db52eb8dde041498e9da641f475e28f8, type: 3}
-  - {fileID: 6561413710750681356, guid: 5d612c1ef13234cd8a59d18ac2a00b74, type: 3}
-  - {fileID: 1619979092685954322, guid: af0565d806da04b33b0aa7a2c38fcfe5, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &2051883079
 GameObject:
   m_ObjectHideFlags: 0
@@ -40266,8 +39943,8 @@ GameObject:
   - component: {fileID: 2068102407}
   - component: {fileID: 2068102408}
   - component: {fileID: 2068102409}
-  - component: {fileID: 2068102411}
   - component: {fileID: 2068102410}
+  - component: {fileID: 2068102411}
   m_Layer: 0
   m_Name: LunastasisBottle
   m_TagString: Untagged
@@ -40354,7 +40031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &2068102410
 Rigidbody2D:
   serializedVersion: 4
@@ -40414,7 +40091,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 5.41961, y: 0.031691313}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -40425,7 +40102,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
+  m_Size: {x: 12.572119, y: 2.514997}
   m_EdgeRadius: 0
 --- !u!1 &2080583409
 GameObject:
@@ -41023,8 +40700,8 @@ GameObject:
   - component: {fileID: 2110943545}
   - component: {fileID: 2110943546}
   - component: {fileID: 2110943547}
-  - component: {fileID: 2110943549}
   - component: {fileID: 2110943548}
+  - component: {fileID: 2110943549}
   m_Layer: 0
   m_Name: LunastasisBottle
   m_TagString: Untagged
@@ -41111,7 +40788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ebff05013ba4c05b53470729e5dace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LunastacisFlowchart: {fileID: 828905099}
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!50 &2110943548
 Rigidbody2D:
   serializedVersion: 4
@@ -41171,7 +40848,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 5.3245244, y: 0.03168881}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -41182,7 +40859,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.24, y: 4.48}
+  m_Size: {x: 12.889049, y: 2.6417649}
   m_EdgeRadius: 0
 --- !u!1 &2119861325
 GameObject:
@@ -43333,6 +43010,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &122722480975329191
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  text: "\u98F2\u307E\u306A\u3044"
+  description: 
+  targetBlock: {fileID: 2270008165717848858}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!1 &140755345121066584
 GameObject:
   m_ObjectHideFlags: 0
@@ -46251,6 +45953,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5695441821199613248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1859101061753141098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8524204350590640988}
+  - component: {fileID: 8748020228414935204}
+  - component: {fileID: 9186821947414775194}
+  - component: {fileID: 8482254121725610437}
+  - component: {fileID: 5843483986402204700}
+  m_Layer: 0
+  m_Name: LunastasisBottle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1859361899114527815
 GameObject:
   m_ObjectHideFlags: 0
@@ -46438,63 +46160,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &2009944524471410748
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 361994973}
-    m_Modifications:
-    - target: {fileID: 2417370182354018127, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_Name
-      value: LunaStacisFlowchart
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -22.996103
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.6198992
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.089444384
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324314880731023109, guid: 953bd78359f004591a223b9946e7d253, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 953bd78359f004591a223b9946e7d253, type: 3}
 --- !u!1 &2022061987019614657
 GameObject:
   m_ObjectHideFlags: 0
@@ -47115,6 +46780,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2270008165717848858
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 173
+    y: 130.5
+    width: 94
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 4
+  blockName: Undrink
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 7604161776928291486}
+  - {fileID: 7604161776928291487}
+  suppressAllAutoSelections: 0
 --- !u!61 &2276693625033147469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48064,7 +47757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 6926323558903001116, guid: 8ca308940b9e94201be910d7eb35f605, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!50 &2768876423985923471
 Rigidbody2D:
   serializedVersion: 4
@@ -48237,6 +47930,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &2875491859058435897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.996103, y: -1.6198992, z: 0.089444384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 361994973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2876416853083613781
 Transform:
   m_ObjectHideFlags: 0
@@ -48284,6 +47992,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8011392537137231404}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2883437466552915287
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1
+  indentLevel: 0
+  text: "\u98F2\u3080"
+  description: 
+  targetBlock: {fileID: 7604161776928291479}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!1 &2911289321859986285
 GameObject:
   m_ObjectHideFlags: 0
@@ -50639,6 +50372,10 @@ Transform:
   m_Children:
   - {fileID: 235787395}
   - {fileID: 1480909379}
+  - {fileID: 325893630}
+  - {fileID: 277156784}
+  - {fileID: 800603697}
+  - {fileID: 109486053}
   m_Father: {fileID: 6464488248886805530}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4026964520886365666
@@ -51132,6 +50869,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 582087791326521167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4208887333124652915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2875491859058435897}
+  - component: {fileID: 5875719923437957279}
+  - component: {fileID: 6647348884494792208}
+  - component: {fileID: 2883437466552915287}
+  - component: {fileID: 7604161776928291479}
+  - component: {fileID: 122722480975329191}
+  - component: {fileID: 2270008165717848858}
+  - component: {fileID: 4741115160816380615}
+  - component: {fileID: 7604161776928291482}
+  - component: {fileID: 7604161776928291481}
+  - component: {fileID: 7604161776928291480}
+  - component: {fileID: 7604161776928291484}
+  - component: {fileID: 7604161776928291483}
+  - component: {fileID: 7604161776928291485}
+  - component: {fileID: 7604161776928291487}
+  - component: {fileID: 7604161776928291486}
+  - component: {fileID: 7604161776928291488}
+  m_Layer: 0
+  m_Name: LunaStacisFlowchart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &4238102939256840816
 GameObject:
   m_ObjectHideFlags: 0
@@ -51920,6 +51689,23 @@ Transform:
   - {fileID: 2454172771458921551}
   m_Father: {fileID: 582087791326521167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4741115160816380615
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: DisableMovement
+  delay: 0
 --- !u!4 &4755681875280932447
 Transform:
   m_ObjectHideFlags: 0
@@ -51948,7 +51734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 6926323558903001116, guid: 8ca308940b9e94201be910d7eb35f605, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!1 &4765337079649103742
 GameObject:
   m_ObjectHideFlags: 0
@@ -53725,6 +53511,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!50 &5843483986402204700
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859101061753141098}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5848445320724936470
 GameObject:
   m_ObjectHideFlags: 0
@@ -53976,6 +53789,44 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5875719923437957279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  scrollPos: {x: 1, y: 0}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 1
+  scrollViewRect:
+    serializedVersion: 2
+    x: -343
+    y: -340
+    width: 1114
+    height: 859
+  selectedBlocks:
+  - {fileID: 2270008165717848858}
+  selectedCommands: []
+  variables: []
+  description: 
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  showLineNumbers: 0
+  hideCommands: []
+  luaEnvironment: {fileID: 0}
+  luaBindingName: flowchart
 --- !u!212 &5889934971627247431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -55499,6 +55350,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6543703888731531501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6647348884494792208
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 67
+    y: 71
+    width: 111
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: Lunastacis
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 4741115160816380615}
+  - {fileID: 2883437466552915287}
+  - {fileID: 122722480975329191}
+  suppressAllAutoSelections: 0
 --- !u!4 &6652995716896701315
 Transform:
   m_ObjectHideFlags: 0
@@ -55649,7 +55529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6694221201337591909
 GameObject:
   m_ObjectHideFlags: 0
@@ -56919,6 +56799,223 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3187463842183848434}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7604161776928291479
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 6
+    y: 123.5
+    width: 80
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 2
+  blockName: Drink
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 7604161776928291482}
+  - {fileID: 7604161776928291481}
+  - {fileID: 7604161776928291480}
+  - {fileID: 7604161776928291484}
+  - {fileID: 7604161776928291488}
+  - {fileID: 7604161776928291485}
+  - {fileID: 7604161776928291483}
+  suppressAllAutoSelections: 0
+--- !u!114 &7604161776928291480
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  targetObject: {fileID: 1511723585}
+  methodName: FadeToBlack
+  delay: 0
+--- !u!114 &7604161776928291481
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  storyText: "\u8996\u754C\u304C\u307C\u3084\u3051\u3001\u610F\u8B58\u304C\u9060\u306E\u3044\u3066\u3044\u304F..."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &7604161776928291482
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  storyText: ...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &7604161776928291483
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: LoadgameStage
+  delay: 0
+--- !u!114 &7604161776928291484
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &7604161776928291485
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: EnableMovement
+  delay: 0
+--- !u!114 &7604161776928291486
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  storyText: ...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &7604161776928291487
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: EnableMovement
+  delay: 0
+--- !u!114 &7604161776928291488
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208887333124652915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: ShuraudayPenalty
+  delay: 0
 --- !u!4 &7617607077037270957
 Transform:
   m_ObjectHideFlags: 0
@@ -57333,7 +57430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &7827360798843561671
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -57551,7 +57648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 6926323558903001116, guid: 8ca308940b9e94201be910d7eb35f605, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!114 &7943530205457239278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57916,7 +58013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anomalyPrefabs:
-  - {fileID: 6926323558903001116, guid: 8ca308940b9e94201be910d7eb35f605, type: 3}
+  - {fileID: 1859101061753141098}
 --- !u!212 &8212665872860920237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58207,6 +58304,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &8482254121725610437
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859101061753141098}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.24, y: 4.48}
+    newSize: {x: 2.24, y: 4.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.24, y: 4.48}
+  m_EdgeRadius: 0
 --- !u!114 &8495102093458606166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58286,6 +58428,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 361994973}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &8524204350590640988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859101061753141098}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.48842, y: 79.78528, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8546113208580653268
 SpriteRenderer:
@@ -58533,10 +58690,6 @@ Transform:
   - {fileID: 2876416853083613781}
   - {fileID: 1028018816323187051}
   - {fileID: 2069910507769560917}
-  - {fileID: 325893630}
-  - {fileID: 277156784}
-  - {fileID: 800603697}
-  - {fileID: 109486053}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8722235681755427209
@@ -58586,6 +58739,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8704305678675575441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &8748020228414935204
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859101061753141098}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 081f7fb6e9cb846ee8fd237291127f98, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.24, y: 4.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!4 &8776570462695686486
 Transform:
   m_ObjectHideFlags: 0
@@ -59484,6 +59689,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9186821947414775194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859101061753141098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7d0352e3e37841ab9f5031c7dae11f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LunastacisFlowchart: {fileID: 5875719923437957279}
 --- !u!4 &9191111340454079476
 Transform:
   m_ObjectHideFlags: 0
@@ -59562,3 +59780,4 @@ SceneRoots:
   - {fileID: 6870031876011788630}
   - {fileID: 1031264426}
   - {fileID: 367096126}
+  - {fileID: 8524204350590640988}

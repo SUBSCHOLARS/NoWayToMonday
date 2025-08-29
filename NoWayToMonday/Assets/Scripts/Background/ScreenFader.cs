@@ -72,7 +72,7 @@ public class ScreenFader : MonoBehaviour
                     SceneManager.LoadSceneAsync("RottsDay");
                     break;
                 case "靈":
-                    SceneManager.LoadSceneAsync("CursedDay");
+                    SceneManager.LoadSceneAsync("CurseDay");
                     break;
                 case "翳":
                     SceneManager.LoadSceneAsync("UmbraDay");

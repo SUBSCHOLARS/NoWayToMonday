@@ -27,19 +27,16 @@ public class FridgeScript : MonoBehaviour
     {
         if (isNearFridge && Input.GetKeyDown(KeyCode.Space))
         {
-            CachedPos = mainCamera.transform.position;
-            lastUsedFridge = this;
-            Debug.Log("CashedPos: " + CachedPos);
-            PlayerMovementWithFungus.SendMessage("DisableMovement");
-            mainCamera.transform.position = new Vector3(transform.position.x + 6, 25f, -10f);
+            FridgeOps();
         }
     }
-    void OnMouseDown()
+    public void FridgeOps()
     {
-        // if (isNearFridge && isMoved)
-        // {
-        //     mainCamera.transform.position = CachedPos;
-        // }
+        CachedPos = mainCamera.transform.position;
+        lastUsedFridge = this;
+        Debug.Log("CashedPos: " + CachedPos);
+        PlayerMovementWithFungus.SendMessage("DisableMovement");
+        mainCamera.transform.position = new Vector3(transform.position.x + 6, 25f, -10f);
     }
     void OnTriggerEnter2D(Collider2D other)
     {

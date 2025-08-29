@@ -4814,7 +4814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &178733241
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10065,7 +10065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1611706930}
+  selectedFlowchart: {fileID: 1693432849274002333}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -36290,7 +36290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u95C7\u3068\u306F\u751F\u7269\u306B\u3068\u3063\u3066\u306E\n\u6839\u6E90\u7684\u306A\u6050\u6016\u3067\u3042\u308A\u3001\u305D\u308C\u306F\n\u3042\u308B\u7A2E\u306E\u672A\u77E5\u304B\u3089\u304F\u308B\u306E\u3060\u3068\u8A00\u3048\u308B\u3002"
+  m_text: "<mark=#02020570 padding=\"30,3 0, 0, 0\">\u95C7\u3068\u306F\u751F\u7269\u306B\u3068\u3063\u3066\u306E\n\u6839\u6E90\u7684\u306A\u6050\u6016\u3067\u3042\u308A\u3001\u305D\u308C\u306F\n\u3042\u308B\u7A2E\u306E\u672A\u77E5\u304B\u3089\u304F\u308B\u306E\u3060\u3068\u8A00\u3048\u308B\u3002</mark>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0bc42951fe154451983974da27332f74, type: 2}
   m_sharedMaterial: {fileID: 3363058889422199235, guid: 0bc42951fe154451983974da27332f74, type: 2}
@@ -36348,7 +36348,7 @@ MonoBehaviour:
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
+  m_geometrySortingOrder: 1
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
@@ -41230,8 +41230,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 3553893871337791276}
-  selectedCommands:
-  - {fileID: 7813571880354737020}
+  selectedCommands: []
   variables:
   - {fileID: 488210989003199286}
   description: 

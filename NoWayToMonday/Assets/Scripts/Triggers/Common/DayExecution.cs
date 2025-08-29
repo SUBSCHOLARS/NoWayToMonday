@@ -38,8 +38,4 @@ public class DayExecution : MonoBehaviour
     {
         flowchart.ExecuteBlock("Seepsday");
     }
-    public void ExecuteAfterConv()
-    {
-        flowchart.ExecuteBlock("AfterConv");
-    }
 }

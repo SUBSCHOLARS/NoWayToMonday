@@ -10,10 +10,6 @@ public class RefinedKanjiManager : MonoBehaviour
     private string savedReading;
     int sizePercentage;
     float horizontalOffset;
-    void Start()
-    {
-        LoadKanjiState();
-    }
     private Dictionary<string, string> kanjiDictionary = new Dictionary<string, string>
     {
         { "衊", "ばつ" },
@@ -78,7 +74,6 @@ public class RefinedKanjiManager : MonoBehaviour
                 break;
         }
         sourceDictionary.Remove(randomKey); // Remove the selected kanji to ensure uniqueness
-        SaveKanjiState();
     }
     public void SetRandomKanjiForSpecificSay()
     {
@@ -102,46 +97,5 @@ public class RefinedKanjiManager : MonoBehaviour
         flowchart.SetStringVariable("repeatKanji", savedKanji);
         flowchart.SetStringVariable("repeatReading", savedKanji);
     }
-    public void SaveKanjiState()
-    {
-        foreach (var kanji in kanjiDictionary.Keys)
-        {
-            PlayerPrefs.SetInt($"kanji_{kanji}", 1); // 1: 未削除
-        }
-        foreach (var kanji in rareKanjiDictionary.Keys)
-        {
-            PlayerPrefs.SetInt($"rareKanji_{kanji}", 1); // 1: 未削除
-        }
-        PlayerPrefs.Save();
-    }
-    public void LoadKanjiState()
-    {
-        List<string> keysToRemove = new List<string>();
 
-        foreach (var kanji in kanjiDictionary.Keys)
-        {
-            if (PlayerPrefs.GetInt($"kanji_{kanji}", 1) == 0) // 0: 削除済み
-            {
-                keysToRemove.Add(kanji);
-            }
-        }
-        foreach (var kanji in keysToRemove)
-        {
-            kanjiDictionary.Remove(kanji);
-        }
-
-        keysToRemove.Clear();
-
-        foreach (var kanji in rareKanjiDictionary.Keys)
-        {
-            if (PlayerPrefs.GetInt($"rareKanji_{kanji}", 1) == 0) // 0: 削除済み
-            {
-                keysToRemove.Add(kanji);
-            }
-        }
-        foreach (var kanji in keysToRemove)
-        {
-            rareKanjiDictionary.Remove(kanji);
-        }
-    }
 }

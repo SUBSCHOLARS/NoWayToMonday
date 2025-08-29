@@ -12,6 +12,7 @@ TagManager:
   - DoorFront
   - Flower
   - Blood
+  - Towel
   layers:
   - Default
   - TransparentFX

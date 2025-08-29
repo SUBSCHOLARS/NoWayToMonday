@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MaulsdayAnomalyActivator : MonoBehaviour
 {
-     [Header("発生させる異常オブジェクト")]
+    [Header("発生させる異常オブジェクト")]
     public GameObject[] anomalyPrefabs;
     private bool isActivated = false;
 

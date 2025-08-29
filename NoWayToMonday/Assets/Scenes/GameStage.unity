@@ -2703,6 +2703,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TV: {fileID: 97033682}
   Screen: {fileID: 1747651501}
+  FlowerEnchanting: {fileID: 0}
+  RedProgram: {fileID: 0}
   tvInteractableIcon: {fileID: 1032386002}
 --- !u!1 &114615977
 GameObject:
@@ -13192,6 +13194,8 @@ MonoBehaviour:
   PC: {fileID: 944397064}
   PCScreen: {fileID: 569128317}
   pcInteractableIcon: {fileID: 1409188156}
+  PlayerMovementWithFungus: {fileID: 0}
+  PCDesktop: {fileID: 0}
 --- !u!1 &947198539
 GameObject:
   m_ObjectHideFlags: 0
@@ -21844,9 +21848,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1643264376}
+  - {fileID: 1643264338}
   selectedCommands:
-  - {fileID: 1643264385}
+  - {fileID: 1643264357}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}

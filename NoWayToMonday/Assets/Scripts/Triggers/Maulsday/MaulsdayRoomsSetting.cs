@@ -8,6 +8,7 @@ public class MaulsdayRoomsSetting : MonoBehaviour
     [Header("ステージ設定")]
     public GameObject[] roomPrefabs; // 部屋のテンプレートプレハブを複数登録
     public GameObject bedroomPrefab;
+    public GameObject Kitchen;
     [Header("異常アニメーション設定")]
     [Tooltip("キッチンで異常アニメーションが発生する確率")]
     [Range(0, 1)] public float kitchenAnomalyChance = 0.3f; // 30%の確率
@@ -53,7 +54,15 @@ public class MaulsdayRoomsSetting : MonoBehaviour
         // 2. 決定した数だけ部屋を生成する
         for (int i = 0; i < roomCount; i++)
         {
-            GameObject selectedRoomPrefab = roomPrefabs[Random.Range(0, roomPrefabs.Length)];
+            GameObject selectedRoomPrefab;
+            if (i == 0)
+            {
+                selectedRoomPrefab = Kitchen;
+            }
+            else
+            {
+                selectedRoomPrefab = roomPrefabs[Random.Range(0, roomPrefabs.Length)];
+            }
             // 部屋を生成（位置や繋ぎ方はゲームの仕様に合わせて調整）
             Vector3 spawnPos = new Vector3(63.5f + i * -45, -0.7f, 0); // 仮の位置
             GameObject newRoom = Instantiate(selectedRoomPrefab, spawnPos, Quaternion.identity);
@@ -109,7 +118,7 @@ public class MaulsdayRoomsSetting : MonoBehaviour
         {
             // 5. 抽選に当たったら、Animatorのトリガーを発動させる
             Debug.Log("キッチンの異常アニメーションを発動させました！");
-            animator.SetTrigger("isAbnormal");
+            animator.SetTrigger("isAbnomal");
         }
         else
         {

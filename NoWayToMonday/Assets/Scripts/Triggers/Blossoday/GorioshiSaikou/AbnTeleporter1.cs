@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Fungus;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AbnTeleporter1 : MonoBehaviour
 {
@@ -19,6 +20,17 @@ public class AbnTeleporter1 : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        flowchart.ExecuteBlock("BlossoDayReason");
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "BlossoDay":
+                flowchart.ExecuteBlock("BlossoDayReason");
+                break;
+            case "MaulsDay":
+                flowchart.ExecuteBlock("MaulsDayReason");
+                break;
+            case "ShurauDay":
+                flowchart.ExecuteBlock("ShurauDayReason");
+                break;
+        }
     }
 }

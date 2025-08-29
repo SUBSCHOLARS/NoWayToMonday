@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -29,6 +30,11 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public GameObject BrotherNormal;
     public GameObject BrotherFlower;
     private AudioSource audioSource;
+    Animator animator;
+    void Start()
+    {
+        // animator = Player.GetComponent<Animator>();
+    }
     public void DisableMovement()
     {
         playerMovement.SetMovement(false);
@@ -194,5 +200,24 @@ public class PlayerMovementWithFungus : MonoBehaviour
     {
         GameObject[] flowers = GameObject.FindGameObjectsWithTag("Flower");
         PlayerMovement.insanityLevel += flowers.Length;
+    }
+    public void CalculateBloodNumAndChangeInsanityLevel()
+    {
+        GameObject[] bleed = GameObject.FindGameObjectsWithTag("Blood");
+        PlayerMovement.insanityLevel += bleed.Length;
+    }
+    public void BackMoving()
+    {
+        animator = Player.GetComponent<Animator>();
+        Vector3 scale = Player.transform.localScale;
+        scale.x = -1;
+        Player.transform.localScale = scale; // これが必要
+        animator.SetBool("IsWalking", true);
+        Player.transform.DOMoveX(71f, 2.0f).OnComplete(
+            () =>
+            {
+                animator.SetBool("IsWalking", false);
+            }
+        );
     }
 }

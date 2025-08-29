@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class TVScript : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class TVScript : MonoBehaviour
     public GameObject TV;
     public GameObject Screen;
     public GameObject FlowerEnchanting;
+    public GameObject RedProgram;
     public GameObject tvInteractableIcon;
     AudioSource audioSource;
     SpriteRenderer spriteRenderer;
@@ -24,21 +26,31 @@ public class TVScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isNearTV && !isTVOff && Input.GetKeyDown(KeyCode.Space))
+        if (SceneManager.GetActiveScene().name == "BlossoDay")
         {
-            Screen.SetActive(false);
-            FlowerEnchanting.SetActive(true);
-            audioSource.Pause();
-            isTVOff = true;
-            hadBeenStoppedTV = true;
+            if (isNearTV && !isTVOff && Input.GetKeyDown(KeyCode.Space))
+            {
+                Screen.SetActive(false);
+                FlowerEnchanting.SetActive(true);
+                audioSource.Pause();
+                isTVOff = true;
+            }
+            else if (isNearTV && isTVOff && Input.GetKeyDown(KeyCode.Space))
+            {
+                Screen.SetActive(true);
+                FlowerEnchanting.SetActive(false);
+                audioSource.UnPause();
+                isTVOff = false;
+            }
         }
-        else if (isNearTV && isTVOff && Input.GetKeyDown(KeyCode.Space))
+        else if (SceneManager.GetActiveScene().name == "MaulsDay")
         {
-            Screen.SetActive(true);
-            FlowerEnchanting.SetActive(false);
-            audioSource.UnPause();
-            isTVOff = false;
-            hadBeenStoppedTV = false;
+            if (isNearTV && !isTVOff && Input.GetKeyDown(KeyCode.Space))
+            {
+                RedProgram.SetActive(false);
+                audioSource.Pause();
+                isTVOff = true;
+            }
         }
     }
     void OnTriggerEnter2D(Collider2D other)

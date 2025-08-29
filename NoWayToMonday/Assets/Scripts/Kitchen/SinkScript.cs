@@ -48,6 +48,7 @@ public class SinkScript : MonoBehaviour
             {
                 isDripStopped = true;
                 animator.SetTrigger("isBloodStopped");
+                PlayerMovement.insanityLevel -= 2.0f;
                 audioSource.PlayOneShot(audioSource.clip);
             }
             else if (isSand && PodScript.isPodTaken && isNearFaucet)

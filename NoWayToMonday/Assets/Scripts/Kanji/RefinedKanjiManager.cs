@@ -6,8 +6,9 @@ using UnityEngine;
 public class RefinedKanjiManager : MonoBehaviour
 {
     public Flowchart flowchart;
-    private string savedKanji;
+    public static string savedKanji;
     private string savedReading;
+    public static string furiganaText;
     int sizePercentage;
     float horizontalOffset;
     private Dictionary<string, string> kanjiDictionary = new Dictionary<string, string>
@@ -80,11 +81,11 @@ public class RefinedKanjiManager : MonoBehaviour
         GetRandomRefinedKanji();
         if (!string.IsNullOrEmpty(CurrentKanji))
         {
-            string furiganaText = $"{CurrentKanji}<space={horizontalOffset}em><voffset=1em><size={sizePercentage}%>{CurrentReading}</size></voffset>";
+            furiganaText = $"{CurrentKanji}<space={horizontalOffset}em><voffset=1em><size={sizePercentage}%>{CurrentReading}</size></voffset>";
             flowchart.SetStringVariable("currentKanji", furiganaText);
             flowchart.SetStringVariable("currentReading", CurrentReading);
             flowchart.SetStringVariable("pureCurrentKanji", CurrentKanji);
-            savedKanji = furiganaText; // Store the current kanji for repeat use
+            // savedKanji = furiganaText; // Store the current kanji for repeat use
             savedReading = CurrentReading; // Store the current reading for repeat use
         }
         else
@@ -95,7 +96,11 @@ public class RefinedKanjiManager : MonoBehaviour
     public void RepeatRandomKanjiForSpecificSay()
     {
         flowchart.SetStringVariable("repeatKanji", savedKanji);
-        flowchart.SetStringVariable("repeatReading", savedKanji);
+        //flowchart.SetStringVariable("repeatReading", savedKanji);
+    }
+    public void SetBeforeKanji()
+    {
+        savedKanji = furiganaText;
     }
 
 }

@@ -21629,6 +21629,7 @@ GameObject:
   - component: {fileID: 1643264719}
   - component: {fileID: 1643264718}
   - component: {fileID: 1643264717}
+  - component: {fileID: 1643264734}
   m_Layer: 0
   m_Name: Flowchart2
   m_TagString: Untagged
@@ -21853,9 +21854,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1643264370}
+  - {fileID: 1643264349}
   selectedCommands:
-  - {fileID: 1643264717}
+  - {fileID: 1643264734}
   variables:
   - {fileID: 1643264176}
   - {fileID: 1643264202}
@@ -25690,6 +25691,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1643264734}
   - {fileID: 1643264348}
   suppressAllAutoSelections: 0
 --- !u!114 &1643264350
@@ -40563,6 +40565,23 @@ MonoBehaviour:
   indentLevel: 1
   targetObject: {fileID: 961939562}
   methodName: ExecuteAfterConv
+  delay: 0
+--- !u!114 &1643264734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643264160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 587
+  indentLevel: 0
+  targetObject: {fileID: 1643264160}
+  methodName: SetBeforeKanji
   delay: 0
 --- !u!1 &1643500432
 GameObject:

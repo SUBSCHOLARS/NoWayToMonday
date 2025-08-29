@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: bcc4271336ba94d089000caad44cf777
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1928
+        width: 284
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca767a15d98742a5a3ad4f1cde4dc6b
+      internalID: 1497307357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1928
+        width: 282
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcb4d517975a46a3a9e5c63462019e5
+      internalID: -19267042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1928
+        width: 284
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f66ae2e58224d4584528d3fa238a7e
+      internalID: -198646069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 1939
+        width: 284
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244baa71595e846b6876bcfd2a30df66
+      internalID: -1487964445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 1928
+        width: 284
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1d4b4bbad5b4ed48e72659c0c08184
+      internalID: -1234878544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1289
+        width: 284
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb482d18704d4e4ca3194e5dbd88d21
+      internalID: -383467348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1289
+        width: 282
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a27000166744107815735210715c8f
+      internalID: 894434323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1289
+        width: 284
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5d14608df074acd95a2e58b3803d32
+      internalID: -1391931267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 1289
+        width: 284
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb4f0331d60146718ed3ccb15989b3b
+      internalID: 748627679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 1289
+        width: 284
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108947937427c4f288942ad6d2d0e8ab
+      internalID: -599979153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 648
+        width: 284
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f7da565614a4a458c29e64224a9f04
+      internalID: 1725048643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 648
+        width: 282
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcc73c2076cc46bbb516154c2b0f659
+      internalID: 920687771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 648
+        width: 284
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0062bb758108d48e58405c4614d73601
+      internalID: -501537448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2138
+        y: 648
+        width: 284
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4178e4d5ca9ab4fcbaa6a51ea02139f3
+      internalID: -1255095987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 648
+        width: 284
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbb1505bb6694b5997c8ef11871bd0b
+      internalID: 317239134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 9
+        width: 284
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e7b9a6922d247f4b8b1da201d89614
+      internalID: 2050301457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 9
+        width: 282
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487d0d79919b447af8385a38edc6b119
+      internalID: 448130256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoWayToMondayLurksDayStranger-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 9
+        width: 284
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec01d28343ed4aa79ec4a4805a04a02
+      internalID: 2039146623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NoWayToMondayLurksDayStranger-Sheet_0: 1497307357
+      NoWayToMondayLurksDayStranger-Sheet_1: -19267042
+      NoWayToMondayLurksDayStranger-Sheet_10: 1725048643
+      NoWayToMondayLurksDayStranger-Sheet_11: 920687771
+      NoWayToMondayLurksDayStranger-Sheet_12: -501537448
+      NoWayToMondayLurksDayStranger-Sheet_13: -1255095987
+      NoWayToMondayLurksDayStranger-Sheet_14: 317239134
+      NoWayToMondayLurksDayStranger-Sheet_15: 2050301457
+      NoWayToMondayLurksDayStranger-Sheet_16: 448130256
+      NoWayToMondayLurksDayStranger-Sheet_17: 2039146623
+      NoWayToMondayLurksDayStranger-Sheet_2: -198646069
+      NoWayToMondayLurksDayStranger-Sheet_3: -1487964445
+      NoWayToMondayLurksDayStranger-Sheet_4: -1234878544
+      NoWayToMondayLurksDayStranger-Sheet_5: -383467348
+      NoWayToMondayLurksDayStranger-Sheet_6: 894434323
+      NoWayToMondayLurksDayStranger-Sheet_7: -1391931267
+      NoWayToMondayLurksDayStranger-Sheet_8: 748627679
+      NoWayToMondayLurksDayStranger-Sheet_9: -599979153
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

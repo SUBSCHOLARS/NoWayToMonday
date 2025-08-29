@@ -3,7 +3,7 @@ using UnityEngine;
 public class LunastacisScript : MonoBehaviour
 {
     bool isNear = false;
-    Flowchart LunastacisFlowchart;
+    public Flowchart LunastacisFlowchart;
     void Update()
     {
         if (isNear && Input.GetKeyDown(KeyCode.Space))

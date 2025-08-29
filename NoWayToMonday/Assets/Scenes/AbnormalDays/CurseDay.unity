@@ -40937,7 +40937,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 3553893871337791276}
   selectedCommands:
-  - {fileID: 8554331155431585619}
+  - {fileID: 7813571880354737020}
   variables:
   - {fileID: 488210989003199286}
   description: 
@@ -44468,7 +44468,6 @@ MonoBehaviour:
   - {fileID: 823195205643085624}
   - {fileID: 1716571611525825203}
   - {fileID: 6406465805817865261}
-  - {fileID: 8554331155431585619}
   - {fileID: 7813571880354737020}
   - {fileID: 2492696611621296080}
   - {fileID: 593931798996818780}
@@ -46671,7 +46670,6 @@ GameObject:
   - component: {fileID: 7827360798843561671}
   - component: {fileID: 1716571611525825203}
   - component: {fileID: 5036494068280747761}
-  - component: {fileID: 8554331155431585619}
   m_Layer: 0
   m_Name: FlowchartSleep
   m_TagString: Untagged
@@ -49338,6 +49336,7 @@ MonoBehaviour:
   TV: {fileID: 2448035922704441077}
   Screen: {fileID: 838361023101753433}
   FlowerEnchanting: {fileID: 98659883}
+  RedProgram: {fileID: 0}
   tvInteractableIcon: {fileID: 8894820646863648231}
 --- !u!4 &6110090760521316550
 Transform:
@@ -53369,23 +53368,6 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 5175157807626884622}
   methodName: ResetMenuTriggerSleep
-  delay: 0
---- !u!114 &8554331155431585619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4578566898243161274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 25
-  indentLevel: 0
-  targetObject: {fileID: 5870712809568637876}
-  methodName: CalculateFlowerNumAndChangeInsanityLevel
   delay: 0
 --- !u!4 &8568655585819850417
 Transform:

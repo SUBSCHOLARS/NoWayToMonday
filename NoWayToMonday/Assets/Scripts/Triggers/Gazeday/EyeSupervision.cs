@@ -75,19 +75,25 @@ public class EyeSupervision : MonoBehaviour
         // 自分の位置を基準に半径20の範囲でPlayerを探索
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 20f);
 
+        bool playerFound = false;
+
         foreach (var hitCollider in hitColliders)
         {
             if (hitCollider.CompareTag("Player")) // Playerタグを持つオブジェクトを判定
             {
-                //Debug.Log("Playerが範囲内にいます: " + hitCollider.gameObject.name);
-                // 必要な処理をここに記述
                 playerTransform = hitCollider.gameObject.transform;
                 lastPlayerPosition = playerTransform.position;
+                playerFound = true;
+                break; // プレイヤーが見つかったらループを抜ける
             }
-            else
-            {
-                Debug.Log("いません");
-            }
+        }
+
+        if (!playerFound)
+        {
+            // 範囲内にプレイヤーがいない場合、playerTransformをリセット
+            playerTransform = null;
+            animator.SetBool("IsDetected", false);
+            spriteRenderer.color = Color.white;
         }
     }
 }

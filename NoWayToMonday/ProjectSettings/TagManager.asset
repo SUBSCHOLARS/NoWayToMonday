@@ -13,6 +13,7 @@ TagManager:
   - Flower
   - Blood
   - Towel
+  - Sink
   layers:
   - Default
   - TransparentFX

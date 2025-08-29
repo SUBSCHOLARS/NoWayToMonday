@@ -31,6 +31,9 @@ public class AbnTeleporter1 : MonoBehaviour
             case "ShurauDay":
                 flowchart.ExecuteBlock("ShurauDayReason");
                 break;
+            case "UmbraDay":
+                flowchart.ExecuteBlock("UmbraDayReason");
+                break;
         }
     }
 }

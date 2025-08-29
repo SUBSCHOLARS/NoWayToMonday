@@ -224,4 +224,12 @@ public class PlayerMovementWithFungus : MonoBehaviour
     {
         PlayerMovement.insanityLevel += 30f;
     }
+    public void GetSinkTags()
+    {
+        GameObject[] sinks = GameObject.FindGameObjectsWithTag("Sink");
+        for (int i = 0; i < sinks.Length; i++)
+        {
+            sinks[i].GetComponent<Animator>().SetBool("IsDripping", false);
+        }
+    }
 }

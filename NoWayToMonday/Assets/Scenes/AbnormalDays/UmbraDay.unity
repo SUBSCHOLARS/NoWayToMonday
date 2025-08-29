@@ -5749,6 +5749,7 @@ GameObject:
   - component: {fileID: 238481839}
   - component: {fileID: 238481843}
   - component: {fileID: 238481842}
+  - component: {fileID: 238481844}
   m_Layer: 0
   m_Name: AbnormalDayReasonFlowchart
   m_TagString: Untagged
@@ -5825,6 +5826,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 238481843}
   - {fileID: 238481839}
+  - {fileID: 238481844}
   - {fileID: 238481842}
   suppressAllAutoSelections: 0
 --- !u!114 &238481841
@@ -5854,7 +5856,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 238481840}
   selectedCommands:
-  - {fileID: 238481839}
+  - {fileID: 238481844}
   variables: []
   description: 
   stepPause: 0
@@ -5899,6 +5901,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 5870712809568637876}
   methodName: DisableMovement
+  delay: 0
+--- !u!114 &238481844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238481837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  targetObject: {fileID: 5870712809568637876}
+  methodName: BackMoving
   delay: 0
 --- !u!1 &248231822
 GameObject:
@@ -10065,7 +10084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1693432849274002333}
+  selectedFlowchart: {fileID: 238481841}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1

@@ -20,7 +20,6 @@ public class RefinedKanjiManager : MonoBehaviour
         { "靈", "りょう" },
         { "蕐", "はな" },
         { "翳", "かげ" },
-        { "蠱", "こ" },
         { "瀛", "うみ" }
     };
     private Dictionary<string, string> rareKanjiDictionary = new Dictionary<string, string>

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Fungus;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -31,6 +32,9 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public GameObject BrotherNormal;
     public GameObject BrotherFlower;
     private AudioSource audioSource;
+    public GameObject Bed;
+    public Flowchart UndayFlowchart;
+    public GameObject DontGoAnywhere;
     public Image NoImage;
     Animator animator;
     void Start()
@@ -256,5 +260,15 @@ public class PlayerMovementWithFungus : MonoBehaviour
 
         // 再生が終了したら非表示にする
         NoImage.gameObject.SetActive(false);
+    }
+    public void SetPlayerOnBed()
+    {
+        Player.transform.position = Bed.transform.position;
+        UndayFlowchart.ExecuteBlock("Unday");
+        DontGoAnywhere.SetActive(true);
+    }
+    public void DontGoAnywhereDeactivate()
+    {
+        DontGoAnywhere.SetActive(false);
     }
 }

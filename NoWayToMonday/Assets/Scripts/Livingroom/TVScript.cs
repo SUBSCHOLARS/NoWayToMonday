@@ -47,9 +47,24 @@ public class TVScript : MonoBehaviour
         {
             if (isNearTV && !isTVOff && Input.GetKeyDown(KeyCode.Space))
             {
-                RedProgram.SetActive(false);
                 audioSource.Pause();
                 isTVOff = true;
+                Destroy(RedProgram);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "GameStage")
+        {
+            if (isNearTV && !isTVOff && Input.GetKeyDown(KeyCode.Space))
+            {
+                Screen.SetActive(false);
+                audioSource.Pause();
+                isTVOff = true;
+            }
+            else if (isNearTV && isTVOff && Input.GetKeyDown(KeyCode.Space))
+            {
+                Screen.SetActive(true);
+                audioSource.UnPause();
+                isTVOff = false;
             }
         }
     }

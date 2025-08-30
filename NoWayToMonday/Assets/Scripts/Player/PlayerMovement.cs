@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip[] walkingSounds;
     public AudioClip bleedingSound;
     public AudioClip openDoor;
+    bool hasKnifeLurksday = false;
     //public GameObject WalkingSound;
     Rigidbody2D rb2D;
     Animator animator;
@@ -73,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsWalking", false);
             animator.SetBool("IsWalkingWithPod", false);
         }
-        if (this.gameObject.transform.position.x < -13f&&SceneManager.GetActiveScene().name=="GameStage")
+        if (this.gameObject.transform.position.x < -13f && SceneManager.GetActiveScene().name == "GameStage")
         {
             this.gameObject.transform.position = new Vector3(-13f, -7.7f, 0f);
         }
@@ -180,5 +181,34 @@ public class PlayerMovement : MonoBehaviour
     public void ExploringFinish()
     {
         isExploring = false;
+    }
+    public void KnifeTakenAnim()
+    {
+        animator.SetBool("TakeKnife", true);
+        GameObject[] knives = GameObject.FindGameObjectsWithTag("Knife");
+        GameObject[] knivestaken = GameObject.FindGameObjectsWithTag("KnifeTaken");
+        for (int i = 0; i < knives.Length; i++)
+        {
+            knives[i].SetActive(false);
+        }
+        for (int i = 0; i < knivestaken.Length; i++)
+        {
+            knivestaken[i].SetActive(true);
+        }
+        hasKnifeLurksday = true;
+    }
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Stranger"))
+        {
+            if (hasKnifeLurksday)
+            {
+                Destroy(collision.gameObject);
+            }
+            else
+            {
+                animator.SetBool("StabbedByStranger", true);
+            }
+        }
     }
 }

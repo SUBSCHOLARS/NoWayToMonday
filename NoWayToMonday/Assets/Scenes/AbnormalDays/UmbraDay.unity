@@ -7685,6 +7685,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   BrotherNormal: {fileID: 0}
   BrotherFlower: {fileID: 0}
+  NoImage: {fileID: 0}
 --- !u!114 &337235536
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10084,7 +10085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 238481841}
+  selectedFlowchart: {fileID: 1693432849274002333}
 --- !u!4 &545543068
 Transform:
   m_ObjectHideFlags: 1
@@ -16400,6 +16401,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   BrotherNormal: {fileID: 0}
   BrotherFlower: {fileID: 0}
+  NoImage: {fileID: 0}
 --- !u!114 &1192274795
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -22370,6 +22372,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   BrotherNormal: {fileID: 0}
   BrotherFlower: {fileID: 0}
+  NoImage: {fileID: 0}
 --- !u!114 &1643264169
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -41249,7 +41252,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 3553893871337791276}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1814494470689514287}
   variables:
   - {fileID: 488210989003199286}
   description: 
@@ -41420,8 +41424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  targetObject: {fileID: 3842634849031192373, guid: 057ac13cc4de44593b3669564c67dca5, type: 3}
-  methodName: FadeToBlackThenToClear
+  targetObject: {fileID: 1511723585}
+  methodName: FadeToBlack
   delay: 0
 --- !u!1 &1814907166476799754
 GameObject:
@@ -44240,6 +44244,7 @@ MonoBehaviour:
   Player: {fileID: 594145122}
   BrotherNormal: {fileID: 1531718580}
   BrotherFlower: {fileID: 1568637922}
+  NoImage: {fileID: 0}
 --- !u!4 &3316339452387527698
 Transform:
   m_ObjectHideFlags: 0

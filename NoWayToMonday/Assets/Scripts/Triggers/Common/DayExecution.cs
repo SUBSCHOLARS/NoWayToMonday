@@ -36,7 +36,7 @@ public class DayExecution : MonoBehaviour
     }
     public void ExecuteShrauday()
     {
-        flowchart.ExecuteBlock("Seepsday");
+        flowchart.ExecuteBlock("Shurauday");
     }
     public void ExecuteAfterConv()
     {

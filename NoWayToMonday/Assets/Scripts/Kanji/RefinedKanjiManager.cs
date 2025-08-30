@@ -11,19 +11,19 @@ public class RefinedKanjiManager : MonoBehaviour
     public static string furiganaText;
     int sizePercentage;
     float horizontalOffset;
-    private Dictionary<string, string> kanjiDictionary = new Dictionary<string, string>
+    public static Dictionary<string, string> kanjiDictionary = new Dictionary<string, string>
     {
         { "衊", "ばつ" },
         { "寢", "ね" },
         { "蔽", "へい" },
         { "瞵", "りん" },
-        { "錆", "さび" },
+        //{ "錆", "さび" },
         { "靈", "りょう" },
         { "蕐", "はな" },
         { "翳", "かげ" },
-        { "瀛", "うみ" }
+        //{ "瀛", "うみ" }
     };
-    private Dictionary<string, string> rareKanjiDictionary = new Dictionary<string, string>
+    public static Dictionary<string, string> rareKanjiDictionary = new Dictionary<string, string>
     {
         { "彁", " " },
         { "墸", "  " },

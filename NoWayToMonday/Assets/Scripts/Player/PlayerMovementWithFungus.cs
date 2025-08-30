@@ -5,6 +5,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovementWithFungus : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public GameObject BrotherNormal;
     public GameObject BrotherFlower;
     private AudioSource audioSource;
+    public Image NoImage;
     Animator animator;
     void Start()
     {
@@ -231,5 +233,28 @@ public class PlayerMovementWithFungus : MonoBehaviour
         {
             sinks[i].GetComponent<Animator>().SetBool("IsDripping", false);
         }
+    }
+    public void NoImageActivationAndPlaySound()
+    {
+        NoImage.gameObject.SetActive(true); // 画像を表示
+        AudioSource audioSource = NoImage.GetComponent<AudioSource>(); // AudioSourceを取得
+
+        if (audioSource != null)
+        {
+            audioSource.Play(); // 音を再生
+            StartCoroutine(DisableNoImageAfterSound(audioSource)); // 再生終了後に非表示にするコルーチンを開始
+        }
+    }
+
+    private IEnumerator DisableNoImageAfterSound(AudioSource audioSource)
+    {
+        // 再生中は待機
+        while (audioSource.isPlaying)
+        {
+            yield return null; // 次のフレームまで待機
+        }
+
+        // 再生が終了したら非表示にする
+        NoImage.gameObject.SetActive(false);
     }
 }

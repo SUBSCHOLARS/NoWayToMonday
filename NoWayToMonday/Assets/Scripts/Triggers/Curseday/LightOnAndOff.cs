@@ -7,8 +7,9 @@ public class LightOnAndOff : MonoBehaviour
 {
     public GameObject Light;
     public Light2D globalLight;
-    public float dimmedIntensity = 0.3f;
+    public float dimmedIntensity = 0.1f;
     private AudioSource audioSource;
+    public GameObject[] ghosts;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,21 +29,29 @@ public class LightOnAndOff : MonoBehaviour
         {
             Debug.Log("ライトをオフにします");
             Light.SetActive(false);
+            for (int i = 0; i < ghosts.Length; i++)
+            {
+                ghosts[i].SetActive(true);
+            }
             audioSource.PlayOneShot(audioSource.clip);
             if (globalLight != null)
             {
                 globalLight.intensity = dimmedIntensity;
             }
-            yield return new WaitForSeconds(4.0f);
+            yield return new WaitForSeconds(4f);
 
             Debug.Log("ライトをオフにします");
             Light.SetActive(true);
+            for (int i = 0; i < ghosts.Length; i++)
+            {
+                ghosts[i].SetActive(false);
+            }
             audioSource.PlayOneShot(audioSource.clip);
             if (globalLight != null)
             {
                 globalLight.intensity = 1f;
             }
-            yield return new WaitForSeconds(4.0f);
+            yield return new WaitForSeconds(4f);
         }
     }
 }

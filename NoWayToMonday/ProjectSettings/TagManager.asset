@@ -16,6 +16,7 @@ TagManager:
   - Sink
   - Knife
   - KnifeTaken
+  - Stranger
   layers:
   - Default
   - TransparentFX

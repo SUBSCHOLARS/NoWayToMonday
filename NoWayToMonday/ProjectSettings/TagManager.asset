@@ -17,6 +17,7 @@ TagManager:
   - Knife
   - KnifeTaken
   - Stranger
+  - StrangerInBedroom
   layers:
   - Default
   - TransparentFX

@@ -210,5 +210,9 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("StabbedByStranger", true);
             }
         }
+        if (collision.gameObject.CompareTag("StrangerInBedroom"))
+        {
+            animator.SetBool("StabbedByStranger", true);
+        }
     }
 }

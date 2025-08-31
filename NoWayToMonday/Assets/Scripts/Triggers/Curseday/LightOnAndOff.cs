@@ -32,6 +32,7 @@ public class LightOnAndOff : MonoBehaviour
             for (int i = 0; i < ghosts.Length; i++)
             {
                 ghosts[i].SetActive(true);
+                ghosts[i].GetComponent<AudioSource>().Play();
             }
             audioSource.PlayOneShot(audioSource.clip);
             if (globalLight != null)
@@ -40,11 +41,12 @@ public class LightOnAndOff : MonoBehaviour
             }
             yield return new WaitForSeconds(4f);
 
-            Debug.Log("ライトをオフにします");
+            Debug.Log("ライトをオンにします");
             Light.SetActive(true);
             for (int i = 0; i < ghosts.Length; i++)
             {
                 ghosts[i].SetActive(false);
+                ghosts[i].GetComponent<AudioSource>().Stop();
             }
             audioSource.PlayOneShot(audioSource.clip);
             if (globalLight != null)

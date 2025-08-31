@@ -61,7 +61,7 @@ public class GhostScript : MonoBehaviour
         }
 
         // 条件1: AudioSourceが現在再生中か？ (ミュートされておらず、ボリュームが0より大きいかも確認)
-        if (!targetAudioSource.isPlaying || targetAudioSource.mute || targetAudioSource.volume <= 0)
+        if (!targetAudioSource.isPlaying || targetAudioSource.mute || targetAudioSource.volume <= 0 || AudioListener.volume == 0f)
         {
             return false;
         }

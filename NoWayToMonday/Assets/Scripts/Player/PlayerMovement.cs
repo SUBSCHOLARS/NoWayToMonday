@@ -33,7 +33,77 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
+        if (isExploring)
+        {
+            insanityLevel += 0.01f * Time.deltaTime;
+        }
+        if (SceneManager.GetActiveScene().name == "CurseDay")
+        {
+            if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = 1; // Flip the sprite to face right
+            transform.localScale = scale;
+            animator.SetBool("NoSound", false);
+            transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
+        }
+        if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove)))
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = -1;
+            transform.localScale = scale;
+            animator.SetBool("NoSound", false);
+            transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+        }
+        if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow) ||
+           Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
+           || (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow)))
+        {
+            animator.SetBool("NoSound", true);
+        }
+        if (this.gameObject.transform.position.x < -13f && SceneManager.GetActiveScene().name == "GameStage")
+        {
+            this.gameObject.transform.position = new Vector3(-13f, -7.7f, 0f);
+        }
+        if (this.gameObject.transform.position.x > 106.15)
+        {
+            this.gameObject.transform.position = new Vector3(106.15f, -7.2f, 0f);
+        }
+        if (autoMove)
+        {
+            animator.SetBool("NoSound", false);
+            Vector3 scale = transform.localScale;
+            scale.x = -1;
+            transform.localScale = scale;
+            transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+        }
+        if (autoMoveRight)
+        {
+            animator.SetBool("NoSound", false);
+            transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
+        }
+        if (backMove)
+        {
+            animator.SetBool("NoSound", false);
+            Vector3 scale = transform.localScale;
+            scale.x = -1;
+            transform.localScale = scale;
+            transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
+        }
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            if (stateInfo.IsName("IdleEarClosing"))
+            {
+                AudioListener.volume = 0f;
+                Debug.Log("音量オフ！");
+            }
+            else
+            {
+                AudioListener.volume = 1f;
+            }
+        }
+        else
+        {
+            if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
         {
             Vector3 scale = transform.localScale;
             scale.x = 1; // Flip the sprite to face right
@@ -103,9 +173,6 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = scale;
             transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
         }
-        if (isExploring)
-        {
-            insanityLevel += 0.01f * Time.deltaTime;
         }
     }
     public void ThroughDoor()

@@ -27,7 +27,7 @@ public class LightOnAndOff : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("ライトをオフにします");
+            //Debug.Log("ライトをオフにします");
             Light.SetActive(false);
             for (int i = 0; i < ghosts.Length; i++)
             {
@@ -41,7 +41,7 @@ public class LightOnAndOff : MonoBehaviour
             }
             yield return new WaitForSeconds(4f);
 
-            Debug.Log("ライトをオンにします");
+            //Debug.Log("ライトをオンにします");
             Light.SetActive(true);
             for (int i = 0; i < ghosts.Length; i++)
             {

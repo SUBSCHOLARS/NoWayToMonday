@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EvacuationScript : MonoBehaviour
+public class EvacuationScript2 : MonoBehaviour
 {
     public GameObject Player;
     public GameObject PlayerEvacuated;
@@ -23,11 +23,11 @@ public class EvacuationScript : MonoBehaviour
             Player.SetActive(false);
             PlayerEvacuated.SetActive(true);
         }
-        if (isEvacuated && isNear && Input.GetKeyDown(KeyCode.Space))
+        else if (isEvacuated && isNear && Input.GetKeyDown(KeyCode.Space))
         {
+            isEvacuated = false;
             Player.SetActive(true);
             PlayerEvacuated.SetActive(false);
-            isEvacuated = false;
         }
     }
     void OnTriggerEnter2D(Collider2D collision)

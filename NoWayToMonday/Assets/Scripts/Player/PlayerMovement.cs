@@ -270,7 +270,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (hasKnifeLurksday)
             {
-                Destroy(collision.gameObject);
+                collision.gameObject.SetActive(false);
             }
             else
             {

@@ -34,7 +34,7 @@ public class DayExecution : MonoBehaviour
     {
         flowchart.ExecuteBlock("Maulsday");
     }
-    public void ExecuteShrauday()
+    public void ExecuteShurauday()
     {
         flowchart.ExecuteBlock("Shurauday");
     }

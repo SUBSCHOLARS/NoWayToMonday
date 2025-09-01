@@ -5,6 +5,7 @@ using UnityEngine;
 public class StrangerMovementInBedroom : MonoBehaviour
 {
     private AudioSource audioSource;
+    private float timer = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,13 +16,18 @@ public class StrangerMovementInBedroom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timer += Time.deltaTime;
         transform.position += new Vector3(-5f, 0, 0) * Time.deltaTime;
+        if (timer >= 6f)
+        {
+            Destroy(gameObject);
+        }
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "StrangerActivationdeletion")
         {
-            Destroy(gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 }

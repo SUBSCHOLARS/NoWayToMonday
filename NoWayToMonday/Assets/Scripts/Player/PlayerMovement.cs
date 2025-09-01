@@ -94,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
             if (stateInfo.IsName("IdleEarClosing"))
             {
                 AudioListener.volume = 0f;
-                Debug.Log("音量オフ！");
+                //Debug.Log("音量オフ！");
             }
             else
             {

@@ -242,7 +242,7 @@ public class PlayerMovementWithFungus : MonoBehaviour
     {
         NoImage.gameObject.SetActive(true); // 画像を表示
         AudioSource audioSource = NoImage.GetComponent<AudioSource>(); // AudioSourceを取得
-
+        SetPlayerOnBed();
         if (audioSource != null)
         {
             audioSource.Play(); // 音を再生
@@ -270,5 +270,19 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public void DontGoAnywhereDeactivate()
     {
         DontGoAnywhere.SetActive(false);
+    }
+    public void BackMovingUnday()
+    {
+        animator = Player.GetComponent<Animator>();
+        Vector3 scale = Player.transform.localScale;
+        scale.x = -1;
+        Player.transform.localScale = scale; // これが必要
+        animator.SetBool("IsWalking", true);
+        Player.transform.DOMoveX(-9.1f, 2.0f).OnComplete(
+            () =>
+            {
+                animator.SetBool("IsWalking", false);
+            }
+        );
     }
 }

@@ -48,7 +48,7 @@ public class BackgroundChanger : MonoBehaviour
             AlteredRoom.SetActive(true);
             Destroy(Brother);
             Reason2.SetActive(true);
-            Monologue.ExecuteBlock("Monologue");
+            //Monologue.ExecuteBlock("Monologue");
             Debug.Log("Altered!");
         }
         else if (counter == 3)

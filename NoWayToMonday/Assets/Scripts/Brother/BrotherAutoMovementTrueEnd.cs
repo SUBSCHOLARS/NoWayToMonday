@@ -17,6 +17,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
     public DeathTimer deathTimer;
     public GameObject TrueKnife;
     public GameObject Sink;
+    bool hadBeenStoppedPC = false;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -47,7 +48,7 @@ public class BrotherAutoMovementTrueEnd : MonoBehaviour
         {
             audioSource.PlayOneShot(Bleeding,1.0f);
             TrueKnife.SetActive(false);
-            if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV && PCScript.hadBeenStoppedPC && RadioScript.hadBeenStoppedRadio)
+            if (SinkScript.hadBeenStoppedDrip && ExtrovertFanScript.hadBeenStoppedFan && TVScript.hadBeenStoppedTV && hadBeenStoppedPC && RadioScript.hadBeenStoppedRadio)
             {
                 FlowchartExtendedTrueEnd.ExecuteBlock("ExtendedTrueEvent");
                 animator = Sink.GetComponent<Animator>();

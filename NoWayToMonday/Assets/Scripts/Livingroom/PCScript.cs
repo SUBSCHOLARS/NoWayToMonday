@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class PCScript : MonoBehaviour
 {
     bool isNearPC = false;
-    public static bool hadBeenStoppedPC = false;
     public GameObject PC;
     public GameObject PCScreen;
     public GameObject pcInteractableIcon;

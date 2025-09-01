@@ -3,15 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 using Unity.VisualScripting;
+using UnityEngine.Rendering.Universal;
 public class PlayerMonologue : MonoBehaviour
 {
     public Flowchart Monologue;
+    public Light2D globalLight;
     // Start is called before the first frame update
     void Start()
     {
         if (PlayerMovement.insanityLevel <= 60f)
         {
-            switch (DayCountManager.DayCount)
+            MonoloqueSwitcher();
+        }
+        else
+        {
+            globalLight.color = Color.red;
+            MonoloqueSwitcher();
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    void MonoloqueSwitcher()
+    {
+        switch (DayCountManager.DayCount)
             {
                 case 1:
                     Monologue.ExecuteBlock("DayOneMonologue");
@@ -35,16 +53,5 @@ public class PlayerMonologue : MonoBehaviour
                     Monologue.ExecuteBlock("DaySevenMonologue");
                     break;
             }
-        }
-        else
-        {
-            Debug.Log("Bad End!");
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

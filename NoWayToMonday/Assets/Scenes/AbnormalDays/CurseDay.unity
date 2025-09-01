@@ -50704,6 +50704,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.079200745
       objectReference: {fileID: 0}
+    - target: {fileID: 6330418373074125801, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c58fb2c1b15c241f8ac5ebbea422323a, type: 2}
     - target: {fileID: 6756010313625688972, guid: b68ba89cffc854d43a600f2ee423ff26, type: 3}
       propertyPath: openDoor
       value: 

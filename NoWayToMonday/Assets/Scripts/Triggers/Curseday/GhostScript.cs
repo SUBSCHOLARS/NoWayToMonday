@@ -51,7 +51,7 @@ public class GhostScript : MonoBehaviour
     IEnumerator Search()
     {
         SearchForPlayer();
-        yield return null;
+        yield return new WaitForSeconds(1.5f);
     }
     public bool IsSoundAudibleToPlayer()
     {

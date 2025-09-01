@@ -34,6 +34,15 @@ public class AbnTeleporter1 : MonoBehaviour
             case "UmbraDay":
                 flowchart.ExecuteBlock("UmbraDayReason");
                 break;
+            case "LurksDay":
+                flowchart.ExecuteBlock("LurksDayReason");
+                break;
+            case "CurseDay":
+                flowchart.ExecuteBlock("CurseDayReason");
+                break;
+            case "GazeDay":
+                flowchart.ExecuteBlock("GazeDayReason");
+                break;
         }
     }
 }

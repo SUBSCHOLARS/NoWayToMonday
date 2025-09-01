@@ -263,7 +263,8 @@ public class PlayerMovementWithFungus : MonoBehaviour
     }
     public void SetPlayerOnBed()
     {
-        Player.transform.position = Bed.transform.position;
+        Player.transform.position = new Vector3(-9.1f, -7.7f, 0);
+        MainCamera.transform.position = new Vector3(-1.3f, -0.79f, -10f);
         UndayFlowchart.ExecuteBlock("Unday");
         DontGoAnywhere.SetActive(true);
     }
@@ -284,5 +285,9 @@ public class PlayerMovementWithFungus : MonoBehaviour
                 animator.SetBool("IsWalking", false);
             }
         );
+    }
+    public void AudioListenerReturns()
+    {
+        AudioListener.volume = 1f;
     }
 }

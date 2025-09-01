@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -5146808354249407791}
   - component: {fileID: -4017990143005849167}
   - component: {fileID: 1556643972775766606}
-  - component: {fileID: -120980067896602521}
+  - component: {fileID: -3122999947948148639}
   m_Layer: 0
   m_Name: Blood2Fridge
   m_TagString: Blood
@@ -256,7 +256,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-120980067896602521
+--- !u!114 &-3122999947948148639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,6 +265,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7874015529004380843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dc5d640a766145a4846f0b402b97dcc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a3824c2d65444449bd18c2e91f0edf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

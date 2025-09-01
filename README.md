@@ -35,3 +35,5 @@ https://otologic.jp/
 - Unity 2022.3.23f1
 - Aseprite
 - TTSMaker
+- ぴたちー素材館
+http://www.vita-chi.net/sec/voi/hora/voivoi1.htm

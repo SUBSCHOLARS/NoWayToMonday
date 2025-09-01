@@ -36,4 +36,5 @@ https://otologic.jp/
 - Aseprite
 - TTSMaker
 - ぴたちー素材館
+
 http://www.vita-chi.net/sec/voi/hora/voivoi1.htm

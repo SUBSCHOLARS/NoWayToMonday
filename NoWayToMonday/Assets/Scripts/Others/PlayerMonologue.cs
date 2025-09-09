@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
-using Unity.VisualScripting;
 using UnityEngine.Rendering.Universal;
 public class PlayerMonologue : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class PlayerMonologue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerMovement.insanityLevel <= 60f)
+        if (PlayerMovement.insanityLevel <= 40f)
         {
             MonoloqueSwitcher();
         }

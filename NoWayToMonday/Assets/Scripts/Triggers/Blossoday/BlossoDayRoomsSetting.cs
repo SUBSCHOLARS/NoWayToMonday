@@ -13,12 +13,12 @@ public class BlossoDayRoomsSetting : MonoBehaviour
     // 狂気レベルが低い時の設定
     [Range(1, 10)] public int rooms_Min_LowInsanity = 3;
     [Range(1, 10)] public int rooms_Max_LowInsanity = 5;
-    [Range(0, 1)] public float anomalyChance_LowInsanity = 0.8f; // 異常発生確率20%
+    [Range(0, 1)] public float anomalyChance_LowInsanity = 0.4f; // 異常発生確率40%
 
     // 狂気レベルが高い時の設定
     [Range(1, 10)] public int rooms_Min_HighInsanity = 6;
     [Range(1, 10)] public int rooms_Max_HighInsanity = 8;
-    [Range(0, 1)] public float anomalyChance_HighInsanity = 0.6f; // 異常発生確率60%
+    [Range(0, 1)] public float anomalyChance_HighInsanity = 0.8f; // 異常発生確率80%
 
     public float insanityThreshold = 50f; // 狂気レベルの高低を分けるしきい値
                                           // ▲ Unityエディタで設定する項目ここまで ▲

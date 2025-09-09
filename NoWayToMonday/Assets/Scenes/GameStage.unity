@@ -18843,7 +18843,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1304312251}
   selectedCommands:
-  - {fileID: 1304312250}
+  - {fileID: 1304312254}
   variables: []
   description: 
   stepPause: 0
@@ -18958,7 +18958,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 64
-    y: 128.5
+    y: 129.5
     width: 187
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -55402,7 +55402,6 @@ GameObject:
   - component: {fileID: 1654938307}
   - component: {fileID: 1654938308}
   - component: {fileID: 1654938309}
-  - component: {fileID: 1654938310}
   - component: {fileID: 1654938313}
   - component: {fileID: 1654938314}
   - component: {fileID: 1654938316}
@@ -55485,7 +55484,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1654938298}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1654938314}
   variables:
   - {fileID: 1654938309}
   description: 
@@ -55603,7 +55603,6 @@ MonoBehaviour:
   - {fileID: 1654938303}
   - {fileID: 1654938305}
   - {fileID: 1654938306}
-  - {fileID: 1654938310}
   - {fileID: 1654938314}
   suppressAllAutoSelections: 0
 --- !u!114 &1654938299
@@ -55782,23 +55781,6 @@ MonoBehaviour:
   scope: 0
   key: DayCount
   value: 1
---- !u!114 &1654938310
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654938291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 16
-  indentLevel: 0
-  targetObject: {fileID: 1307319193}
-  methodName: AlteringRoom
-  delay: 0
 --- !u!114 &1654938313
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -59883,6 +59865,57 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 435460851}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1914888764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1914888766}
+  - component: {fileID: 1914888765}
+  m_Layer: 0
+  m_Name: BackgroundChangerForGameStage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1914888765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914888764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470b2e8641d8441df945d2ee37a48416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Room: {fileID: 289729249}
+  AlteredRoom: {fileID: 1086453501}
+  Brother: {fileID: 1568637922}
+  Reason2: {fileID: 518019935}
+  NormalCalendar: {fileID: 1924180311}
+  AlteredCalendar: {fileID: 609007747}
+  Lunastasis: {fileID: 435460850}
+--- !u!4 &1914888766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914888764}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -33.19, y: 79.97, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1924180311
 GameObject:
@@ -65763,3 +65796,4 @@ SceneRoots:
   - {fileID: 434777132366254919}
   - {fileID: 1568637924}
   - {fileID: 9133751}
+  - {fileID: 1914888766}

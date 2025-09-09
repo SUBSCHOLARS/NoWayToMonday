@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name == "CurseDay")
         {
-            if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
+            if ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove))
         {
             Vector3 scale = transform.localScale;
             scale.x = 1; // Flip the sprite to face right
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("NoSound", false);
             transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
         }
-        if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove)))
+        if ((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove))
         {
             Vector3 scale = transform.localScale;
             scale.x = -1;
@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
+            if ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove))
         {
             Vector3 scale = transform.localScale;
             scale.x = 1; // Flip the sprite to face right

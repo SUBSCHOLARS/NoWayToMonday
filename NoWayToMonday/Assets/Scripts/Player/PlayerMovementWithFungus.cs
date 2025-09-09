@@ -279,7 +279,7 @@ public class PlayerMovementWithFungus : MonoBehaviour
         scale.x = -1;
         Player.transform.localScale = scale; // これが必要
         animator.SetBool("IsWalking", true);
-        Player.transform.DOMoveX(-9.1f, 2.0f).OnComplete(
+        Player.transform.DOMoveX(-9.1f, 8.0f).OnComplete(
             () =>
             {
                 animator.SetBool("IsWalking", false);

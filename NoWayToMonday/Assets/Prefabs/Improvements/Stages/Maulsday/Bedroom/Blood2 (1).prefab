@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6727715054584084573}
   - component: {fileID: 4553065558023585738}
   - component: {fileID: -5793932580822385402}
+  - component: {fileID: -3955373799889611196}
   m_Layer: 0
   m_Name: Blood2 (1)
   m_TagString: Blood
@@ -255,3 +256,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3955373799889611196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3027387252360906436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc5d640a766145a4846f0b402b97dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -21,7 +21,7 @@ public class UndayDontGoAnywhere : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            UndayFlowchart.ExecuteBlock("DontGoAnywhere");
+            UndayFlowchart.ExecuteBlock("UndayDontGoAnywhere");
         }
     }
 }

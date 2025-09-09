@@ -2764,7 +2764,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1635763899}
   selectedCommands:
-  - {fileID: 1635763910}
+  - {fileID: 1635763906}
   variables: []
   description: 
   stepPause: 0
@@ -2913,7 +2913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "\u30D0\u30C3\u30C9\u30A8\u30F3\u30C9"
+  storyText: "\u30D0\u30C3\u30C9\u30A8\u30F3\u30C9: \u300C\u4E8B\u4EF6\u300D"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}

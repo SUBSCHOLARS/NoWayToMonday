@@ -1062,6 +1062,8 @@ GameObject:
   - component: {fileID: 1361496107}
   - component: {fileID: 1361496108}
   - component: {fileID: 1361496109}
+  - component: {fileID: 1361496111}
+  - component: {fileID: 1361496110}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1111,6 +1113,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1361496109}
   - {fileID: 1361496107}
+  - {fileID: 1361496111}
+  - {fileID: 1361496110}
   - {fileID: 1361496108}
   suppressAllAutoSelections: 0
 --- !u!114 &1361496105
@@ -1140,7 +1144,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1361496104}
   selectedCommands:
-  - {fileID: 1361496107}
+  - {fileID: 1361496110}
   variables: []
   description: 
   stepPause: 0
@@ -1181,7 +1185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "\u30C7\u30E2\u7248\u306F\u7D42\u4E86\u3067\u3059\u3002\u958B\u767A\u5B8C\u4E86\u3092\u304A\u6301\u3061\u304F\u3060\u3055\u3044\u3002"
+  storyText: ...
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1229,6 +1233,60 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1.5
   durationOLD: 0
+--- !u!114 &1361496110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361496102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  storyText: "\u30D0\u30C3\u30C9\u30A8\u30F3\u30C9: \u300C\u4E0D\u660E\u300D"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1361496111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361496102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  storyText: "\u6C17\u3092\u3064\u3051\u308D\u3063\u3066\u8A00\u3063\u305F\u306E\u306B\u306A\u3042..."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1438076752
 GameObject:
   m_ObjectHideFlags: 0

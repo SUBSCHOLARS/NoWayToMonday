@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AbnormalDays/UmbraDay.unity
     guid: 33c1c0745185448aa8de884563755ca9
+  - enabled: 1
+    path: Assets/Scenes/DaminEnd.unity
+    guid: d4dcd4e1202f34b05a80de9e79b7d0ea
   m_configObjects: {}

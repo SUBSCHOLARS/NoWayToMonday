@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Fungus;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackgroundChanger : MonoBehaviour
 {
@@ -63,6 +64,7 @@ public class BackgroundChanger : MonoBehaviour
         else if (counter == 8)
         {
             Debug.Log("惰眠を貪るエンド");
+            SceneManager.LoadScene("DaminEnd");
         }
     }
 }

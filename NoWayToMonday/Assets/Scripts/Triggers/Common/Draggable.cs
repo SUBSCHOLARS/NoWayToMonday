@@ -9,6 +9,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Vector2 originalPosition;
+    private Canvas canvas; // 追加
 
     void Awake()
     {
@@ -18,6 +19,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         {
             canvasGroup = gameObject.AddComponent<CanvasGroup>();
         }
+        canvas = GetComponentInParent<Canvas>(); // 追加
     }
 
     // ドラッグが開始された時に一度だけ呼ばれる
@@ -32,8 +34,15 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     // ドラッグ中に毎フレーム呼ばれる
     public void OnDrag(PointerEventData eventData)
     {
-        // オブジェクトをマウスカーソルの位置に追従させる
-        rectTransform.anchoredPosition += eventData.delta / transform.parent.localScale.x;
+        Vector2 localPoint;
+        // スクリーン座標をローカル座標に変換
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            rectTransform.parent as RectTransform,
+            eventData.position,
+            canvas.worldCamera,
+            out localPoint
+        );
+        rectTransform.anchoredPosition = localPoint;
     }
 
     // ドラッグが終了した時に一度だけ呼ばれる

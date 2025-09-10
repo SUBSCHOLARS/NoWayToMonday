@@ -6,7 +6,6 @@ public class AbnTeleporter8 : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Camera;
-    bool isFinal = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +26,8 @@ public class AbnTeleporter8 : MonoBehaviour
             Camera.transform.position = new Vector3(-117.5f, -1.42f, -10f);
         }
     }
-    public void IsFinalEnable()
-    {
-        isFinal = true;
-    }
+    // public void IsFinalEnable()
+    // {
+    //     isFinal = true;
+    // }
 }

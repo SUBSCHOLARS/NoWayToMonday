@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class ShuraudayRoomsSetting : MonoBehaviour
 {
@@ -21,13 +22,14 @@ public class ShuraudayRoomsSetting : MonoBehaviour
     // 狂気レベルが高い時の設定
     [Range(1, 10)] public int rooms_Min_HighInsanity = 6;
     [Range(1, 10)] public int rooms_Max_HighInsanity = 8;
-    [Range(0, 1)] public float anomalyChance_HighInsanity = 0.6f; // 異常発生確率60%
+    [Range(0, 1)] public float anomalyChance_HighInsanity = 0.8f; // 異常発生確率60%
 
     public float insanityThreshold = 50f; // 狂気レベルの高低を分けるしきい値
                                           // ▲ Unityエディタで設定する項目ここまで ▲
     public float roomSpacing = 45f;
     public GameObject canvasObject;
     public Vector3 startPosition = new Vector3(63f, 0, 0);
+    public Light2D globalLight;
     void Start()
     {
         GenerateStage();
@@ -46,6 +48,7 @@ public class ShuraudayRoomsSetting : MonoBehaviour
         }
         else
         {
+            globalLight.color = Color.red;
             roomCount = Random.Range(rooms_Min_HighInsanity, rooms_Max_HighInsanity + 1);
             anomalyChance = anomalyChance_HighInsanity;
         }

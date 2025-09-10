@@ -21819,7 +21819,7 @@ MonoBehaviour:
   roomSpacing: 45
   canvasObject: {fileID: 1603839543}
   startPosition: {x: 63, y: 0, z: 0}
-  globalLight: {fileID: 0}
+  globalLight: {fileID: 1485048161}
 --- !u!4 &1531935548
 Transform:
   m_ObjectHideFlags: 0

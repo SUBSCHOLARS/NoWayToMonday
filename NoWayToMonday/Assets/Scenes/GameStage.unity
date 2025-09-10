@@ -55402,7 +55402,6 @@ GameObject:
   - component: {fileID: 1654938295}
   - component: {fileID: 1654938302}
   - component: {fileID: 1654938304}
-  - component: {fileID: 1654938303}
   - component: {fileID: 1654938305}
   - component: {fileID: 1654938306}
   - component: {fileID: 1654938307}
@@ -55413,6 +55412,7 @@ GameObject:
   - component: {fileID: 1654938316}
   - component: {fileID: 1654938315}
   - component: {fileID: 1654938317}
+  - component: {fileID: 1654938318}
   m_Layer: 0
   m_Name: FlowchartSleep
   m_TagString: Untagged
@@ -55490,7 +55490,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1654938298}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1654938318}
   variables:
   - {fileID: 1654938309}
   description: 
@@ -55605,7 +55606,7 @@ MonoBehaviour:
   - {fileID: 1654938307}
   - {fileID: 1654938317}
   - {fileID: 1654938304}
-  - {fileID: 1654938303}
+  - {fileID: 1654938318}
   - {fileID: 1654938305}
   - {fileID: 1654938306}
   - {fileID: 1654938314}
@@ -55668,23 +55669,6 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1511723585}
   methodName: FadeToBlackThenToClear
-  delay: 0
---- !u!114 &1654938303
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654938291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 11
-  indentLevel: 0
-  targetObject: {fileID: 1910558882}
-  methodName: EnableMovement
   delay: 0
 --- !u!114 &1654938304
 MonoBehaviour:
@@ -55872,6 +55856,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1929079718}
   methodName: ExploringFinishSet
+  delay: 0
+--- !u!114 &1654938318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654938291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 24
+  indentLevel: 0
+  targetObject: {fileID: 1307319193}
+  methodName: AlteringRoom
   delay: 0
 --- !u!1 &1661838220
 GameObject:

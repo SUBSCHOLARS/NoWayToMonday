@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class GazedayRoomsSetting : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class GazedayRoomsSetting : MonoBehaviour
     public float roomSpacing = 45f;
     public GameObject canvasObject;
     public Vector3 startPosition = new Vector3(63f, 0, 0);
+    public Light2D globalLight;
     void Start()
     {
         GenerateStage();
@@ -44,6 +46,7 @@ public class GazedayRoomsSetting : MonoBehaviour
         }
         else
         {
+            globalLight.color = Color.red;
             roomCount = Random.Range(rooms_Min_HighInsanity, rooms_Max_HighInsanity + 1);
             anomalyChance = anomalyChance_HighInsanity;
         }

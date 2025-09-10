@@ -18,6 +18,8 @@ TagManager:
   - KnifeTaken
   - Stranger
   - StrangerInBedroom
+  - Ghost
+  - Light
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - Scanline
   - Water
   - UI
-  - 
+  - VolumeSettingUI
   - 
   - 
   - 

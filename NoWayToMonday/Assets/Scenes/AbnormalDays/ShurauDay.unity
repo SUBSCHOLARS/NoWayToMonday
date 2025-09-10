@@ -24716,6 +24716,7 @@ MonoBehaviour:
   roomSpacing: 45
   canvasObject: {fileID: 1603839543}
   startPosition: {x: 63, y: 0, z: 0}
+  globalLight: {fileID: 1485048161}
 --- !u!1 &1545151467
 GameObject:
   m_ObjectHideFlags: 0

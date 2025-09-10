@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class UmbradayRoomsSetting : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class UmbradayRoomsSetting : MonoBehaviour
     public GameObject canvasObject;
     public Vector3 startPosition = new Vector3(63f, 0, 0);
     int UmbradayMultiplier = 3;
+    public Light2D globalLight;
     void Start()
     {
         GenerateStage();
@@ -47,6 +49,7 @@ public class UmbradayRoomsSetting : MonoBehaviour
         }
         else
         {
+            globalLight.color = Color.red;
             roomCount = Random.Range(rooms_Min_HighInsanity, rooms_Max_HighInsanity + 1);
         }
 

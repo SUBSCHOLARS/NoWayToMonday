@@ -16,6 +16,8 @@ public class EscapeKeyTitleBack : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            DayCountManager.DayCount = 1;
+            RefinedKanjiManager.ResetKanjiDictionaries(); // ←ここでリストを復元
             SceneManager.LoadScene("Title");
         }
     }

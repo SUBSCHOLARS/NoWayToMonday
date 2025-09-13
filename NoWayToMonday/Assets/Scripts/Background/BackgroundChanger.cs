@@ -64,6 +64,8 @@ public class BackgroundChanger : MonoBehaviour
         else if (counter >= 8)
         {
             Debug.Log("惰眠を貪るエンド");
+            DayCountManager.DayCount = 1;
+            RefinedKanjiManager.ResetKanjiDictionaries(); // ←ここでリストを復元
             SceneManager.LoadScene("DaminEnd");
         }
     }

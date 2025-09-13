@@ -19,11 +19,13 @@ public class GameStageBacker : MonoBehaviour
     public void GameStageBack()
     {
         DayCountManager.DayCount = 1;
+        RefinedKanjiManager.ResetKanjiDictionaries(); // ←ここでリストを復元
         SceneManager.LoadScene("GameStage");
     }
     public void TitleBack()
     {
         DayCountManager.DayCount = 1;
+        RefinedKanjiManager.ResetKanjiDictionaries(); // ←ここでリストを復元
         SceneManager.LoadScene("Title");
     }
 }

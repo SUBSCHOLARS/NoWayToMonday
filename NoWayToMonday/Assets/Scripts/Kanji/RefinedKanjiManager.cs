@@ -11,6 +11,30 @@ public class RefinedKanjiManager : MonoBehaviour
     public static string furiganaText;
     int sizePercentage;
     float horizontalOffset;
+     private static readonly Dictionary<string, string> initialKanjiDictionary = new Dictionary<string, string>
+    {
+        { "衊", "ばつ" },
+        { "寢", "ね" },
+        { "蔽", "へい" },
+        { "瞵", "りん" },
+        { "靈", "りょう" },
+        { "蕐", "はな" },
+        { "翳", "かげ" },
+    };
+    private static readonly Dictionary<string, string> initialRareKanjiDictionary = new Dictionary<string, string>
+    {
+        { "彁", "カ" },
+        { "墸", "トど" },
+        { "妛", "なミおン" },
+        { "蟐", "ビヘび" }
+    };
+
+    // 差し戻し用メソッド
+    public static void ResetKanjiDictionaries()
+    {
+        kanjiDictionary = new Dictionary<string, string>(initialKanjiDictionary);
+        rareKanjiDictionary = new Dictionary<string, string>(initialRareKanjiDictionary);
+    }
     public static Dictionary<string, string> kanjiDictionary = new Dictionary<string, string>
     {
         { "衊", "ばつ" },

@@ -76,12 +76,10 @@ public class PlayerMovementWithFungus : MonoBehaviour
     public void SleepActivate()
     {
         SleepActivator.SetActive(true);
-        SleepText.gameObject.SetActive(true);
     }
     public void SleepDeactivate()
     {
         SleepActivator.SetActive(false);
-        SleepText.gameObject.SetActive(false);
     }
     public void BGMStop()
     {

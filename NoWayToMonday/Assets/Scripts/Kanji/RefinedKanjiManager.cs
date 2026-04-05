@@ -96,7 +96,7 @@ public class RefinedKanjiManager : MonoBehaviour
     public void RepeatRandomKanjiForSpecificSay()
     {
         flowchart.SetStringVariable("repeatKanji", savedKanji);
-        flowchart.SetStringVariable("repeatReading", savedKanji);
+        flowchart.SetStringVariable("repeatReading", savedReading);
     }
 
 }

@@ -25,10 +25,10 @@ public class RefinedKanjiManager : MonoBehaviour
     };
     private Dictionary<string, string> rareKanjiDictionary = new Dictionary<string, string>
     {
-        { "彁", " " },
-        { "墸", "  " },
-        { "妛", "    " },
-        { "蟐", "   " }
+        { "彁", "　" },
+        { "墸", "　　" },
+        { "妛", "　　　　" },
+        { "蟐", "　　　" }
     };
     public string CurrentKanji { get; private set; }
     public string CurrentReading { get; private set; }

@@ -25,53 +25,11 @@ public class Teleporter2 : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") && !isMoveNormally)
-        {
-            player.transform.position = new Vector3(70f, -7.7f, 0f);
-            MainCamera.transform.position = new Vector3(97.6f, 17.3f, -10f);
-            audioManager.PlayAuido();
-            if (DayCountManager.DayCount != 7)
-            {
-                this.gameObject.SetActive(false);
-                Reason.SetActive(true);
-            }
-
-            switch (DayCountManager.DayCount)
-            {
-                case 1:
-                    flowchart.ExecuteBlock("DayOne");
-                    break;
-                case 2:
-                    flowchart.ExecuteBlock("DayTwo");
-                    break;
-                case 3:
-                    flowchart.ExecuteBlock("DayThree");
-                    break;
-                case 4:
-                    flowchart.ExecuteBlock("DayFour");
-                    break;
-                case 5:
-                    flowchart.ExecuteBlock("DayFive");
-                    break;
-                case 6:
-                    flowchart.ExecuteBlock("DaySix");
-                    break;
-                case 7:
-                    flowchart.ExecuteBlock("DaySeven");
-                    isMoveNormally = true;
-                    break;
-            }
-        }
-        else if (other.gameObject.CompareTag("Player") && isMoveNormally)
+         if (other.gameObject.CompareTag("Player"))
         {
             audioManager.PlayAuido();
             player.transform.position = new Vector3(84.8f, -7.2f, 0f);
             MainCamera.transform.position = new Vector3(94.9f, -0.66f, -10f);
-            if (Teleporter6.ComeBackFlag)
-            {
-                ComeBackAndFoundBrotherMissingFlowChart.ExecuteBlock("Found");
-                Teleporter6.ComeBackFlag = false;
-            }
         }
     }
 }

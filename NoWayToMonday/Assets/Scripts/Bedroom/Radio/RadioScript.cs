@@ -8,7 +8,6 @@ public class RadioScript : MonoBehaviour
     [SerializeField] private AudioClip[] radioClips;
     AudioSource audioSource;
     bool isNearRadio = false;
-    bool isRadioOff = false;
     public static bool hadBeenStoppedRadio = false;
     public GameObject radioInteractableIcon;
     SpriteRenderer spriteRenderer;
@@ -17,44 +16,6 @@ public class RadioScript : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = radioInteractableIcon.GetComponent<SpriteRenderer>();
-        PlayRadio();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (isNearRadio && !isRadioOff && Input.GetKeyDown(KeyCode.Space))
-        {
-            PauseRadio();
-            isRadioOff = true;
-            hadBeenStoppedRadio = true;
-        }
-        else if (isNearRadio && isRadioOff && Input.GetKeyDown(KeyCode.Space))
-        {
-            ResumeRadio();
-            isRadioOff = false;
-            hadBeenStoppedRadio = false;
-        }   
-    }
-    public void PlayRadio()
-    {
-        audioSource.clip = radioClips[DayCountManager.DayCount - 1];
-        audioSource.Play();
-    }
-    public void StopRadio()
-    {
-        audioSource.Stop();
-    }
-    public void ResumeRadio()
-    {
-        if (!audioSource.isPlaying)
-        {
-            audioSource.UnPause();
-        }
-    }
-    public void PauseRadio()
-    {
-        audioSource.Pause();
     }
     void OnTriggerEnter2D(Collider2D other)
     {

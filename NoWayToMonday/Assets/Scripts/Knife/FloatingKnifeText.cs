@@ -23,10 +23,13 @@ public class FloatingKnifeText : MonoBehaviour
     }
     void Update()
     {
-        if(PlayerInRange&&!menuTriggered&&Input.GetKeyDown(KeyCode.Space))
+        if (PlayerInRange && !menuTriggered && Input.GetKeyDown(KeyCode.Space))
         {
-            menuTriggered=true;
-            KnifeFlowChart.ExecuteBlock("KnifeMenu");
+            menuTriggered = true;
+            if (DayCountManager.DayCount == 7)
+                KnifeFlowChart.ExecuteBlock("KnifeMenu");
+            else
+                KnifeFlowChart.ExecuteBlock("KnifeNarrative_Day" + DayCountManager.DayCount);
         }
     }
     private void OnTriggerStay2D(Collider2D other)

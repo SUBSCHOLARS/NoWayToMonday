@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\hatanaka\\\\Desktop\\\\UnityProjects\\\\NoWayToMonday\\\\NoWayToMonday\\\\Assets\" -Directory | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\hatanaka\\\\Desktop\\\\UnityProjects\\\\NoWayToMonday\\\\NoWayToMonday\\\\Assets\\\\Scenes\" -Recurse -File | Where-Object { $_.Extension -eq \".asset\" -or $_.Extension -eq \".prefab\" } | Select-Object FullName)",
+      "Bash(dir \"C:\\\\Users\\\\hatanaka\\\\Desktop\\\\UnityProjects\\\\NoWayToMonday\\\\Assets\\\\Scripts\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\hatanaka\\\\Desktop\\\\UnityProjects\\\\NoWayToMonday\\\\NoWayToMonday\\\\Assets\\\\Scripts\" -Recurse | Where-Object { $_.Extension -eq \".cs\" } | ForEach-Object { $_.FullName })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\hatanaka\\\\Desktop\\\\UnityProjects\\\\NoWayToMonday\\\\NoWayToMonday\\\\Assets\\\\Scripts\\\\Triggers\" | ForEach-Object { $_.Name })"
+    ]
+  }
+}

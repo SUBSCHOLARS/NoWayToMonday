@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class DayCountManager : MonoBehaviour
 {
-    public static int DayCount=1; 
+    public static int DayCount=1;
+
+    public int GetDayCount()
+    {
+        return DayCount;
+    }
 }

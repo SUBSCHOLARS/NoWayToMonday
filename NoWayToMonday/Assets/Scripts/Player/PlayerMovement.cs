@@ -30,37 +30,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
+        if ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove))
         {
             Vector3 scale = transform.localScale;
-            scale.x = 1; // Flip the sprite to face right
+            scale.x = 1;
             transform.localScale = scale;
             animator.SetBool("IsWalking", true);
             transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
         }
-        if (!PodScript.isPodTaken && ((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove)))
+        if ((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove))
         {
             Vector3 scale = transform.localScale;
             scale.x = -1;
             transform.localScale = scale;
             animator.SetBool("IsWalking", true);
-            transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
-        }
-
-        if (PodScript.isPodTaken && ((Input.GetKey(KeyCode.RightArrow) && canMove) || (Input.GetKey(KeyCode.D) && canMove)))
-        {
-            Vector3 scale = transform.localScale;
-            scale.x = 1; // Flip the sprite to face right
-            transform.localScale = scale;
-            animator.SetBool("IsWalkingWithPod", true);
-            transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
-        }
-        if (PodScript.isPodTaken && ((Input.GetKey(KeyCode.LeftArrow) && canMove) || (Input.GetKey(KeyCode.A) && canMove)))
-        {
-            Vector3 scale = transform.localScale;
-            scale.x = -1;
-            transform.localScale = scale;
-            animator.SetBool("IsWalkingWithPod", true);
             transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
         }
 
@@ -69,7 +52,6 @@ public class PlayerMovement : MonoBehaviour
            || (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.LeftArrow)))
         {
             animator.SetBool("IsWalking", false);
-            animator.SetBool("IsWalkingWithPod", false);
         }
         if (this.gameObject.transform.position.x < -13f)
         {

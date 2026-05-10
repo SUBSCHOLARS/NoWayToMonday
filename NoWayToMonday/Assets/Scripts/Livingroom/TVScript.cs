@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Fungus;
 
 public class TVScript : MonoBehaviour
 {
     bool isNearTV = false;
     bool isTVOff = false;
+    bool hasNarrated = false;
     public static bool hadBeenStoppedTV = false;
     public GameObject TV;
     public GameObject Screen;
     public GameObject tvInteractableIcon;
+    public Flowchart narrativeFlowchart;
     AudioSource audioSource;
     SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
@@ -29,6 +32,7 @@ public class TVScript : MonoBehaviour
             audioSource.Pause();
             isTVOff = true;
             hadBeenStoppedTV = true;
+            TryNarrate();
         }
         else if (isNearTV && isTVOff && Input.GetKeyDown(KeyCode.Space))
         {
@@ -38,6 +42,19 @@ public class TVScript : MonoBehaviour
             hadBeenStoppedTV = false;
         }
     }
+
+    void TryNarrate()
+    {
+        if (hasNarrated || narrativeFlowchart == null) return;
+        string block = "TV_Day" + DayCountManager.DayCount;
+        if (narrativeFlowchart.HasBlock(block))
+        {
+            hasNarrated = true;
+            narrativeFlowchart.ExecuteBlock(block);
+        }
+    }
+
+    public void ResetNarration() => hasNarrated = false;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))

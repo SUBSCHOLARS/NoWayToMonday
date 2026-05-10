@@ -10,13 +10,12 @@ public class BackgroundChanger : MonoBehaviour
     public GameObject AlteredKitchen;
     public GameObject Room;
     public GameObject AlteredRoom;
-    public GameObject Brother;
     public GameObject Reason2;
     public GameObject NormalCalendar;
     public GameObject AlteredCalendar;
-    public GameObject Lunastasis;
     public Flowchart SleepFlowchart;
     public Flowchart Monologue;
+    public BrotherDayController brotherDayController;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,23 +46,19 @@ public class BackgroundChanger : MonoBehaviour
         {
             Room.SetActive(false);
             AlteredRoom.SetActive(true);
-            Destroy(Brother);
             Reason2.SetActive(true);
             Monologue.ExecuteBlock("Monologue");
-            Debug.Log("Altered!");
         }
         else if (counter == 3)
         {
             NormalCalendar.SetActive(false);
             AlteredCalendar.SetActive(true);
         }
-        else if (counter == 5)
-        {
-            Lunastasis.SetActive(true);
-        }
         else if (counter == 8)
         {
             SceneManager.LoadScene("SleepBadEndText");
         }
+        if (brotherDayController != null)
+            brotherDayController.ApplyDaySetup(DayCountManager.DayCount);
     }
 }
